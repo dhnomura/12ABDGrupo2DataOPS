@@ -13,6 +13,7 @@ Introdução ao GitFlow: https://vimeo.com/16018419
 
 Mais um Site legal sobre Git: https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow
 
+Git Flow Cheat Sheet: http://https://danielkummer.github.io/git-flow-cheatsheet/
 
 # Branchs
 
