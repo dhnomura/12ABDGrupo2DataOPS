@@ -31,11 +31,11 @@ Branch Projeto Aula 2 -> Entregaveis da Aula
 
 Gerar datasets, um com dados agregados para um relatório de negócios, e um dataset para o time de ciencia de Dados realizar exploração dos dados;
 
-- [ ] O Relatório é para a àrea de Vendas:
-- [ ] Este relatório deve conter dados diários
-- [ ] Informações de valores de venda por Região
-- [ ] Informações de valores de Venda Online e Offline
+1. O Relatório é para a àrea de Vendas:
+	-	Este relatório deve conter dados diários
+	-	Informações de valores de venda por Região
+	-	Informações de valores de Venda Online e Offline
 
-- [ ] O Dataset para exploração para ciência de Dados:
-- [ ] Objetivo de construir um modelo de previsão de Churn
-- [ ] A solicitação é de uma amostra de dados com informações da entidades de Cliente, Produtos, Vendas e Vendedores.
+2. O Dataset para exploração para ciência de Dados:
+	-	Objetivo de construir um modelo de previsão de Churn
+	-	A solicitação é de uma amostra de dados com informações da entidades de Cliente, Produtos, Vendas e Vendedores.
