@@ -39,3 +39,9 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 2. O Dataset para exploração para ciência de Dados:
 	-	Objetivo de construir um modelo de previsão de Churn
 	-	A solicitação é de uma amostra de dados com informações da entidades de Cliente, Produtos, Vendas e Vendedores.
+
+# Data Pipe lines
+
+1. Pipe line com dados agregados de vendas para relatório de negócio
+
+![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/RelatorioVendas.PNG)
