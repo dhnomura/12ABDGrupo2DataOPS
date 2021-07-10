@@ -301,7 +301,7 @@ public class IngestaoVendas implements TalendJob {
 		tDBInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tLogRow_1_error(Exception exception, String errorComponent,
+	public void tFileOutputDelimited_4_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
@@ -2774,7 +2774,7 @@ public class IngestaoVendas implements TalendJob {
 				String dbUser_tDBInput_1 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:MIDWy9T1d7ncPLRa/ih8+HMFajerj+p1ak1SkheoV3bB3IenJw==");
+						"enc:routine.encryption.key.v1:ARso2/ZAXcyB0hUuz5XLu1jakj9qeo2PBi2NoERG5ClIDnkwyw==");
 
 				String dbPwd_tDBInput_1 = decryptedPassword_tDBInput_1;
 
@@ -3543,138 +3543,102 @@ public class IngestaoVendas implements TalendJob {
 				 */
 
 				/**
-				 * [tLogRow_1 begin ] start
+				 * [tFileOutputDelimited_4 begin ] start
 				 */
 
-				ok_Hash.put("tLogRow_1", false);
-				start_Hash.put("tLogRow_1", System.currentTimeMillis());
+				ok_Hash.put("tFileOutputDelimited_4", false);
+				start_Hash.put("tFileOutputDelimited_4", System.currentTimeMillis());
 
-				currentComponent = "tLogRow_1";
+				currentComponent = "tFileOutputDelimited_4";
 
 				if (execStat) {
 					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row6");
 				}
 
-				int tos_count_tLogRow_1 = 0;
+				int tos_count_tFileOutputDelimited_4 = 0;
 
-				///////////////////////
-
-				class Util_tLogRow_1 {
-
-					String[] des_top = { ".", ".", "-", "+" };
-
-					String[] des_head = { "|=", "=|", "-", "+" };
-
-					String[] des_bottom = { "'", "'", "-", "+" };
-
-					String name = "";
-
-					java.util.List<String[]> list = new java.util.ArrayList<String[]>();
-
-					int[] colLengths = new int[2];
-
-					public void addRow(String[] row) {
-
-						for (int i = 0; i < 2; i++) {
-							if (row[i] != null) {
-								colLengths[i] = Math.max(colLengths[i], row[i].length());
-							}
-						}
-						list.add(row);
+				String fileName_tFileOutputDelimited_4 = "";
+				fileName_tFileOutputDelimited_4 = (new java.io.File(
+						"D:/Projetos/12ABDGrupo2DataOPS/DL/Curated/SalesOrderJoinAddress"
+								+ TalendDate.getDate("YYYY-MM-DD") + ".csv")).getAbsolutePath().replace("\\", "/");
+				String fullName_tFileOutputDelimited_4 = null;
+				String extension_tFileOutputDelimited_4 = null;
+				String directory_tFileOutputDelimited_4 = null;
+				if ((fileName_tFileOutputDelimited_4.indexOf("/") != -1)) {
+					if (fileName_tFileOutputDelimited_4.lastIndexOf(".") < fileName_tFileOutputDelimited_4
+							.lastIndexOf("/")) {
+						fullName_tFileOutputDelimited_4 = fileName_tFileOutputDelimited_4;
+						extension_tFileOutputDelimited_4 = "";
+					} else {
+						fullName_tFileOutputDelimited_4 = fileName_tFileOutputDelimited_4.substring(0,
+								fileName_tFileOutputDelimited_4.lastIndexOf("."));
+						extension_tFileOutputDelimited_4 = fileName_tFileOutputDelimited_4
+								.substring(fileName_tFileOutputDelimited_4.lastIndexOf("."));
 					}
-
-					public void setTableName(String name) {
-
-						this.name = name;
+					directory_tFileOutputDelimited_4 = fileName_tFileOutputDelimited_4.substring(0,
+							fileName_tFileOutputDelimited_4.lastIndexOf("/"));
+				} else {
+					if (fileName_tFileOutputDelimited_4.lastIndexOf(".") != -1) {
+						fullName_tFileOutputDelimited_4 = fileName_tFileOutputDelimited_4.substring(0,
+								fileName_tFileOutputDelimited_4.lastIndexOf("."));
+						extension_tFileOutputDelimited_4 = fileName_tFileOutputDelimited_4
+								.substring(fileName_tFileOutputDelimited_4.lastIndexOf("."));
+					} else {
+						fullName_tFileOutputDelimited_4 = fileName_tFileOutputDelimited_4;
+						extension_tFileOutputDelimited_4 = "";
 					}
+					directory_tFileOutputDelimited_4 = "";
+				}
+				boolean isFileGenerated_tFileOutputDelimited_4 = true;
+				java.io.File filetFileOutputDelimited_4 = new java.io.File(fileName_tFileOutputDelimited_4);
+				globalMap.put("tFileOutputDelimited_4_FILE_NAME", fileName_tFileOutputDelimited_4);
+				int nb_line_tFileOutputDelimited_4 = 0;
+				int splitedFileNo_tFileOutputDelimited_4 = 0;
+				int currentRow_tFileOutputDelimited_4 = 0;
 
-					public StringBuilder format() {
+				final String OUT_DELIM_tFileOutputDelimited_4 = /** Start field tFileOutputDelimited_4:FIELDSEPARATOR */
+						";"/** End field tFileOutputDelimited_4:FIELDSEPARATOR */
+				;
 
-						StringBuilder sb = new StringBuilder();
+				final String OUT_DELIM_ROWSEP_tFileOutputDelimited_4 = /**
+																		 * Start field
+																		 * tFileOutputDelimited_4:ROWSEPARATOR
+																		 */
+						"\n"/** End field tFileOutputDelimited_4:ROWSEPARATOR */
+				;
 
-						sb.append(print(des_top));
-
-						int totals = 0;
-						for (int i = 0; i < colLengths.length; i++) {
-							totals = totals + colLengths[i];
-						}
-
-						// name
-						sb.append("|");
-						int k = 0;
-						for (k = 0; k < (totals + 1 - name.length()) / 2; k++) {
-							sb.append(' ');
-						}
-						sb.append(name);
-						for (int i = 0; i < totals + 1 - name.length() - k; i++) {
-							sb.append(' ');
-						}
-						sb.append("|\n");
-
-						// head and rows
-						sb.append(print(des_head));
-						for (int i = 0; i < list.size(); i++) {
-
-							String[] row = list.get(i);
-
-							java.util.Formatter formatter = new java.util.Formatter(new StringBuilder());
-
-							StringBuilder sbformat = new StringBuilder();
-							sbformat.append("|%1$-");
-							sbformat.append(colLengths[0]);
-							sbformat.append("s");
-
-							sbformat.append("|%2$-");
-							sbformat.append(colLengths[1]);
-							sbformat.append("s");
-
-							sbformat.append("|\n");
-
-							formatter.format(sbformat.toString(), (Object[]) row);
-
-							sb.append(formatter.toString());
-							if (i == 0)
-								sb.append(print(des_head)); // print the head
-						}
-
-						// end
-						sb.append(print(des_bottom));
-						return sb;
-					}
-
-					private StringBuilder print(String[] fillChars) {
-						StringBuilder sb = new StringBuilder();
-						// first column
-						sb.append(fillChars[0]);
-						for (int i = 0; i < colLengths[0] - fillChars[0].length() + 1; i++) {
-							sb.append(fillChars[2]);
-						}
-						sb.append(fillChars[3]);
-
-						// last column
-						for (int i = 0; i < colLengths[1] - fillChars[1].length() + 1; i++) {
-							sb.append(fillChars[2]);
-						}
-						sb.append(fillChars[1]);
-						sb.append("\n");
-						return sb;
-					}
-
-					public boolean isTableEmpty() {
-						if (list.size() > 1)
-							return false;
-						return true;
+				// create directory only if not exists
+				if (directory_tFileOutputDelimited_4 != null && directory_tFileOutputDelimited_4.trim().length() != 0) {
+					java.io.File dir_tFileOutputDelimited_4 = new java.io.File(directory_tFileOutputDelimited_4);
+					if (!dir_tFileOutputDelimited_4.exists()) {
+						dir_tFileOutputDelimited_4.mkdirs();
 					}
 				}
-				Util_tLogRow_1 util_tLogRow_1 = new Util_tLogRow_1();
-				util_tLogRow_1.setTableName("tLogRow_1");
-				util_tLogRow_1.addRow(new String[] { "CountryRegion", "TotalDue", });
-				StringBuilder strBuffer_tLogRow_1 = null;
-				int nb_line_tLogRow_1 = 0;
-///////////////////////    			
+
+				// routines.system.Row
+				java.io.Writer outtFileOutputDelimited_4 = null;
+
+				java.io.File fileToDelete_tFileOutputDelimited_4 = new java.io.File(fileName_tFileOutputDelimited_4);
+				if (fileToDelete_tFileOutputDelimited_4.exists()) {
+					fileToDelete_tFileOutputDelimited_4.delete();
+				}
+				outtFileOutputDelimited_4 = new java.io.BufferedWriter(new java.io.OutputStreamWriter(
+						new java.io.FileOutputStream(fileName_tFileOutputDelimited_4, false), "ISO-8859-15"));
+				if (filetFileOutputDelimited_4.length() == 0) {
+					outtFileOutputDelimited_4.write("CountryRegion");
+					outtFileOutputDelimited_4.write(OUT_DELIM_tFileOutputDelimited_4);
+					outtFileOutputDelimited_4.write("TotalDue");
+					outtFileOutputDelimited_4.write(OUT_DELIM_ROWSEP_tFileOutputDelimited_4);
+					outtFileOutputDelimited_4.flush();
+				}
+
+				resourceMap.put("out_tFileOutputDelimited_4", outtFileOutputDelimited_4);
+				resourceMap.put("nb_line_tFileOutputDelimited_4", nb_line_tFileOutputDelimited_4);
+				resourceMap.put("isFileGenerated_tFileOutputDelimited_4", isFileGenerated_tFileOutputDelimited_4);
+				resourceMap.put("filetFileOutputDelimited_4", filetFileOutputDelimited_4);
 
 				/**
-				 * [tLogRow_1 begin ] stop
+				 * [tFileOutputDelimited_4 begin ] stop
 				 */
 
 				/**
@@ -3731,61 +3695,55 @@ public class IngestaoVendas implements TalendJob {
 					 */
 
 					/**
-					 * [tLogRow_1 main ] start
+					 * [tFileOutputDelimited_4 main ] start
 					 */
 
-					currentComponent = "tLogRow_1";
+					currentComponent = "tFileOutputDelimited_4";
 
 					if (execStat) {
 						runStat.updateStatOnConnection(iterateId, 1, 1, "row6");
 					}
 
-///////////////////////		
+					StringBuilder sb_tFileOutputDelimited_4 = new StringBuilder();
+					if (row6.CountryRegion != null) {
+						sb_tFileOutputDelimited_4.append(row6.CountryRegion);
+					}
+					sb_tFileOutputDelimited_4.append(OUT_DELIM_tFileOutputDelimited_4);
+					if (row6.TotalDue != null) {
+						sb_tFileOutputDelimited_4
+								.append(row6.TotalDue.setScale(4, java.math.RoundingMode.HALF_UP).toPlainString());
+					}
+					sb_tFileOutputDelimited_4.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_4);
 
-					String[] row_tLogRow_1 = new String[2];
+					nb_line_tFileOutputDelimited_4++;
+					resourceMap.put("nb_line_tFileOutputDelimited_4", nb_line_tFileOutputDelimited_4);
 
-					if (row6.CountryRegion != null) { //
-						row_tLogRow_1[0] = String.valueOf(row6.CountryRegion);
+					outtFileOutputDelimited_4.write(sb_tFileOutputDelimited_4.toString());
 
-					} //
-
-					if (row6.TotalDue != null) { //
-						row_tLogRow_1[1] = row6.TotalDue.setScale(4, java.math.RoundingMode.HALF_UP).toPlainString();
-
-					} //
-
-					util_tLogRow_1.addRow(row_tLogRow_1);
-					nb_line_tLogRow_1++;
-//////
-
-//////                    
-
-///////////////////////    			
-
-					tos_count_tLogRow_1++;
+					tos_count_tFileOutputDelimited_4++;
 
 					/**
-					 * [tLogRow_1 main ] stop
+					 * [tFileOutputDelimited_4 main ] stop
 					 */
 
 					/**
-					 * [tLogRow_1 process_data_begin ] start
+					 * [tFileOutputDelimited_4 process_data_begin ] start
 					 */
 
-					currentComponent = "tLogRow_1";
+					currentComponent = "tFileOutputDelimited_4";
 
 					/**
-					 * [tLogRow_1 process_data_begin ] stop
+					 * [tFileOutputDelimited_4 process_data_begin ] stop
 					 */
 
 					/**
-					 * [tLogRow_1 process_data_end ] start
+					 * [tFileOutputDelimited_4 process_data_end ] start
 					 */
 
-					currentComponent = "tLogRow_1";
+					currentComponent = "tFileOutputDelimited_4";
 
 					/**
-					 * [tLogRow_1 process_data_end ] stop
+					 * [tFileOutputDelimited_4 process_data_end ] stop
 					 */
 
 					/**
@@ -3818,37 +3776,36 @@ public class IngestaoVendas implements TalendJob {
 				 */
 
 				/**
-				 * [tLogRow_1 end ] start
+				 * [tFileOutputDelimited_4 end ] start
 				 */
 
-				currentComponent = "tLogRow_1";
+				currentComponent = "tFileOutputDelimited_4";
 
-//////
-
-				java.io.PrintStream consoleOut_tLogRow_1 = null;
-				if (globalMap.get("tLogRow_CONSOLE") != null) {
-					consoleOut_tLogRow_1 = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
-				} else {
-					consoleOut_tLogRow_1 = new java.io.PrintStream(new java.io.BufferedOutputStream(System.out));
-					globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_1);
+				if (outtFileOutputDelimited_4 != null) {
+					outtFileOutputDelimited_4.flush();
+					outtFileOutputDelimited_4.close();
 				}
 
-				consoleOut_tLogRow_1.println(util_tLogRow_1.format().toString());
-				consoleOut_tLogRow_1.flush();
-//////
-				globalMap.put("tLogRow_1_NB_LINE", nb_line_tLogRow_1);
+				globalMap.put("tFileOutputDelimited_4_NB_LINE", nb_line_tFileOutputDelimited_4);
+				globalMap.put("tFileOutputDelimited_4_FILE_NAME", fileName_tFileOutputDelimited_4);
 
-///////////////////////    			
+				if (isFileGenerated_tFileOutputDelimited_4 && nb_line_tFileOutputDelimited_4 == 0) {
+
+					filetFileOutputDelimited_4.delete();
+
+				}
+
+				resourceMap.put("finish_tFileOutputDelimited_4", true);
 
 				if (execStat) {
 					runStat.updateStat(resourceMap, iterateId, 2, 0, "row6");
 				}
 
-				ok_Hash.put("tLogRow_1", true);
-				end_Hash.put("tLogRow_1", System.currentTimeMillis());
+				ok_Hash.put("tFileOutputDelimited_4", true);
+				end_Hash.put("tFileOutputDelimited_4", System.currentTimeMillis());
 
 				/**
-				 * [tLogRow_1 end ] stop
+				 * [tFileOutputDelimited_4 end ] stop
 				 */
 
 			} // end the resume
@@ -3978,13 +3935,32 @@ public class IngestaoVendas implements TalendJob {
 				 */
 
 				/**
-				 * [tLogRow_1 finally ] start
+				 * [tFileOutputDelimited_4 finally ] start
 				 */
 
-				currentComponent = "tLogRow_1";
+				currentComponent = "tFileOutputDelimited_4";
+
+				if (resourceMap.get("finish_tFileOutputDelimited_4") == null) {
+
+					java.io.Writer outtFileOutputDelimited_4 = (java.io.Writer) resourceMap
+							.get("out_tFileOutputDelimited_4");
+					if (outtFileOutputDelimited_4 != null) {
+						outtFileOutputDelimited_4.flush();
+						outtFileOutputDelimited_4.close();
+					}
+
+					if (Boolean.valueOf(String.valueOf(resourceMap.get("isFileGenerated_tFileOutputDelimited_4")))
+							&& Integer
+									.valueOf(String.valueOf(resourceMap.get("nb_line_tFileOutputDelimited_4"))) == 0) {
+
+						((java.io.File) resourceMap.get("filetFileOutputDelimited_4")).delete();
+
+					}
+
+				}
 
 				/**
-				 * [tLogRow_1 finally ] stop
+				 * [tFileOutputDelimited_4 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -4744,7 +4720,7 @@ public class IngestaoVendas implements TalendJob {
 				String dbUser_tDBInput_2 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_2 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:UsUspo9xGmrK7AEFKN/FbbQoN5gZzyAhcNdDqfPVBu7jEan7jQ==");
+						"enc:routine.encryption.key.v1:AMjQGt15phlEh4bsAa99jMc7n6SoC0qR0yu7DOFHwLtFy5EjdQ==");
 
 				String dbPwd_tDBInput_2 = decryptedPassword_tDBInput_2;
 
@@ -5605,6 +5581,6 @@ public class IngestaoVendas implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 181386 characters generated by Talend Open Studio for Data Integration on the
- * July 10, 2021 6:22:25 PM BRT
+ * 182832 characters generated by Talend Open Studio for Data Integration on the
+ * July 10, 2021 6:29:23 PM BRT
  ************************************************************************************************/
