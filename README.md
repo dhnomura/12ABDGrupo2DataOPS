@@ -26,27 +26,13 @@ Branch Master -> Produtivo
 Branch Feature -> Ambiente de Desenvolvimento
 
 
-# Etapas do Projeto
+# Data Ops Entregas Aula 2
 
-Projeto Aula 1 - 2h30min
-
-	Criar uma branch para armazenar código e documentação;
-	
-		Realizar a branch através do GitFlow
-		
-		Realizar um assessment de uma base de dados
-		
-		Mapeamento de dados
-		
-		Entender quais tabelas eu tenho na base
-		
-		Quais informações tem em cada tabela
-		
-		Modelo Entidade relacionamento
-		
-		Pode ser um Word, pode ser um PDF
-		
-		Tabelas encontradas, atributos, relacionamentos
-		
-		Faltou o relacionamento
-		
+Gerar datasets, um com dados agregados para um relatório de negócios, e um dataset para o time de ciencia de Dados realizar exploração dos dados;
+• O Relatório é para a àrea de Vendas:
+	• 	Este relatório deve conter dados diários
+	• 	Informações de valores de venda por Região
+	• 	Informações de valores de Venda Online e Offline
+• O Dataset para exploração para ciência de Dados:
+	• 	Objetivo de construir um modelo de previsão de Churn
+	• 	A solicitação é de uma amostra de dados com informações da entidades de Cliente, Produtos, Vendas e Vendedores.
