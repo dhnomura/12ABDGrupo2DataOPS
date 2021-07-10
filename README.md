@@ -15,6 +15,10 @@ Mais um Site legal sobre Git: https://www.atlassian.com/br/git/tutorials/compari
 
 Git Flow Cheat Sheet: http://https://danielkummer.github.io/git-flow-cheatsheet/
 
+# Modelo Entidade Relacionamento SalesLT
+
+![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/main/assessment/SalesLT_ER.png?raw=true_)
+
 # Branchs
 
 Branch Master -> Produtivo
