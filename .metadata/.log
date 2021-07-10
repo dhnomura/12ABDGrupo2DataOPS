@@ -2315,3 +2315,547 @@ There may be some other errors caused by JVM compatibility. Make sure your JVM s
 !ENTRY org.talend.platform.logging 1 0 2021-07-10 18:29:26.564
 !MESSAGE 2021-07-10 18:29:26,562 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3652 %*
 
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:33.775
+!MESSAGE 2021-07-10 18:59:33,738 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:34.763
+!MESSAGE 2021-07-10 18:59:34,759 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:35.746
+!MESSAGE 2021-07-10 18:59:35,745 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:35.747
+!MESSAGE 2021-07-10 18:59:35,747 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:35.750
+!MESSAGE 2021-07-10 18:59:35,750 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:35.751
+!MESSAGE 2021-07-10 18:59:35,750 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:36.394
+!MESSAGE 2021-07-10 18:59:36,393 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 2 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:36.789
+!MESSAGE 2021-07-10 18:59:36,789 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 18:59:36.975
+!MESSAGE 2021-07-10 18:59:36,974 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3533 %*
+
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:02:51.393
+!MESSAGE 2021-07-10 19:02:51,391 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-server-2.0.2.3.1.4.12-1.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:uTgfApQnsemPnNE2A7mQjrJC+bJlgFvRmDJ6oot7F2qDdQhGTyUKwK08WYg=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase/hbase-server/2.0.2.3.1.4.12-1/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-server-2.0.2.3.1.4.12-1.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:uTgfApQnsemPnNE2A7mQjrJC+bJlgFvRmDJ6oot7F2qDdQhGTyUKwK08WYg=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase/hbase-server/2.0.2.3.1.4.12-1/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase:hbase-server:jar:2.0.2.3.1.4.12-1: [Could not transfer artifact org.apache.hbase:hbase-server:jar:2.0.2.3.1.4.12-1 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase:hbase-server:jar:2.0.2.3.1.4.12-1
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:03:02.664
+!MESSAGE 2021-07-10 19:03:02,663 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-server-2.1.0-cdh6.1.1.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:fo5FHymRHo7aZpN4T%2Fho92HkgBZCZCB+dqmWP5S9a3qlXR+8rZSVNhy3XX0=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase/hbase-server/2.1.0-cdh6.1.1/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-server-2.1.0-cdh6.1.1.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:fo5FHymRHo7aZpN4T%2Fho92HkgBZCZCB+dqmWP5S9a3qlXR+8rZSVNhy3XX0=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase/hbase-server/2.1.0-cdh6.1.1/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase:hbase-server:jar:2.1.0-cdh6.1.1: [Could not transfer artifact org.apache.hbase:hbase-server:jar:2.1.0-cdh6.1.1 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase:hbase-server:jar:2.1.0-cdh6.1.1
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:03:13.924
+!MESSAGE 2021-07-10 19:03:13,923 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-shaded-miscellaneous-2.1.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:tPsc1CuodI0pfE76cDtvSdafmO2+TVP6DkO3O9l6p2jQMVgHyPmTnyv24cg=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-miscellaneous/2.1.0/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-shaded-miscellaneous-2.1.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:tPsc1CuodI0pfE76cDtvSdafmO2+TVP6DkO3O9l6p2jQMVgHyPmTnyv24cg=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-miscellaneous/2.1.0/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-miscellaneous:jar:2.1.0: [Could not transfer artifact org.apache.hbase.thirdparty:hbase-shaded-miscellaneous:jar:2.1.0 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-miscellaneous:jar:2.1.0
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:03:25.311
+!MESSAGE 2021-07-10 19:03:25,304 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-shaded-miscellaneous-2.2.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:lN5sK4adlhNaWGKtWZ7+x4MKuVb3WXiYsUl8z4jiyihFKFxv0UfeGjF9MNw=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-miscellaneous/2.2.0/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-shaded-miscellaneous-2.2.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:lN5sK4adlhNaWGKtWZ7+x4MKuVb3WXiYsUl8z4jiyihFKFxv0UfeGjF9MNw=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-miscellaneous/2.2.0/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-miscellaneous:jar:2.2.0: [Could not transfer artifact org.apache.hbase.thirdparty:hbase-shaded-miscellaneous:jar:2.2.0 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-miscellaneous:jar:2.2.0
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:03:36.613
+!MESSAGE 2021-07-10 19:03:36,612 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-shaded-netty-2.1.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:Wmzu3AaTrwqOaKlIsQqFZtSapVi1ctniWNM4HSjWpNqdRVu0hMR8d8VPvMU=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-netty/2.1.0/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-shaded-netty-2.1.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:Wmzu3AaTrwqOaKlIsQqFZtSapVi1ctniWNM4HSjWpNqdRVu0hMR8d8VPvMU=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-netty/2.1.0/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-netty:jar:2.1.0: [Could not transfer artifact org.apache.hbase.thirdparty:hbase-shaded-netty:jar:2.1.0 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-netty:jar:2.1.0
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:03:47.896
+!MESSAGE 2021-07-10 19:03:47,895 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-shaded-netty-2.2.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:JDMRCTUaPNljYYFzxmaj0aGVXhm94OcS0hvg5qMRtA%2FPefTffaHNZp+iKyw=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-netty/2.2.0/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-shaded-netty-2.2.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:JDMRCTUaPNljYYFzxmaj0aGVXhm94OcS0hvg5qMRtA%2FPefTffaHNZp+iKyw=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-netty/2.2.0/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-netty:jar:2.2.0: [Could not transfer artifact org.apache.hbase.thirdparty:hbase-shaded-netty:jar:2.2.0 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-netty:jar:2.2.0
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:03:54.542
+!MESSAGE 2021-07-10 19:03:54,542 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-shaded-protobuf-2.1.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:rN1UmECXezagW9b5%2FUgFrNvTXV+JnE0Gr%2F6etQRhd01xgOlT0bDwAkb9hu0=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-protobuf/2.1.0/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-shaded-protobuf-2.1.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:rN1UmECXezagW9b5%2FUgFrNvTXV+JnE0Gr%2F6etQRhd01xgOlT0bDwAkb9hu0=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-protobuf/2.1.0/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-protobuf:jar:2.1.0: [Could not transfer artifact org.apache.hbase.thirdparty:hbase-shaded-protobuf:jar:2.1.0 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-protobuf:jar:2.1.0
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-10 19:04:05.817
+!MESSAGE 2021-07-10 19:04:05,816 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hbase-shaded-protobuf-2.2.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:Z8gpNz79K0gNDMxmtMeqh91CWDjj3JFI7QPWmzVD51nR1v82EjwgsYIHgQM=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-protobuf/2.2.0/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hbase-shaded-protobuf-2.2.0.jar : mvn:https://studio-dl-client:enc:system.encryption.key.v1:Z8gpNz79K0gNDMxmtMeqh91CWDjj3JFI7QPWmzVD51nR1v82EjwgsYIHgQM=@talend-update.talend.com/nexus/content/groups/dynamicdistribution/!org.apache.hbase.thirdparty/hbase-shaded-protobuf/2.2.0/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-protobuf:jar:2.2.0: [Could not transfer artifact org.apache.hbase.thirdparty:hbase-shaded-protobuf:jar:2.2.0 from/to repo_-1625987577 (https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/): Read timed out]
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:30)
+	at org.talend.core.nexus.TalendMavenResolver.resolve(TalendMavenResolver.java:122)
+	at org.talend.librariesmanager.model.service.LocalLibraryManager.resolveJar(LocalLibraryManager.java:463)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.resolveJar(NexusDownloadHelperWithProgress.java:101)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:76)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: java.lang.Exception: Error resolving artifact org.apache.hbase.thirdparty:hbase-shaded-protobuf:jar:2.2.0
+	at org.talend.core.nexus.ResolverExceptionHandler.hideCredential(ResolverExceptionHandler.java:28)
+	... 10 more
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:30.579
+!MESSAGE 2021-07-10 19:15:30,550 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:31.362
+!MESSAGE 2021-07-10 19:15:31,361 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:32.223
+!MESSAGE 2021-07-10 19:15:32,223 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:32.224
+!MESSAGE 2021-07-10 19:15:32,224 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:32.227
+!MESSAGE 2021-07-10 19:15:32,227 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:32.228
+!MESSAGE 2021-07-10 19:15:32,227 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:32.359
+!MESSAGE 2021-07-10 19:15:32,359 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:32.910
+!MESSAGE 2021-07-10 19:15:32,909 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:15:33.064
+!MESSAGE 2021-07-10 19:15:33,063 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3525 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:16:58.886
+!MESSAGE 2021-07-10 19:16:58,869 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:16:59.293
+!MESSAGE 2021-07-10 19:16:59,289 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:16:59.916
+!MESSAGE 2021-07-10 19:16:59,910 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:16:59.918
+!MESSAGE 2021-07-10 19:16:59,917 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:16:59.921
+!MESSAGE 2021-07-10 19:16:59,920 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:16:59.922
+!MESSAGE 2021-07-10 19:16:59,921 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:00.025
+!MESSAGE 2021-07-10 19:17:00,023 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:00.492
+!MESSAGE 2021-07-10 19:17:00,489 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:00.688
+!MESSAGE 2021-07-10 19:17:00,685 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3907 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:18.760
+!MESSAGE 2021-07-10 19:17:18,759 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:19.437
+!MESSAGE 2021-07-10 19:17:19,435 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:19.673
+!MESSAGE 2021-07-10 19:17:19,673 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:19.674
+!MESSAGE 2021-07-10 19:17:19,674 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:19.675
+!MESSAGE 2021-07-10 19:17:19,675 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:19.676
+!MESSAGE 2021-07-10 19:17:19,676 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:19.751
+!MESSAGE 2021-07-10 19:17:19,751 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:19.929
+!MESSAGE 2021-07-10 19:17:19,928 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:17:20.099
+!MESSAGE 2021-07-10 19:17:20,099 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=4040 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:47.801
+!MESSAGE 2021-07-10 19:18:47,801 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:47.889
+!MESSAGE 2021-07-10 19:18:47,889 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:48.115
+!MESSAGE 2021-07-10 19:18:48,114 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:48.116
+!MESSAGE 2021-07-10 19:18:48,115 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:48.117
+!MESSAGE 2021-07-10 19:18:48,117 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:48.118
+!MESSAGE 2021-07-10 19:18:48,117 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:48.181
+!MESSAGE 2021-07-10 19:18:48,180 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:48.364
+!MESSAGE 2021-07-10 19:18:48,364 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:18:48.531
+!MESSAGE 2021-07-10 19:18:48,530 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3972 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:22.932
+!MESSAGE 2021-07-10 19:20:22,931 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:23.210
+!MESSAGE 2021-07-10 19:20:23,209 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:23.723
+!MESSAGE 2021-07-10 19:20:23,722 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:23.723
+!MESSAGE 2021-07-10 19:20:23,723 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:23.726
+!MESSAGE 2021-07-10 19:20:23,725 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:23.727
+!MESSAGE 2021-07-10 19:20:23,726 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:23.794
+!MESSAGE 2021-07-10 19:20:23,792 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:24.138
+!MESSAGE 2021-07-10 19:20:24,138 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:20:24.310
+!MESSAGE 2021-07-10 19:20:24,310 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3779 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:20.978
+!MESSAGE 2021-07-10 19:22:20,977 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.030
+!MESSAGE 2021-07-10 19:22:21,029 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.225
+!MESSAGE 2021-07-10 19:22:21,223 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.226
+!MESSAGE 2021-07-10 19:22:21,226 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.228
+!MESSAGE 2021-07-10 19:22:21,227 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.228
+!MESSAGE 2021-07-10 19:22:21,228 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.287
+!MESSAGE 2021-07-10 19:22:21,286 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.418
+!MESSAGE 2021-07-10 19:22:21,418 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:22:21.628
+!MESSAGE 2021-07-10 19:22:21,628 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3597 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:05.566
+!MESSAGE 2021-07-10 19:23:05,565 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:05.618
+!MESSAGE 2021-07-10 19:23:05,617 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:05.848
+!MESSAGE 2021-07-10 19:23:05,848 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:05.849
+!MESSAGE 2021-07-10 19:23:05,849 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:05.851
+!MESSAGE 2021-07-10 19:23:05,850 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:05.851
+!MESSAGE 2021-07-10 19:23:05,851 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:05.918
+!MESSAGE 2021-07-10 19:23:05,917 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:06.075
+!MESSAGE 2021-07-10 19:23:06,075 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:06.243
+!MESSAGE 2021-07-10 19:23:06,242 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3736 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.212
+!MESSAGE 2021-07-10 19:23:21,212 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.308
+!MESSAGE 2021-07-10 19:23:21,308 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.523
+!MESSAGE 2021-07-10 19:23:21,522 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.524
+!MESSAGE 2021-07-10 19:23:21,523 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.526
+!MESSAGE 2021-07-10 19:23:21,525 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.526
+!MESSAGE 2021-07-10 19:23:21,526 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.585
+!MESSAGE 2021-07-10 19:23:21,584 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.721
+!MESSAGE 2021-07-10 19:23:21,720 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:21.914
+!MESSAGE 2021-07-10 19:23:21,914 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3733 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:44.763
+!MESSAGE 2021-07-10 19:23:44,763 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:44.805
+!MESSAGE 2021-07-10 19:23:44,805 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:45.011
+!MESSAGE 2021-07-10 19:23:45,010 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:45.011
+!MESSAGE 2021-07-10 19:23:45,011 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:45.014
+!MESSAGE 2021-07-10 19:23:45,013 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:45.015
+!MESSAGE 2021-07-10 19:23:45,014 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:45.125
+!MESSAGE 2021-07-10 19:23:45,124 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:45.262
+!MESSAGE 2021-07-10 19:23:45,261 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-10 19:23:45.382
+!MESSAGE 2021-07-10 19:23:45,381 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3467 %*
+
