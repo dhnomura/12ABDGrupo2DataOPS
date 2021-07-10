@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_sX_5oeGwEeu9Hqb2tbT3Qw" id="_sX_5oOGwEeu9Hqb2tbT3Qw" label="IngestaoVendas" purpose="Realizar a ingestao de dados de vendas" description="Objetivo de apresentar um relatorio com as seguintes agregacoes:&#xD;&#xA;- Vendas Diarias&#xD;&#xA;- Vendas Por regiao&#xD;&#xA;- Vendas Online e Offline" version="0.1" statusCode="" item="_sX_5o-GwEeu9Hqb2tbT3Qw" displayName="IngestaoVendas">
+    <author href="../../talend.project#_O0NhEOGvEeu9Hqb2tbT3Qw"/>
+    <additionalProperties xmi:id="_sYCV4OGwEeu9Hqb2tbT3Qw" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_sYCV4eGwEeu9Hqb2tbT3Qw" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_sYCV4uGwEeu9Hqb2tbT3Qw" key="created_date" value="2021-07-10T15:57:37.342-0300"/>
+    <additionalProperties xmi:id="_sYCV4-GwEeu9Hqb2tbT3Qw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_sYCV5OGwEeu9Hqb2tbT3Qw" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_sYCV5eGwEeu9Hqb2tbT3Qw" key="modified_date" value="2021-07-10T18:13:31.824-0300"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_sX_5ouGwEeu9Hqb2tbT3Qw" path="RelatorioVendas" locked="true" lockDate="2021-07-10T17:51:35.006-0300">
+    <locker href="../../talend.project#_O0NhEOGvEeu9Hqb2tbT3Qw"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_sX_5o-GwEeu9Hqb2tbT3Qw" property="_sX_5oeGwEeu9Hqb2tbT3Qw" state="_sX_5ouGwEeu9Hqb2tbT3Qw">
+    <process href="IngestaoVendas_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>
