@@ -402,6 +402,76 @@ public class IngestaoCienciaDados implements TalendJob {
 		tDBInput_9_onSubJobError(exception, errorComponent, globalMap);
 	}
 
+	public void tMap_4_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_11_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tFileOutputDelimited_10_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_11_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tDBInput_10_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_10_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tDBInput_11_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_11_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tFileOutputDelimited_7_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_11_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tDBInput_12_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_12_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tFileOutputDelimited_8_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_12_onSubJobError(exception, errorComponent, globalMap);
+	}
+
 	public void tAdvancedHash_row5_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -420,6 +490,26 @@ public class IngestaoCienciaDados implements TalendJob {
 		status = "failure";
 
 		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tAdvancedHash_row13_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_9_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tAdvancedHash_row14_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tDBInput_12_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tDBInput_1_onSubJobError(Exception exception, String errorComponent,
@@ -463,6 +553,30 @@ public class IngestaoCienciaDados implements TalendJob {
 	}
 
 	public void tDBInput_9_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
+	public void tDBInput_10_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
+	public void tDBInput_11_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
+	public void tDBInput_12_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -2393,7 +2507,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_1 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:ZMJSK7ENgrBssg8qF/P0lrYrPWcln9VSwNI2P6aw/s3ayZTK4Q==");
+						"enc:routine.encryption.key.v1:eK/NAL+bn7WQaRmL3gmC4E/adBycoYfTakepz6cnWG/cEh5XwA==");
 
 				String dbPwd_tDBInput_1 = decryptedPassword_tDBInput_1;
 
@@ -4014,7 +4128,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_2 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_2 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:iWy34Gy2IBiZ5kiVc6GTh+o80mP32hwx1rfZMnw9aUKhl+62KQ==");
+						"enc:routine.encryption.key.v1:vpJ5FCox7dH2kh0QFAQCUSfhS7g9Wi+jxA2fRjuZroqWrOUgwA==");
 
 				String dbPwd_tDBInput_2 = decryptedPassword_tDBInput_2;
 
@@ -5110,7 +5224,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_3 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_3 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:MigpOBeWCayUE9GrwEUdrE4l/+FBEVzRE2rJTJiCQPSKKjcLng==");
+						"enc:routine.encryption.key.v1:gpTo9ZrL+o7nxtEoegcoSSArRQ02APAswBuC4ONVg6bL7+q4xQ==");
 
 				String dbPwd_tDBInput_3 = decryptedPassword_tDBInput_3;
 
@@ -5563,7 +5677,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_4 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_4 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:f258BtaELnXFerA42H3mfg5NRLx1+B5EIBEfroB2IyAMyMP3ww==");
+						"enc:routine.encryption.key.v1:QCyLDJuKGSlCkFd1jqOAm77JlMemGm8i2C2s7AYOWUoqxpg9RA==");
 
 				String dbPwd_tDBInput_4 = decryptedPassword_tDBInput_4;
 
@@ -5754,7 +5868,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_8 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_8 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:KxcCdAu8kyjuWmu2IFjTLMtWtKgZaszX/CPLJDl8CjVB1nSLdw==");
+						"enc:routine.encryption.key.v1:sWgxvFXSlruxpukjr/oJcWo2s7z2gajgnPD2aU8Dxh7Mx5xuvg==");
 
 				String dbPwd_tDBInput_8 = decryptedPassword_tDBInput_8;
 
@@ -5898,6 +6012,388 @@ public class IngestaoCienciaDados implements TalendJob {
 		}
 
 		globalMap.put("tDBInput_8_SUBPROCESS_STATE", 1);
+	}
+
+	public static class row13Struct implements routines.system.IPersistableComparableLookupRow<row13Struct> {
+		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		protected static final int DEFAULT_HASHCODE = 1;
+		protected static final int PRIME = 31;
+		protected int hashCode = DEFAULT_HASHCODE;
+		public boolean hashCodeDirty = true;
+
+		public String loopKey;
+
+		public int CustomerID;
+
+		public int getCustomerID() {
+			return this.CustomerID;
+		}
+
+		public String NameStyle;
+
+		public String getNameStyle() {
+			return this.NameStyle;
+		}
+
+		public String Title;
+
+		public String getTitle() {
+			return this.Title;
+		}
+
+		public String FirstName;
+
+		public String getFirstName() {
+			return this.FirstName;
+		}
+
+		public String MiddleName;
+
+		public String getMiddleName() {
+			return this.MiddleName;
+		}
+
+		public String LastName;
+
+		public String getLastName() {
+			return this.LastName;
+		}
+
+		public String Suffix;
+
+		public String getSuffix() {
+			return this.Suffix;
+		}
+
+		public String CompanyName;
+
+		public String getCompanyName() {
+			return this.CompanyName;
+		}
+
+		public String SalesPerson;
+
+		public String getSalesPerson() {
+			return this.SalesPerson;
+		}
+
+		public String EmailAddress;
+
+		public String getEmailAddress() {
+			return this.EmailAddress;
+		}
+
+		public String Phone;
+
+		public String getPhone() {
+			return this.Phone;
+		}
+
+		public String PasswordHash;
+
+		public String getPasswordHash() {
+			return this.PasswordHash;
+		}
+
+		public String PasswordSalt;
+
+		public String getPasswordSalt() {
+			return this.PasswordSalt;
+		}
+
+		public Object rowguid;
+
+		public Object getRowguid() {
+			return this.rowguid;
+		}
+
+		public java.util.Date ModifiedDate;
+
+		public java.util.Date getModifiedDate() {
+			return this.ModifiedDate;
+		}
+
+		@Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+
+				result = prime * result + (int) this.CustomerID;
+
+				this.hashCode = result;
+				this.hashCodeDirty = false;
+			}
+			return this.hashCode;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			final row13Struct other = (row13Struct) obj;
+
+			if (this.CustomerID != other.CustomerID)
+				return false;
+
+			return true;
+		}
+
+		public void copyDataTo(row13Struct other) {
+
+			other.CustomerID = this.CustomerID;
+			other.NameStyle = this.NameStyle;
+			other.Title = this.Title;
+			other.FirstName = this.FirstName;
+			other.MiddleName = this.MiddleName;
+			other.LastName = this.LastName;
+			other.Suffix = this.Suffix;
+			other.CompanyName = this.CompanyName;
+			other.SalesPerson = this.SalesPerson;
+			other.EmailAddress = this.EmailAddress;
+			other.Phone = this.Phone;
+			other.PasswordHash = this.PasswordHash;
+			other.PasswordSalt = this.PasswordSalt;
+			other.rowguid = this.rowguid;
+			other.ModifiedDate = this.ModifiedDate;
+
+		}
+
+		public void copyKeysDataTo(row13Struct other) {
+
+			other.CustomerID = this.CustomerID;
+
+		}
+
+		private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				byte[] byteArray = new byte[length];
+				dis.read(byteArray);
+				strReturn = new String(byteArray, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(DataInputStream dis, ObjectInputStream ois) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, DataOutputStream dos, ObjectOutputStream oos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readKeysData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados) {
+
+				try {
+
+					int length = 0;
+
+					this.CustomerID = dis.readInt();
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeKeysData(ObjectOutputStream dos) {
+			try {
+
+				// int
+
+				dos.writeInt(this.CustomerID);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		/**
+		 * Fill Values data by reading ObjectInputStream.
+		 */
+		public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+			try {
+
+				int length = 0;
+
+				this.NameStyle = readString(dis, ois);
+
+				this.Title = readString(dis, ois);
+
+				this.FirstName = readString(dis, ois);
+
+				this.MiddleName = readString(dis, ois);
+
+				this.LastName = readString(dis, ois);
+
+				this.Suffix = readString(dis, ois);
+
+				this.CompanyName = readString(dis, ois);
+
+				this.SalesPerson = readString(dis, ois);
+
+				this.EmailAddress = readString(dis, ois);
+
+				this.Phone = readString(dis, ois);
+
+				this.PasswordHash = readString(dis, ois);
+
+				this.PasswordSalt = readString(dis, ois);
+
+				this.rowguid = (Object) ois.readObject();
+
+				this.ModifiedDate = readDate(dis, ois);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+
+			} catch (ClassNotFoundException eCNFE) {
+				throw new RuntimeException(eCNFE);
+
+			}
+
+		}
+
+		/**
+		 * Return a byte array which represents Values data.
+		 */
+		public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+			try {
+
+				writeString(this.NameStyle, dos, oos);
+
+				writeString(this.Title, dos, oos);
+
+				writeString(this.FirstName, dos, oos);
+
+				writeString(this.MiddleName, dos, oos);
+
+				writeString(this.LastName, dos, oos);
+
+				writeString(this.Suffix, dos, oos);
+
+				writeString(this.CompanyName, dos, oos);
+
+				writeString(this.SalesPerson, dos, oos);
+
+				writeString(this.EmailAddress, dos, oos);
+
+				writeString(this.Phone, dos, oos);
+
+				writeString(this.PasswordHash, dos, oos);
+
+				writeString(this.PasswordSalt, dos, oos);
+
+				oos.writeObject(this.rowguid);
+
+				writeDate(this.ModifiedDate, dos, oos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("CustomerID=" + String.valueOf(CustomerID));
+			sb.append(",NameStyle=" + NameStyle);
+			sb.append(",Title=" + Title);
+			sb.append(",FirstName=" + FirstName);
+			sb.append(",MiddleName=" + MiddleName);
+			sb.append(",LastName=" + LastName);
+			sb.append(",Suffix=" + Suffix);
+			sb.append(",CompanyName=" + CompanyName);
+			sb.append(",SalesPerson=" + SalesPerson);
+			sb.append(",EmailAddress=" + EmailAddress);
+			sb.append(",Phone=" + Phone);
+			sb.append(",PasswordHash=" + PasswordHash);
+			sb.append(",PasswordSalt=" + PasswordSalt);
+			sb.append(",rowguid=" + String.valueOf(rowguid));
+			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row13Struct other) {
+
+			int returnValue = -1;
+
+			returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
+			if (returnValue != 0) {
+				return returnValue;
+			}
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
 	}
 
 	public static class HarmonizadoStruct implements routines.system.IPersistableRow<HarmonizadoStruct> {
@@ -7023,6 +7519,39 @@ public class IngestaoCienciaDados implements TalendJob {
 				row7Struct row7 = new row7Struct();
 				row7Struct row8 = row7;
 				HarmonizadoStruct Harmonizado = new HarmonizadoStruct();
+				HarmonizadoStruct row13 = Harmonizado;
+
+				/**
+				 * [tAdvancedHash_row13 begin ] start
+				 */
+
+				ok_Hash.put("tAdvancedHash_row13", false);
+				start_Hash.put("tAdvancedHash_row13", System.currentTimeMillis());
+
+				currentComponent = "tAdvancedHash_row13";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row13");
+				}
+
+				int tos_count_tAdvancedHash_row13 = 0;
+
+				// connection name:row13
+				// source node:tFileOutputDelimited_6 - inputs:(Harmonizado)
+				// outputs:(row13,row13) | target node:tAdvancedHash_row13 - inputs:(row13)
+				// outputs:()
+				// linked node: tMap_4 - inputs:(row13,row11,row14) outputs:(Customer1)
+
+				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row13 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row13Struct> tHash_Lookup_row13 = org.talend.designer.components.lookup.memory.AdvancedMemoryLookup
+						.<row13Struct>getLookup(matchingModeEnum_row13);
+
+				globalMap.put("tHash_Lookup_row13", tHash_Lookup_row13);
+
+				/**
+				 * [tAdvancedHash_row13 begin ] stop
+				 */
 
 				/**
 				 * [tFileOutputDelimited_6 begin ] start
@@ -7334,7 +7863,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_9 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_9 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:seFRWn9+XAHpkRs17yB1TfahG+mFRTTjlztuJ4qxpbj3cC9Xew==");
+						"enc:routine.encryption.key.v1:QVKTx3WcOKmheey16knNgMxOFtmm1iV4HgC9HBTMshObyOYTSg==");
 
 				String dbPwd_tDBInput_9 = decryptedPassword_tDBInput_9;
 
@@ -7858,6 +8387,8 @@ public class IngestaoCienciaDados implements TalendJob {
 
 							outtFileOutputDelimited_6.write(sb_tFileOutputDelimited_6.toString());
 
+							row13 = Harmonizado;
+
 							tos_count_tFileOutputDelimited_6++;
 
 							/**
@@ -7872,6 +8403,76 @@ public class IngestaoCienciaDados implements TalendJob {
 
 							/**
 							 * [tFileOutputDelimited_6 process_data_begin ] stop
+							 */
+
+							/**
+							 * [tAdvancedHash_row13 main ] start
+							 */
+
+							currentComponent = "tAdvancedHash_row13";
+
+							if (execStat) {
+								runStat.updateStatOnConnection(iterateId, 1, 1, "row13");
+							}
+
+							row13Struct row13_HashRow = new row13Struct();
+
+							row13_HashRow.CustomerID = row13.CustomerID;
+
+							row13_HashRow.NameStyle = row13.NameStyle;
+
+							row13_HashRow.Title = row13.Title;
+
+							row13_HashRow.FirstName = row13.FirstName;
+
+							row13_HashRow.MiddleName = row13.MiddleName;
+
+							row13_HashRow.LastName = row13.LastName;
+
+							row13_HashRow.Suffix = row13.Suffix;
+
+							row13_HashRow.CompanyName = row13.CompanyName;
+
+							row13_HashRow.SalesPerson = row13.SalesPerson;
+
+							row13_HashRow.EmailAddress = row13.EmailAddress;
+
+							row13_HashRow.Phone = row13.Phone;
+
+							row13_HashRow.PasswordHash = row13.PasswordHash;
+
+							row13_HashRow.PasswordSalt = row13.PasswordSalt;
+
+							row13_HashRow.rowguid = row13.rowguid;
+
+							row13_HashRow.ModifiedDate = row13.ModifiedDate;
+
+							tHash_Lookup_row13.put(row13_HashRow);
+
+							tos_count_tAdvancedHash_row13++;
+
+							/**
+							 * [tAdvancedHash_row13 main ] stop
+							 */
+
+							/**
+							 * [tAdvancedHash_row13 process_data_begin ] start
+							 */
+
+							currentComponent = "tAdvancedHash_row13";
+
+							/**
+							 * [tAdvancedHash_row13 process_data_begin ] stop
+							 */
+
+							/**
+							 * [tAdvancedHash_row13 process_data_end ] start
+							 */
+
+							currentComponent = "tAdvancedHash_row13";
+
+							/**
+							 * [tAdvancedHash_row13 process_data_end ] stop
 							 */
 
 							/**
@@ -8038,6 +8639,25 @@ public class IngestaoCienciaDados implements TalendJob {
 				 * [tFileOutputDelimited_6 end ] stop
 				 */
 
+				/**
+				 * [tAdvancedHash_row13 end ] start
+				 */
+
+				currentComponent = "tAdvancedHash_row13";
+
+				tHash_Lookup_row13.endPut();
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row13");
+				}
+
+				ok_Hash.put("tAdvancedHash_row13", true);
+				end_Hash.put("tAdvancedHash_row13", System.currentTimeMillis());
+
+				/**
+				 * [tAdvancedHash_row13 end ] stop
+				 */
+
 			} // end the resume
 
 		} catch (java.lang.Exception e) {
@@ -8132,6 +8752,16 @@ public class IngestaoCienciaDados implements TalendJob {
 				 * [tFileOutputDelimited_6 finally ] stop
 				 */
 
+				/**
+				 * [tAdvancedHash_row13 finally ] start
+				 */
+
+				currentComponent = "tAdvancedHash_row13";
+
+				/**
+				 * [tAdvancedHash_row13 finally ] stop
+				 */
+
 			} catch (java.lang.Exception e) {
 				// ignore
 			} catch (java.lang.Error error) {
@@ -8141,6 +8771,3291 @@ public class IngestaoCienciaDados implements TalendJob {
 		}
 
 		globalMap.put("tDBInput_9_SUBPROCESS_STATE", 1);
+	}
+
+	public void tDBInput_10Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_10_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				/**
+				 * [tDBInput_10 begin ] start
+				 */
+
+				ok_Hash.put("tDBInput_10", false);
+				start_Hash.put("tDBInput_10", System.currentTimeMillis());
+
+				currentComponent = "tDBInput_10";
+
+				int tos_count_tDBInput_10 = 0;
+
+				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_10 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
+						.getMSSqlGenerateTimestampUtil();
+
+				java.util.List<String> talendToDBList_tDBInput_10 = new java.util.ArrayList();
+				String[] talendToDBArray_tDBInput_10 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
+						"DECIMAL IDENTITY", "REAL" };
+				java.util.Collections.addAll(talendToDBList_tDBInput_10, talendToDBArray_tDBInput_10);
+				int nb_line_tDBInput_10 = 0;
+				java.sql.Connection conn_tDBInput_10 = null;
+				String driverClass_tDBInput_10 = "net.sourceforge.jtds.jdbc.Driver";
+				java.lang.Class jdbcclazz_tDBInput_10 = java.lang.Class.forName(driverClass_tDBInput_10);
+				String dbUser_tDBInput_10 = "sqlfamily";
+
+				final String decryptedPassword_tDBInput_10 = routines.system.PasswordEncryptUtil.decryptPassword(
+						"enc:routine.encryption.key.v1:3GL94BHBF12zJG2LL+apclwr6v6RnmW+4JTtR0Old/YFcCHd0Q==");
+
+				String dbPwd_tDBInput_10 = decryptedPassword_tDBInput_10;
+
+				String port_tDBInput_10 = "1433";
+				String dbname_tDBInput_10 = "AdventureWorks";
+				String url_tDBInput_10 = "jdbc:jtds:sqlserver://" + "sqlservercentralpublic.database.windows.net";
+				if (!"".equals(port_tDBInput_10)) {
+					url_tDBInput_10 += ":" + "1433";
+				}
+				if (!"".equals(dbname_tDBInput_10)) {
+					url_tDBInput_10 += "//" + "AdventureWorks";
+				}
+				url_tDBInput_10 += ";appName=" + projectName + ";" + "";
+				String dbschema_tDBInput_10 = "SalesLT";
+
+				conn_tDBInput_10 = java.sql.DriverManager.getConnection(url_tDBInput_10, dbUser_tDBInput_10,
+						dbPwd_tDBInput_10);
+
+				java.sql.Statement stmt_tDBInput_10 = conn_tDBInput_10.createStatement();
+
+				String dbquery_tDBInput_10 = "SELECT SalesLT.CustomerAddress.CustomerID,\n		SalesLT.CustomerAddress.AddressID,\n		SalesLT.CustomerAddress.rowguid,\n		Sa"
+						+ "lesLT.CustomerAddress.ModifiedDate\nFROM	SalesLT.CustomerAddress";
+
+				globalMap.put("tDBInput_10_QUERY", dbquery_tDBInput_10);
+				java.sql.ResultSet rs_tDBInput_10 = null;
+
+				try {
+					rs_tDBInput_10 = stmt_tDBInput_10.executeQuery(dbquery_tDBInput_10);
+					java.sql.ResultSetMetaData rsmd_tDBInput_10 = rs_tDBInput_10.getMetaData();
+					int colQtyInRs_tDBInput_10 = rsmd_tDBInput_10.getColumnCount();
+
+					String tmpContent_tDBInput_10 = null;
+
+					while (rs_tDBInput_10.next()) {
+						nb_line_tDBInput_10++;
+
+						/**
+						 * [tDBInput_10 begin ] stop
+						 */
+
+						/**
+						 * [tDBInput_10 main ] start
+						 */
+
+						currentComponent = "tDBInput_10";
+
+						tos_count_tDBInput_10++;
+
+						/**
+						 * [tDBInput_10 main ] stop
+						 */
+
+						/**
+						 * [tDBInput_10 process_data_begin ] start
+						 */
+
+						currentComponent = "tDBInput_10";
+
+						/**
+						 * [tDBInput_10 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tDBInput_10 process_data_end ] start
+						 */
+
+						currentComponent = "tDBInput_10";
+
+						/**
+						 * [tDBInput_10 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_10 end ] start
+						 */
+
+						currentComponent = "tDBInput_10";
+
+					}
+				} finally {
+					if (rs_tDBInput_10 != null) {
+						rs_tDBInput_10.close();
+					}
+					if (stmt_tDBInput_10 != null) {
+						stmt_tDBInput_10.close();
+					}
+					if (conn_tDBInput_10 != null && !conn_tDBInput_10.isClosed()) {
+
+						conn_tDBInput_10.close();
+
+						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
+								&& routines.system.BundleUtils.inOSGi()) {
+							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
+									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
+						}
+
+					}
+				}
+				globalMap.put("tDBInput_10_NB_LINE", nb_line_tDBInput_10);
+
+				ok_Hash.put("tDBInput_10", true);
+				end_Hash.put("tDBInput_10", System.currentTimeMillis());
+
+				/**
+				 * [tDBInput_10 end ] stop
+				 */
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tDBInput_10 finally ] start
+				 */
+
+				currentComponent = "tDBInput_10";
+
+				/**
+				 * [tDBInput_10 finally ] stop
+				 */
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tDBInput_10_SUBPROCESS_STATE", 1);
+	}
+
+	public static class Customer1Struct implements routines.system.IPersistableRow<Customer1Struct> {
+		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+
+		public String Title;
+
+		public String getTitle() {
+			return this.Title;
+		}
+
+		public String FirstName;
+
+		public String getFirstName() {
+			return this.FirstName;
+		}
+
+		public String MiddleName;
+
+		public String getMiddleName() {
+			return this.MiddleName;
+		}
+
+		public String LastName;
+
+		public String getLastName() {
+			return this.LastName;
+		}
+
+		public String Suffix;
+
+		public String getSuffix() {
+			return this.Suffix;
+		}
+
+		public String CompanyName;
+
+		public String getCompanyName() {
+			return this.CompanyName;
+		}
+
+		public String EmailAddress;
+
+		public String getEmailAddress() {
+			return this.EmailAddress;
+		}
+
+		public String Phone;
+
+		public String getPhone() {
+			return this.Phone;
+		}
+
+		public String AddressLine1;
+
+		public String getAddressLine1() {
+			return this.AddressLine1;
+		}
+
+		public String City;
+
+		public String getCity() {
+			return this.City;
+		}
+
+		public String StateProvince;
+
+		public String getStateProvince() {
+			return this.StateProvince;
+		}
+
+		public String CountryRegion;
+
+		public String getCountryRegion() {
+			return this.CountryRegion;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados.length) {
+					if (length < 1024 && commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados.length == 0) {
+						commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[1024];
+					} else {
+						commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados, 0, length);
+				strReturn = new String(commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados) {
+
+				try {
+
+					int length = 0;
+
+					this.Title = readString(dis);
+
+					this.FirstName = readString(dis);
+
+					this.MiddleName = readString(dis);
+
+					this.LastName = readString(dis);
+
+					this.Suffix = readString(dis);
+
+					this.CompanyName = readString(dis);
+
+					this.EmailAddress = readString(dis);
+
+					this.Phone = readString(dis);
+
+					this.AddressLine1 = readString(dis);
+
+					this.City = readString(dis);
+
+					this.StateProvince = readString(dis);
+
+					this.CountryRegion = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.Title, dos);
+
+				// String
+
+				writeString(this.FirstName, dos);
+
+				// String
+
+				writeString(this.MiddleName, dos);
+
+				// String
+
+				writeString(this.LastName, dos);
+
+				// String
+
+				writeString(this.Suffix, dos);
+
+				// String
+
+				writeString(this.CompanyName, dos);
+
+				// String
+
+				writeString(this.EmailAddress, dos);
+
+				// String
+
+				writeString(this.Phone, dos);
+
+				// String
+
+				writeString(this.AddressLine1, dos);
+
+				// String
+
+				writeString(this.City, dos);
+
+				// String
+
+				writeString(this.StateProvince, dos);
+
+				// String
+
+				writeString(this.CountryRegion, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("Title=" + Title);
+			sb.append(",FirstName=" + FirstName);
+			sb.append(",MiddleName=" + MiddleName);
+			sb.append(",LastName=" + LastName);
+			sb.append(",Suffix=" + Suffix);
+			sb.append(",CompanyName=" + CompanyName);
+			sb.append(",EmailAddress=" + EmailAddress);
+			sb.append(",Phone=" + Phone);
+			sb.append(",AddressLine1=" + AddressLine1);
+			sb.append(",City=" + City);
+			sb.append(",StateProvince=" + StateProvince);
+			sb.append(",CountryRegion=" + CountryRegion);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(Customer1Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class row11Struct implements routines.system.IPersistableRow<row11Struct> {
+		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+
+		public int CustomerID;
+
+		public int getCustomerID() {
+			return this.CustomerID;
+		}
+
+		public int AddressID;
+
+		public int getAddressID() {
+			return this.AddressID;
+		}
+
+		public Object rowguid;
+
+		public Object getRowguid() {
+			return this.rowguid;
+		}
+
+		public java.util.Date ModifiedDate;
+
+		public java.util.Date getModifiedDate() {
+			return this.ModifiedDate;
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados) {
+
+				try {
+
+					int length = 0;
+
+					this.CustomerID = dis.readInt();
+
+					this.AddressID = dis.readInt();
+
+					this.rowguid = (Object) dis.readObject();
+
+					this.ModifiedDate = readDate(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// int
+
+				dos.writeInt(this.CustomerID);
+
+				// int
+
+				dos.writeInt(this.AddressID);
+
+				// Object
+
+				dos.writeObject(this.rowguid);
+
+				// java.util.Date
+
+				writeDate(this.ModifiedDate, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("CustomerID=" + String.valueOf(CustomerID));
+			sb.append(",AddressID=" + String.valueOf(AddressID));
+			sb.append(",rowguid=" + String.valueOf(rowguid));
+			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row11Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class row9Struct implements routines.system.IPersistableRow<row9Struct> {
+		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		protected static final int DEFAULT_HASHCODE = 1;
+		protected static final int PRIME = 31;
+		protected int hashCode = DEFAULT_HASHCODE;
+		public boolean hashCodeDirty = true;
+
+		public String loopKey;
+
+		public int CustomerID;
+
+		public int getCustomerID() {
+			return this.CustomerID;
+		}
+
+		public int AddressID;
+
+		public int getAddressID() {
+			return this.AddressID;
+		}
+
+		public Object rowguid;
+
+		public Object getRowguid() {
+			return this.rowguid;
+		}
+
+		public java.util.Date ModifiedDate;
+
+		public java.util.Date getModifiedDate() {
+			return this.ModifiedDate;
+		}
+
+		@Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+
+				result = prime * result + (int) this.CustomerID;
+
+				result = prime * result + (int) this.AddressID;
+
+				this.hashCode = result;
+				this.hashCodeDirty = false;
+			}
+			return this.hashCode;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			final row9Struct other = (row9Struct) obj;
+
+			if (this.CustomerID != other.CustomerID)
+				return false;
+
+			if (this.AddressID != other.AddressID)
+				return false;
+
+			return true;
+		}
+
+		public void copyDataTo(row9Struct other) {
+
+			other.CustomerID = this.CustomerID;
+			other.AddressID = this.AddressID;
+			other.rowguid = this.rowguid;
+			other.ModifiedDate = this.ModifiedDate;
+
+		}
+
+		public void copyKeysDataTo(row9Struct other) {
+
+			other.CustomerID = this.CustomerID;
+			other.AddressID = this.AddressID;
+
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados) {
+
+				try {
+
+					int length = 0;
+
+					this.CustomerID = dis.readInt();
+
+					this.AddressID = dis.readInt();
+
+					this.rowguid = (Object) dis.readObject();
+
+					this.ModifiedDate = readDate(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// int
+
+				dos.writeInt(this.CustomerID);
+
+				// int
+
+				dos.writeInt(this.AddressID);
+
+				// Object
+
+				dos.writeObject(this.rowguid);
+
+				// java.util.Date
+
+				writeDate(this.ModifiedDate, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("CustomerID=" + String.valueOf(CustomerID));
+			sb.append(",AddressID=" + String.valueOf(AddressID));
+			sb.append(",rowguid=" + String.valueOf(rowguid));
+			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row9Struct other) {
+
+			int returnValue = -1;
+
+			returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
+			if (returnValue != 0) {
+				return returnValue;
+			}
+
+			returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
+			if (returnValue != 0) {
+				return returnValue;
+			}
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class after_tDBInput_11Struct implements routines.system.IPersistableRow<after_tDBInput_11Struct> {
+		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		protected static final int DEFAULT_HASHCODE = 1;
+		protected static final int PRIME = 31;
+		protected int hashCode = DEFAULT_HASHCODE;
+		public boolean hashCodeDirty = true;
+
+		public String loopKey;
+
+		public int CustomerID;
+
+		public int getCustomerID() {
+			return this.CustomerID;
+		}
+
+		public int AddressID;
+
+		public int getAddressID() {
+			return this.AddressID;
+		}
+
+		public Object rowguid;
+
+		public Object getRowguid() {
+			return this.rowguid;
+		}
+
+		public java.util.Date ModifiedDate;
+
+		public java.util.Date getModifiedDate() {
+			return this.ModifiedDate;
+		}
+
+		@Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+
+				result = prime * result + (int) this.CustomerID;
+
+				result = prime * result + (int) this.AddressID;
+
+				this.hashCode = result;
+				this.hashCodeDirty = false;
+			}
+			return this.hashCode;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			final after_tDBInput_11Struct other = (after_tDBInput_11Struct) obj;
+
+			if (this.CustomerID != other.CustomerID)
+				return false;
+
+			if (this.AddressID != other.AddressID)
+				return false;
+
+			return true;
+		}
+
+		public void copyDataTo(after_tDBInput_11Struct other) {
+
+			other.CustomerID = this.CustomerID;
+			other.AddressID = this.AddressID;
+			other.rowguid = this.rowguid;
+			other.ModifiedDate = this.ModifiedDate;
+
+		}
+
+		public void copyKeysDataTo(after_tDBInput_11Struct other) {
+
+			other.CustomerID = this.CustomerID;
+			other.AddressID = this.AddressID;
+
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados) {
+
+				try {
+
+					int length = 0;
+
+					this.CustomerID = dis.readInt();
+
+					this.AddressID = dis.readInt();
+
+					this.rowguid = (Object) dis.readObject();
+
+					this.ModifiedDate = readDate(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// int
+
+				dos.writeInt(this.CustomerID);
+
+				// int
+
+				dos.writeInt(this.AddressID);
+
+				// Object
+
+				dos.writeObject(this.rowguid);
+
+				// java.util.Date
+
+				writeDate(this.ModifiedDate, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("CustomerID=" + String.valueOf(CustomerID));
+			sb.append(",AddressID=" + String.valueOf(AddressID));
+			sb.append(",rowguid=" + String.valueOf(rowguid));
+			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(after_tDBInput_11Struct other) {
+
+			int returnValue = -1;
+
+			returnValue = checkNullsAndCompare(this.CustomerID, other.CustomerID);
+			if (returnValue != 0) {
+				return returnValue;
+			}
+
+			returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
+			if (returnValue != 0) {
+				return returnValue;
+			}
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tDBInput_11Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_11_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				tDBInput_9Process(globalMap);
+				tDBInput_12Process(globalMap);
+
+				row9Struct row9 = new row9Struct();
+				row9Struct row11 = row9;
+				Customer1Struct Customer1 = new Customer1Struct();
+
+				/**
+				 * [tFileOutputDelimited_10 begin ] start
+				 */
+
+				ok_Hash.put("tFileOutputDelimited_10", false);
+				start_Hash.put("tFileOutputDelimited_10", System.currentTimeMillis());
+
+				currentComponent = "tFileOutputDelimited_10";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "Customer1");
+				}
+
+				int tos_count_tFileOutputDelimited_10 = 0;
+
+				String fileName_tFileOutputDelimited_10 = "";
+				fileName_tFileOutputDelimited_10 = (new java.io.File(
+						"D:/Projetos/12ABDGrupo2DataOPS/DL/Curated/ChrunCustomerCurated"
+								+ TalendDate.getDate("YYYY-MM-DD") + ".csv")).getAbsolutePath().replace("\\", "/");
+				String fullName_tFileOutputDelimited_10 = null;
+				String extension_tFileOutputDelimited_10 = null;
+				String directory_tFileOutputDelimited_10 = null;
+				if ((fileName_tFileOutputDelimited_10.indexOf("/") != -1)) {
+					if (fileName_tFileOutputDelimited_10.lastIndexOf(".") < fileName_tFileOutputDelimited_10
+							.lastIndexOf("/")) {
+						fullName_tFileOutputDelimited_10 = fileName_tFileOutputDelimited_10;
+						extension_tFileOutputDelimited_10 = "";
+					} else {
+						fullName_tFileOutputDelimited_10 = fileName_tFileOutputDelimited_10.substring(0,
+								fileName_tFileOutputDelimited_10.lastIndexOf("."));
+						extension_tFileOutputDelimited_10 = fileName_tFileOutputDelimited_10
+								.substring(fileName_tFileOutputDelimited_10.lastIndexOf("."));
+					}
+					directory_tFileOutputDelimited_10 = fileName_tFileOutputDelimited_10.substring(0,
+							fileName_tFileOutputDelimited_10.lastIndexOf("/"));
+				} else {
+					if (fileName_tFileOutputDelimited_10.lastIndexOf(".") != -1) {
+						fullName_tFileOutputDelimited_10 = fileName_tFileOutputDelimited_10.substring(0,
+								fileName_tFileOutputDelimited_10.lastIndexOf("."));
+						extension_tFileOutputDelimited_10 = fileName_tFileOutputDelimited_10
+								.substring(fileName_tFileOutputDelimited_10.lastIndexOf("."));
+					} else {
+						fullName_tFileOutputDelimited_10 = fileName_tFileOutputDelimited_10;
+						extension_tFileOutputDelimited_10 = "";
+					}
+					directory_tFileOutputDelimited_10 = "";
+				}
+				boolean isFileGenerated_tFileOutputDelimited_10 = true;
+				java.io.File filetFileOutputDelimited_10 = new java.io.File(fileName_tFileOutputDelimited_10);
+				globalMap.put("tFileOutputDelimited_10_FILE_NAME", fileName_tFileOutputDelimited_10);
+				int nb_line_tFileOutputDelimited_10 = 0;
+				int splitedFileNo_tFileOutputDelimited_10 = 0;
+				int currentRow_tFileOutputDelimited_10 = 0;
+
+				final String OUT_DELIM_tFileOutputDelimited_10 = /**
+																	 * Start field
+																	 * tFileOutputDelimited_10:FIELDSEPARATOR
+																	 */
+						";"/** End field tFileOutputDelimited_10:FIELDSEPARATOR */
+				;
+
+				final String OUT_DELIM_ROWSEP_tFileOutputDelimited_10 = /**
+																		 * Start field
+																		 * tFileOutputDelimited_10:ROWSEPARATOR
+																		 */
+						"\n"/** End field tFileOutputDelimited_10:ROWSEPARATOR */
+				;
+
+				// create directory only if not exists
+				if (directory_tFileOutputDelimited_10 != null
+						&& directory_tFileOutputDelimited_10.trim().length() != 0) {
+					java.io.File dir_tFileOutputDelimited_10 = new java.io.File(directory_tFileOutputDelimited_10);
+					if (!dir_tFileOutputDelimited_10.exists()) {
+						dir_tFileOutputDelimited_10.mkdirs();
+					}
+				}
+
+				// routines.system.Row
+				java.io.Writer outtFileOutputDelimited_10 = null;
+
+				java.io.File fileToDelete_tFileOutputDelimited_10 = new java.io.File(fileName_tFileOutputDelimited_10);
+				if (fileToDelete_tFileOutputDelimited_10.exists()) {
+					fileToDelete_tFileOutputDelimited_10.delete();
+				}
+				outtFileOutputDelimited_10 = new java.io.BufferedWriter(new java.io.OutputStreamWriter(
+						new java.io.FileOutputStream(fileName_tFileOutputDelimited_10, false), "UTF-8"));
+				if (filetFileOutputDelimited_10.length() == 0) {
+					outtFileOutputDelimited_10.write("Title");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("FirstName");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("MiddleName");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("LastName");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("Suffix");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("CompanyName");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("EmailAddress");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("Phone");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("AddressLine1");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("City");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("StateProvince");
+					outtFileOutputDelimited_10.write(OUT_DELIM_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.write("CountryRegion");
+					outtFileOutputDelimited_10.write(OUT_DELIM_ROWSEP_tFileOutputDelimited_10);
+					outtFileOutputDelimited_10.flush();
+				}
+
+				resourceMap.put("out_tFileOutputDelimited_10", outtFileOutputDelimited_10);
+				resourceMap.put("nb_line_tFileOutputDelimited_10", nb_line_tFileOutputDelimited_10);
+				resourceMap.put("isFileGenerated_tFileOutputDelimited_10", isFileGenerated_tFileOutputDelimited_10);
+				resourceMap.put("filetFileOutputDelimited_10", filetFileOutputDelimited_10);
+
+				/**
+				 * [tFileOutputDelimited_10 begin ] stop
+				 */
+
+				/**
+				 * [tMap_4 begin ] start
+				 */
+
+				ok_Hash.put("tMap_4", false);
+				start_Hash.put("tMap_4", System.currentTimeMillis());
+
+				currentComponent = "tMap_4";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row11");
+				}
+
+				int tos_count_tMap_4 = 0;
+
+// ###############################
+// # Lookup's keys initialization
+
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row13Struct> tHash_Lookup_row13 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row13Struct>) ((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row13Struct>) globalMap
+						.get("tHash_Lookup_row13"));
+
+				row13Struct row13HashKey = new row13Struct();
+				row13Struct row13Default = new row13Struct();
+
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row14Struct> tHash_Lookup_row14 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row14Struct>) ((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row14Struct>) globalMap
+						.get("tHash_Lookup_row14"));
+
+				row14Struct row14HashKey = new row14Struct();
+				row14Struct row14Default = new row14Struct();
+// ###############################        
+
+// ###############################
+// # Vars initialization
+				class Var__tMap_4__Struct {
+				}
+				Var__tMap_4__Struct Var__tMap_4 = new Var__tMap_4__Struct();
+// ###############################
+
+// ###############################
+// # Outputs initialization
+				Customer1Struct Customer1_tmp = new Customer1Struct();
+// ###############################
+
+				/**
+				 * [tMap_4 begin ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_7 begin ] start
+				 */
+
+				ok_Hash.put("tFileOutputDelimited_7", false);
+				start_Hash.put("tFileOutputDelimited_7", System.currentTimeMillis());
+
+				currentComponent = "tFileOutputDelimited_7";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row9");
+				}
+
+				int tos_count_tFileOutputDelimited_7 = 0;
+
+				String fileName_tFileOutputDelimited_7 = "";
+				fileName_tFileOutputDelimited_7 = (new java.io.File(
+						"D:/Projetos/12ABDGrupo2DataOPS/DL/raw/ChrunIngCustomerAddressRaw"
+								+ TalendDate.getDate("YYYY-MM-DD") + ".csv")).getAbsolutePath().replace("\\", "/");
+				String fullName_tFileOutputDelimited_7 = null;
+				String extension_tFileOutputDelimited_7 = null;
+				String directory_tFileOutputDelimited_7 = null;
+				if ((fileName_tFileOutputDelimited_7.indexOf("/") != -1)) {
+					if (fileName_tFileOutputDelimited_7.lastIndexOf(".") < fileName_tFileOutputDelimited_7
+							.lastIndexOf("/")) {
+						fullName_tFileOutputDelimited_7 = fileName_tFileOutputDelimited_7;
+						extension_tFileOutputDelimited_7 = "";
+					} else {
+						fullName_tFileOutputDelimited_7 = fileName_tFileOutputDelimited_7.substring(0,
+								fileName_tFileOutputDelimited_7.lastIndexOf("."));
+						extension_tFileOutputDelimited_7 = fileName_tFileOutputDelimited_7
+								.substring(fileName_tFileOutputDelimited_7.lastIndexOf("."));
+					}
+					directory_tFileOutputDelimited_7 = fileName_tFileOutputDelimited_7.substring(0,
+							fileName_tFileOutputDelimited_7.lastIndexOf("/"));
+				} else {
+					if (fileName_tFileOutputDelimited_7.lastIndexOf(".") != -1) {
+						fullName_tFileOutputDelimited_7 = fileName_tFileOutputDelimited_7.substring(0,
+								fileName_tFileOutputDelimited_7.lastIndexOf("."));
+						extension_tFileOutputDelimited_7 = fileName_tFileOutputDelimited_7
+								.substring(fileName_tFileOutputDelimited_7.lastIndexOf("."));
+					} else {
+						fullName_tFileOutputDelimited_7 = fileName_tFileOutputDelimited_7;
+						extension_tFileOutputDelimited_7 = "";
+					}
+					directory_tFileOutputDelimited_7 = "";
+				}
+				boolean isFileGenerated_tFileOutputDelimited_7 = true;
+				java.io.File filetFileOutputDelimited_7 = new java.io.File(fileName_tFileOutputDelimited_7);
+				globalMap.put("tFileOutputDelimited_7_FILE_NAME", fileName_tFileOutputDelimited_7);
+				int nb_line_tFileOutputDelimited_7 = 0;
+				int splitedFileNo_tFileOutputDelimited_7 = 0;
+				int currentRow_tFileOutputDelimited_7 = 0;
+
+				final String OUT_DELIM_tFileOutputDelimited_7 = /** Start field tFileOutputDelimited_7:FIELDSEPARATOR */
+						";"/** End field tFileOutputDelimited_7:FIELDSEPARATOR */
+				;
+
+				final String OUT_DELIM_ROWSEP_tFileOutputDelimited_7 = /**
+																		 * Start field
+																		 * tFileOutputDelimited_7:ROWSEPARATOR
+																		 */
+						"\n"/** End field tFileOutputDelimited_7:ROWSEPARATOR */
+				;
+
+				// create directory only if not exists
+				if (directory_tFileOutputDelimited_7 != null && directory_tFileOutputDelimited_7.trim().length() != 0) {
+					java.io.File dir_tFileOutputDelimited_7 = new java.io.File(directory_tFileOutputDelimited_7);
+					if (!dir_tFileOutputDelimited_7.exists()) {
+						dir_tFileOutputDelimited_7.mkdirs();
+					}
+				}
+
+				// routines.system.Row
+				java.io.Writer outtFileOutputDelimited_7 = null;
+
+				java.io.File fileToDelete_tFileOutputDelimited_7 = new java.io.File(fileName_tFileOutputDelimited_7);
+				if (fileToDelete_tFileOutputDelimited_7.exists()) {
+					fileToDelete_tFileOutputDelimited_7.delete();
+				}
+				outtFileOutputDelimited_7 = new java.io.BufferedWriter(new java.io.OutputStreamWriter(
+						new java.io.FileOutputStream(fileName_tFileOutputDelimited_7, false), "UTF-8"));
+				if (filetFileOutputDelimited_7.length() == 0) {
+					outtFileOutputDelimited_7.write("CustomerID");
+					outtFileOutputDelimited_7.write(OUT_DELIM_tFileOutputDelimited_7);
+					outtFileOutputDelimited_7.write("AddressID");
+					outtFileOutputDelimited_7.write(OUT_DELIM_tFileOutputDelimited_7);
+					outtFileOutputDelimited_7.write("rowguid");
+					outtFileOutputDelimited_7.write(OUT_DELIM_tFileOutputDelimited_7);
+					outtFileOutputDelimited_7.write("ModifiedDate");
+					outtFileOutputDelimited_7.write(OUT_DELIM_ROWSEP_tFileOutputDelimited_7);
+					outtFileOutputDelimited_7.flush();
+				}
+
+				resourceMap.put("out_tFileOutputDelimited_7", outtFileOutputDelimited_7);
+				resourceMap.put("nb_line_tFileOutputDelimited_7", nb_line_tFileOutputDelimited_7);
+				resourceMap.put("isFileGenerated_tFileOutputDelimited_7", isFileGenerated_tFileOutputDelimited_7);
+				resourceMap.put("filetFileOutputDelimited_7", filetFileOutputDelimited_7);
+
+				/**
+				 * [tFileOutputDelimited_7 begin ] stop
+				 */
+
+				/**
+				 * [tDBInput_11 begin ] start
+				 */
+
+				ok_Hash.put("tDBInput_11", false);
+				start_Hash.put("tDBInput_11", System.currentTimeMillis());
+
+				currentComponent = "tDBInput_11";
+
+				int tos_count_tDBInput_11 = 0;
+
+				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_11 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
+						.getMSSqlGenerateTimestampUtil();
+
+				java.util.List<String> talendToDBList_tDBInput_11 = new java.util.ArrayList();
+				String[] talendToDBArray_tDBInput_11 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
+						"DECIMAL IDENTITY", "REAL" };
+				java.util.Collections.addAll(talendToDBList_tDBInput_11, talendToDBArray_tDBInput_11);
+				int nb_line_tDBInput_11 = 0;
+				java.sql.Connection conn_tDBInput_11 = null;
+				String driverClass_tDBInput_11 = "net.sourceforge.jtds.jdbc.Driver";
+				java.lang.Class jdbcclazz_tDBInput_11 = java.lang.Class.forName(driverClass_tDBInput_11);
+				String dbUser_tDBInput_11 = "sqlfamily";
+
+				final String decryptedPassword_tDBInput_11 = routines.system.PasswordEncryptUtil.decryptPassword(
+						"enc:routine.encryption.key.v1:FM5s2iBGIBv+pbX5G36HfAc+dj405fM3xTbF0hhU8+ZhBUzuCw==");
+
+				String dbPwd_tDBInput_11 = decryptedPassword_tDBInput_11;
+
+				String port_tDBInput_11 = "1433";
+				String dbname_tDBInput_11 = "AdventureWorks";
+				String url_tDBInput_11 = "jdbc:jtds:sqlserver://" + "sqlservercentralpublic.database.windows.net";
+				if (!"".equals(port_tDBInput_11)) {
+					url_tDBInput_11 += ":" + "1433";
+				}
+				if (!"".equals(dbname_tDBInput_11)) {
+					url_tDBInput_11 += "//" + "AdventureWorks";
+				}
+				url_tDBInput_11 += ";appName=" + projectName + ";" + "";
+				String dbschema_tDBInput_11 = "SalesLT";
+
+				conn_tDBInput_11 = java.sql.DriverManager.getConnection(url_tDBInput_11, dbUser_tDBInput_11,
+						dbPwd_tDBInput_11);
+
+				java.sql.Statement stmt_tDBInput_11 = conn_tDBInput_11.createStatement();
+
+				String dbquery_tDBInput_11 = "SELECT SalesLT.CustomerAddress.CustomerID,\n		SalesLT.CustomerAddress.AddressID,\n		SalesLT.CustomerAddress.rowguid,\n		Sa"
+						+ "lesLT.CustomerAddress.ModifiedDate\nFROM	SalesLT.CustomerAddress";
+
+				globalMap.put("tDBInput_11_QUERY", dbquery_tDBInput_11);
+				java.sql.ResultSet rs_tDBInput_11 = null;
+
+				try {
+					rs_tDBInput_11 = stmt_tDBInput_11.executeQuery(dbquery_tDBInput_11);
+					java.sql.ResultSetMetaData rsmd_tDBInput_11 = rs_tDBInput_11.getMetaData();
+					int colQtyInRs_tDBInput_11 = rsmd_tDBInput_11.getColumnCount();
+
+					String tmpContent_tDBInput_11 = null;
+
+					while (rs_tDBInput_11.next()) {
+						nb_line_tDBInput_11++;
+
+						if (colQtyInRs_tDBInput_11 < 1) {
+							row9.CustomerID = 0;
+						} else {
+
+							row9.CustomerID = rs_tDBInput_11.getInt(1);
+							if (rs_tDBInput_11.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_11 < 2) {
+							row9.AddressID = 0;
+						} else {
+
+							row9.AddressID = rs_tDBInput_11.getInt(2);
+							if (rs_tDBInput_11.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_11 < 3) {
+							row9.rowguid = null;
+						} else {
+
+							row9.rowguid = rs_tDBInput_11.getObject(3);
+							if (rs_tDBInput_11.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_11 < 4) {
+							row9.ModifiedDate = null;
+						} else {
+
+							row9.ModifiedDate = mssqlGTU_tDBInput_11.getDate(rsmd_tDBInput_11, rs_tDBInput_11, 4);
+
+						}
+
+						/**
+						 * [tDBInput_11 begin ] stop
+						 */
+
+						/**
+						 * [tDBInput_11 main ] start
+						 */
+
+						currentComponent = "tDBInput_11";
+
+						tos_count_tDBInput_11++;
+
+						/**
+						 * [tDBInput_11 main ] stop
+						 */
+
+						/**
+						 * [tDBInput_11 process_data_begin ] start
+						 */
+
+						currentComponent = "tDBInput_11";
+
+						/**
+						 * [tDBInput_11 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tFileOutputDelimited_7 main ] start
+						 */
+
+						currentComponent = "tFileOutputDelimited_7";
+
+						if (execStat) {
+							runStat.updateStatOnConnection(iterateId, 1, 1, "row9");
+						}
+
+						StringBuilder sb_tFileOutputDelimited_7 = new StringBuilder();
+						sb_tFileOutputDelimited_7.append(row9.CustomerID);
+						sb_tFileOutputDelimited_7.append(OUT_DELIM_tFileOutputDelimited_7);
+						sb_tFileOutputDelimited_7.append(row9.AddressID);
+						sb_tFileOutputDelimited_7.append(OUT_DELIM_tFileOutputDelimited_7);
+						if (row9.rowguid != null) {
+							sb_tFileOutputDelimited_7.append(row9.rowguid);
+						}
+						sb_tFileOutputDelimited_7.append(OUT_DELIM_tFileOutputDelimited_7);
+						if (row9.ModifiedDate != null) {
+							sb_tFileOutputDelimited_7
+									.append(FormatterUtils.format_Date(row9.ModifiedDate, "dd-MM-yyyy"));
+						}
+						sb_tFileOutputDelimited_7.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_7);
+
+						nb_line_tFileOutputDelimited_7++;
+						resourceMap.put("nb_line_tFileOutputDelimited_7", nb_line_tFileOutputDelimited_7);
+
+						outtFileOutputDelimited_7.write(sb_tFileOutputDelimited_7.toString());
+
+						row11 = row9;
+
+						tos_count_tFileOutputDelimited_7++;
+
+						/**
+						 * [tFileOutputDelimited_7 main ] stop
+						 */
+
+						/**
+						 * [tFileOutputDelimited_7 process_data_begin ] start
+						 */
+
+						currentComponent = "tFileOutputDelimited_7";
+
+						/**
+						 * [tFileOutputDelimited_7 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tMap_4 main ] start
+						 */
+
+						currentComponent = "tMap_4";
+
+						if (execStat) {
+							runStat.updateStatOnConnection(iterateId, 1, 1, "row11");
+						}
+
+						boolean hasCasePrimitiveKeyWithNull_tMap_4 = false;
+
+						// ###############################
+						// # Input tables (lookups)
+						boolean rejectedInnerJoin_tMap_4 = false;
+						boolean mainRowRejected_tMap_4 = false;
+
+						///////////////////////////////////////////////
+						// Starting Lookup Table "row13"
+						///////////////////////////////////////////////
+
+						boolean forceLooprow13 = false;
+
+						row13Struct row13ObjectFromLookup = null;
+
+						if (!rejectedInnerJoin_tMap_4) { // G_TM_M_020
+
+							hasCasePrimitiveKeyWithNull_tMap_4 = false;
+
+							Object exprKeyValue_row13__CustomerID = row11.CustomerID;
+							if (exprKeyValue_row13__CustomerID == null) {
+								hasCasePrimitiveKeyWithNull_tMap_4 = true;
+							} else {
+								row13HashKey.CustomerID = (int) (Integer) exprKeyValue_row13__CustomerID;
+							}
+
+							row13HashKey.hashCodeDirty = true;
+
+							if (!hasCasePrimitiveKeyWithNull_tMap_4) { // G_TM_M_091
+
+								tHash_Lookup_row13.lookup(row13HashKey);
+
+							} // G_TM_M_091
+
+						} // G_TM_M_020
+
+						if (tHash_Lookup_row13 != null && tHash_Lookup_row13.getCount(row13HashKey) > 1) { // G 071
+
+							// System.out.println("WARNING: UNIQUE MATCH is configured for the lookup
+							// 'row13' and it contains more one result from keys : row13.CustomerID = '" +
+							// row13HashKey.CustomerID + "'");
+						} // G 071
+
+						row13Struct row13 = null;
+
+						row13Struct fromLookup_row13 = null;
+						row13 = row13Default;
+
+						if (tHash_Lookup_row13 != null && tHash_Lookup_row13.hasNext()) { // G 099
+
+							fromLookup_row13 = tHash_Lookup_row13.next();
+
+						} // G 099
+
+						if (fromLookup_row13 != null) {
+							row13 = fromLookup_row13;
+						}
+
+						///////////////////////////////////////////////
+						// Starting Lookup Table "row14"
+						///////////////////////////////////////////////
+
+						boolean forceLooprow14 = false;
+
+						row14Struct row14ObjectFromLookup = null;
+
+						if (!rejectedInnerJoin_tMap_4) { // G_TM_M_020
+
+							hasCasePrimitiveKeyWithNull_tMap_4 = false;
+
+							Object exprKeyValue_row14__AddressID = row11.AddressID;
+							if (exprKeyValue_row14__AddressID == null) {
+								hasCasePrimitiveKeyWithNull_tMap_4 = true;
+							} else {
+								row14HashKey.AddressID = (int) (Integer) exprKeyValue_row14__AddressID;
+							}
+
+							row14HashKey.hashCodeDirty = true;
+
+							if (!hasCasePrimitiveKeyWithNull_tMap_4) { // G_TM_M_091
+
+								tHash_Lookup_row14.lookup(row14HashKey);
+
+							} // G_TM_M_091
+
+						} // G_TM_M_020
+
+						if (tHash_Lookup_row14 != null && tHash_Lookup_row14.getCount(row14HashKey) > 1) { // G 071
+
+							// System.out.println("WARNING: UNIQUE MATCH is configured for the lookup
+							// 'row14' and it contains more one result from keys : row14.AddressID = '" +
+							// row14HashKey.AddressID + "'");
+						} // G 071
+
+						row14Struct row14 = null;
+
+						row14Struct fromLookup_row14 = null;
+						row14 = row14Default;
+
+						if (tHash_Lookup_row14 != null && tHash_Lookup_row14.hasNext()) { // G 099
+
+							fromLookup_row14 = tHash_Lookup_row14.next();
+
+						} // G 099
+
+						if (fromLookup_row14 != null) {
+							row14 = fromLookup_row14;
+						}
+
+						// ###############################
+						{ // start of Var scope
+
+							// ###############################
+							// # Vars tables
+
+							Var__tMap_4__Struct Var = Var__tMap_4;// ###############################
+							// ###############################
+							// # Output tables
+
+							Customer1 = null;
+
+// # Output table : 'Customer1'
+							Customer1_tmp.Title = row13.Title;
+							Customer1_tmp.FirstName = row13.FirstName;
+							Customer1_tmp.MiddleName = row13.MiddleName;
+							Customer1_tmp.LastName = row13.LastName;
+							Customer1_tmp.Suffix = row13.Suffix;
+							Customer1_tmp.CompanyName = row13.CompanyName;
+							Customer1_tmp.EmailAddress = row13.EmailAddress;
+							Customer1_tmp.Phone = row13.Phone;
+							Customer1_tmp.AddressLine1 = row14.AddressLine1;
+							Customer1_tmp.City = row14.City;
+							Customer1_tmp.StateProvince = row14.StateProvince;
+							Customer1_tmp.CountryRegion = row14.CountryRegion;
+							Customer1 = Customer1_tmp;
+// ###############################
+
+						} // end of Var scope
+
+						rejectedInnerJoin_tMap_4 = false;
+
+						tos_count_tMap_4++;
+
+						/**
+						 * [tMap_4 main ] stop
+						 */
+
+						/**
+						 * [tMap_4 process_data_begin ] start
+						 */
+
+						currentComponent = "tMap_4";
+
+						/**
+						 * [tMap_4 process_data_begin ] stop
+						 */
+// Start of branch "Customer1"
+						if (Customer1 != null) {
+
+							/**
+							 * [tFileOutputDelimited_10 main ] start
+							 */
+
+							currentComponent = "tFileOutputDelimited_10";
+
+							if (execStat) {
+								runStat.updateStatOnConnection(iterateId, 1, 1, "Customer1");
+							}
+
+							StringBuilder sb_tFileOutputDelimited_10 = new StringBuilder();
+							if (Customer1.Title != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.Title);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.FirstName != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.FirstName);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.MiddleName != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.MiddleName);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.LastName != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.LastName);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.Suffix != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.Suffix);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.CompanyName != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.CompanyName);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.EmailAddress != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.EmailAddress);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.Phone != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.Phone);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.AddressLine1 != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.AddressLine1);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.City != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.City);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.StateProvince != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.StateProvince);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_tFileOutputDelimited_10);
+							if (Customer1.CountryRegion != null) {
+								sb_tFileOutputDelimited_10.append(Customer1.CountryRegion);
+							}
+							sb_tFileOutputDelimited_10.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_10);
+
+							nb_line_tFileOutputDelimited_10++;
+							resourceMap.put("nb_line_tFileOutputDelimited_10", nb_line_tFileOutputDelimited_10);
+
+							outtFileOutputDelimited_10.write(sb_tFileOutputDelimited_10.toString());
+
+							tos_count_tFileOutputDelimited_10++;
+
+							/**
+							 * [tFileOutputDelimited_10 main ] stop
+							 */
+
+							/**
+							 * [tFileOutputDelimited_10 process_data_begin ] start
+							 */
+
+							currentComponent = "tFileOutputDelimited_10";
+
+							/**
+							 * [tFileOutputDelimited_10 process_data_begin ] stop
+							 */
+
+							/**
+							 * [tFileOutputDelimited_10 process_data_end ] start
+							 */
+
+							currentComponent = "tFileOutputDelimited_10";
+
+							/**
+							 * [tFileOutputDelimited_10 process_data_end ] stop
+							 */
+
+						} // End of branch "Customer1"
+
+						/**
+						 * [tMap_4 process_data_end ] start
+						 */
+
+						currentComponent = "tMap_4";
+
+						/**
+						 * [tMap_4 process_data_end ] stop
+						 */
+
+						/**
+						 * [tFileOutputDelimited_7 process_data_end ] start
+						 */
+
+						currentComponent = "tFileOutputDelimited_7";
+
+						/**
+						 * [tFileOutputDelimited_7 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_11 process_data_end ] start
+						 */
+
+						currentComponent = "tDBInput_11";
+
+						/**
+						 * [tDBInput_11 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_11 end ] start
+						 */
+
+						currentComponent = "tDBInput_11";
+
+					}
+				} finally {
+					if (rs_tDBInput_11 != null) {
+						rs_tDBInput_11.close();
+					}
+					if (stmt_tDBInput_11 != null) {
+						stmt_tDBInput_11.close();
+					}
+					if (conn_tDBInput_11 != null && !conn_tDBInput_11.isClosed()) {
+
+						conn_tDBInput_11.close();
+
+						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
+								&& routines.system.BundleUtils.inOSGi()) {
+							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
+									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
+						}
+
+					}
+				}
+				globalMap.put("tDBInput_11_NB_LINE", nb_line_tDBInput_11);
+
+				ok_Hash.put("tDBInput_11", true);
+				end_Hash.put("tDBInput_11", System.currentTimeMillis());
+
+				/**
+				 * [tDBInput_11 end ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_7 end ] start
+				 */
+
+				currentComponent = "tFileOutputDelimited_7";
+
+				if (outtFileOutputDelimited_7 != null) {
+					outtFileOutputDelimited_7.flush();
+					outtFileOutputDelimited_7.close();
+				}
+
+				globalMap.put("tFileOutputDelimited_7_NB_LINE", nb_line_tFileOutputDelimited_7);
+				globalMap.put("tFileOutputDelimited_7_FILE_NAME", fileName_tFileOutputDelimited_7);
+
+				if (isFileGenerated_tFileOutputDelimited_7 && nb_line_tFileOutputDelimited_7 == 0) {
+
+					filetFileOutputDelimited_7.delete();
+
+				}
+
+				resourceMap.put("finish_tFileOutputDelimited_7", true);
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row9");
+				}
+
+				ok_Hash.put("tFileOutputDelimited_7", true);
+				end_Hash.put("tFileOutputDelimited_7", System.currentTimeMillis());
+
+				/**
+				 * [tFileOutputDelimited_7 end ] stop
+				 */
+
+				/**
+				 * [tMap_4 end ] start
+				 */
+
+				currentComponent = "tMap_4";
+
+// ###############################
+// # Lookup hashes releasing
+				if (tHash_Lookup_row13 != null) {
+					tHash_Lookup_row13.endGet();
+				}
+				globalMap.remove("tHash_Lookup_row13");
+
+				if (tHash_Lookup_row14 != null) {
+					tHash_Lookup_row14.endGet();
+				}
+				globalMap.remove("tHash_Lookup_row14");
+
+// ###############################      
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row11");
+				}
+
+				ok_Hash.put("tMap_4", true);
+				end_Hash.put("tMap_4", System.currentTimeMillis());
+
+				/**
+				 * [tMap_4 end ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_10 end ] start
+				 */
+
+				currentComponent = "tFileOutputDelimited_10";
+
+				if (outtFileOutputDelimited_10 != null) {
+					outtFileOutputDelimited_10.flush();
+					outtFileOutputDelimited_10.close();
+				}
+
+				globalMap.put("tFileOutputDelimited_10_NB_LINE", nb_line_tFileOutputDelimited_10);
+				globalMap.put("tFileOutputDelimited_10_FILE_NAME", fileName_tFileOutputDelimited_10);
+
+				if (isFileGenerated_tFileOutputDelimited_10 && nb_line_tFileOutputDelimited_10 == 0) {
+
+					filetFileOutputDelimited_10.delete();
+
+				}
+
+				resourceMap.put("finish_tFileOutputDelimited_10", true);
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "Customer1");
+				}
+
+				ok_Hash.put("tFileOutputDelimited_10", true);
+				end_Hash.put("tFileOutputDelimited_10", System.currentTimeMillis());
+
+				/**
+				 * [tFileOutputDelimited_10 end ] stop
+				 */
+
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			// free memory for "tMap_4"
+			globalMap.remove("tHash_Lookup_row13");
+
+			// free memory for "tMap_4"
+			globalMap.remove("tHash_Lookup_row14");
+
+			try {
+
+				/**
+				 * [tDBInput_11 finally ] start
+				 */
+
+				currentComponent = "tDBInput_11";
+
+				/**
+				 * [tDBInput_11 finally ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_7 finally ] start
+				 */
+
+				currentComponent = "tFileOutputDelimited_7";
+
+				if (resourceMap.get("finish_tFileOutputDelimited_7") == null) {
+
+					java.io.Writer outtFileOutputDelimited_7 = (java.io.Writer) resourceMap
+							.get("out_tFileOutputDelimited_7");
+					if (outtFileOutputDelimited_7 != null) {
+						outtFileOutputDelimited_7.flush();
+						outtFileOutputDelimited_7.close();
+					}
+
+					if (Boolean.valueOf(String.valueOf(resourceMap.get("isFileGenerated_tFileOutputDelimited_7")))
+							&& Integer
+									.valueOf(String.valueOf(resourceMap.get("nb_line_tFileOutputDelimited_7"))) == 0) {
+
+						((java.io.File) resourceMap.get("filetFileOutputDelimited_7")).delete();
+
+					}
+
+				}
+
+				/**
+				 * [tFileOutputDelimited_7 finally ] stop
+				 */
+
+				/**
+				 * [tMap_4 finally ] start
+				 */
+
+				currentComponent = "tMap_4";
+
+				/**
+				 * [tMap_4 finally ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_10 finally ] start
+				 */
+
+				currentComponent = "tFileOutputDelimited_10";
+
+				if (resourceMap.get("finish_tFileOutputDelimited_10") == null) {
+
+					java.io.Writer outtFileOutputDelimited_10 = (java.io.Writer) resourceMap
+							.get("out_tFileOutputDelimited_10");
+					if (outtFileOutputDelimited_10 != null) {
+						outtFileOutputDelimited_10.flush();
+						outtFileOutputDelimited_10.close();
+					}
+
+					if (Boolean.valueOf(String.valueOf(resourceMap.get("isFileGenerated_tFileOutputDelimited_10")))
+							&& Integer
+									.valueOf(String.valueOf(resourceMap.get("nb_line_tFileOutputDelimited_10"))) == 0) {
+
+						((java.io.File) resourceMap.get("filetFileOutputDelimited_10")).delete();
+
+					}
+
+				}
+
+				/**
+				 * [tFileOutputDelimited_10 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tDBInput_11_SUBPROCESS_STATE", 1);
+	}
+
+	public static class row14Struct implements routines.system.IPersistableComparableLookupRow<row14Struct> {
+		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		protected static final int DEFAULT_HASHCODE = 1;
+		protected static final int PRIME = 31;
+		protected int hashCode = DEFAULT_HASHCODE;
+		public boolean hashCodeDirty = true;
+
+		public String loopKey;
+
+		public int AddressID;
+
+		public int getAddressID() {
+			return this.AddressID;
+		}
+
+		public String AddressLine1;
+
+		public String getAddressLine1() {
+			return this.AddressLine1;
+		}
+
+		public String AddressLine2;
+
+		public String getAddressLine2() {
+			return this.AddressLine2;
+		}
+
+		public String City;
+
+		public String getCity() {
+			return this.City;
+		}
+
+		public String StateProvince;
+
+		public String getStateProvince() {
+			return this.StateProvince;
+		}
+
+		public String CountryRegion;
+
+		public String getCountryRegion() {
+			return this.CountryRegion;
+		}
+
+		public String PostalCode;
+
+		public String getPostalCode() {
+			return this.PostalCode;
+		}
+
+		public Object rowguid;
+
+		public Object getRowguid() {
+			return this.rowguid;
+		}
+
+		public java.util.Date ModifiedDate;
+
+		public java.util.Date getModifiedDate() {
+			return this.ModifiedDate;
+		}
+
+		@Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+
+				result = prime * result + (int) this.AddressID;
+
+				this.hashCode = result;
+				this.hashCodeDirty = false;
+			}
+			return this.hashCode;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			final row14Struct other = (row14Struct) obj;
+
+			if (this.AddressID != other.AddressID)
+				return false;
+
+			return true;
+		}
+
+		public void copyDataTo(row14Struct other) {
+
+			other.AddressID = this.AddressID;
+			other.AddressLine1 = this.AddressLine1;
+			other.AddressLine2 = this.AddressLine2;
+			other.City = this.City;
+			other.StateProvince = this.StateProvince;
+			other.CountryRegion = this.CountryRegion;
+			other.PostalCode = this.PostalCode;
+			other.rowguid = this.rowguid;
+			other.ModifiedDate = this.ModifiedDate;
+
+		}
+
+		public void copyKeysDataTo(row14Struct other) {
+
+			other.AddressID = this.AddressID;
+
+		}
+
+		private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				byte[] byteArray = new byte[length];
+				dis.read(byteArray);
+				strReturn = new String(byteArray, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(DataInputStream dis, ObjectInputStream ois) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, DataOutputStream dos, ObjectOutputStream oos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readKeysData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados) {
+
+				try {
+
+					int length = 0;
+
+					this.AddressID = dis.readInt();
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeKeysData(ObjectOutputStream dos) {
+			try {
+
+				// int
+
+				dos.writeInt(this.AddressID);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		/**
+		 * Fill Values data by reading ObjectInputStream.
+		 */
+		public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+			try {
+
+				int length = 0;
+
+				this.AddressLine1 = readString(dis, ois);
+
+				this.AddressLine2 = readString(dis, ois);
+
+				this.City = readString(dis, ois);
+
+				this.StateProvince = readString(dis, ois);
+
+				this.CountryRegion = readString(dis, ois);
+
+				this.PostalCode = readString(dis, ois);
+
+				this.rowguid = (Object) ois.readObject();
+
+				this.ModifiedDate = readDate(dis, ois);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+
+			} catch (ClassNotFoundException eCNFE) {
+				throw new RuntimeException(eCNFE);
+
+			}
+
+		}
+
+		/**
+		 * Return a byte array which represents Values data.
+		 */
+		public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+			try {
+
+				writeString(this.AddressLine1, dos, oos);
+
+				writeString(this.AddressLine2, dos, oos);
+
+				writeString(this.City, dos, oos);
+
+				writeString(this.StateProvince, dos, oos);
+
+				writeString(this.CountryRegion, dos, oos);
+
+				writeString(this.PostalCode, dos, oos);
+
+				oos.writeObject(this.rowguid);
+
+				writeDate(this.ModifiedDate, dos, oos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("AddressID=" + String.valueOf(AddressID));
+			sb.append(",AddressLine1=" + AddressLine1);
+			sb.append(",AddressLine2=" + AddressLine2);
+			sb.append(",City=" + City);
+			sb.append(",StateProvince=" + StateProvince);
+			sb.append(",CountryRegion=" + CountryRegion);
+			sb.append(",PostalCode=" + PostalCode);
+			sb.append(",rowguid=" + String.valueOf(rowguid));
+			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row14Struct other) {
+
+			int returnValue = -1;
+
+			returnValue = checkNullsAndCompare(this.AddressID, other.AddressID);
+			if (returnValue != 0) {
+				return returnValue;
+			}
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class row10Struct implements routines.system.IPersistableRow<row10Struct> {
+		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
+
+		public int AddressID;
+
+		public int getAddressID() {
+			return this.AddressID;
+		}
+
+		public String AddressLine1;
+
+		public String getAddressLine1() {
+			return this.AddressLine1;
+		}
+
+		public String AddressLine2;
+
+		public String getAddressLine2() {
+			return this.AddressLine2;
+		}
+
+		public String City;
+
+		public String getCity() {
+			return this.City;
+		}
+
+		public String StateProvince;
+
+		public String getStateProvince() {
+			return this.StateProvince;
+		}
+
+		public String CountryRegion;
+
+		public String getCountryRegion() {
+			return this.CountryRegion;
+		}
+
+		public String PostalCode;
+
+		public String getPostalCode() {
+			return this.PostalCode;
+		}
+
+		public Object rowguid;
+
+		public Object getRowguid() {
+			return this.rowguid;
+		}
+
+		public java.util.Date ModifiedDate;
+
+		public java.util.Date getModifiedDate() {
+			return this.ModifiedDate;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados.length) {
+					if (length < 1024 && commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados.length == 0) {
+						commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[1024];
+					} else {
+						commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados, 0, length);
+				strReturn = new String(commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados) {
+
+				try {
+
+					int length = 0;
+
+					this.AddressID = dis.readInt();
+
+					this.AddressLine1 = readString(dis);
+
+					this.AddressLine2 = readString(dis);
+
+					this.City = readString(dis);
+
+					this.StateProvince = readString(dis);
+
+					this.CountryRegion = readString(dis);
+
+					this.PostalCode = readString(dis);
+
+					this.rowguid = (Object) dis.readObject();
+
+					this.ModifiedDate = readDate(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// int
+
+				dos.writeInt(this.AddressID);
+
+				// String
+
+				writeString(this.AddressLine1, dos);
+
+				// String
+
+				writeString(this.AddressLine2, dos);
+
+				// String
+
+				writeString(this.City, dos);
+
+				// String
+
+				writeString(this.StateProvince, dos);
+
+				// String
+
+				writeString(this.CountryRegion, dos);
+
+				// String
+
+				writeString(this.PostalCode, dos);
+
+				// Object
+
+				dos.writeObject(this.rowguid);
+
+				// java.util.Date
+
+				writeDate(this.ModifiedDate, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("AddressID=" + String.valueOf(AddressID));
+			sb.append(",AddressLine1=" + AddressLine1);
+			sb.append(",AddressLine2=" + AddressLine2);
+			sb.append(",City=" + City);
+			sb.append(",StateProvince=" + StateProvince);
+			sb.append(",CountryRegion=" + CountryRegion);
+			sb.append(",PostalCode=" + PostalCode);
+			sb.append(",rowguid=" + String.valueOf(rowguid));
+			sb.append(",ModifiedDate=" + String.valueOf(ModifiedDate));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row10Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tDBInput_12Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_12_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				row10Struct row10 = new row10Struct();
+				row10Struct row14 = row10;
+
+				/**
+				 * [tAdvancedHash_row14 begin ] start
+				 */
+
+				ok_Hash.put("tAdvancedHash_row14", false);
+				start_Hash.put("tAdvancedHash_row14", System.currentTimeMillis());
+
+				currentComponent = "tAdvancedHash_row14";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row14");
+				}
+
+				int tos_count_tAdvancedHash_row14 = 0;
+
+				// connection name:row14
+				// source node:tFileOutputDelimited_8 - inputs:(row10) outputs:(row14,row14) |
+				// target node:tAdvancedHash_row14 - inputs:(row14) outputs:()
+				// linked node: tMap_4 - inputs:(row13,row11,row14) outputs:(Customer1)
+
+				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row14 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row14Struct> tHash_Lookup_row14 = org.talend.designer.components.lookup.memory.AdvancedMemoryLookup
+						.<row14Struct>getLookup(matchingModeEnum_row14);
+
+				globalMap.put("tHash_Lookup_row14", tHash_Lookup_row14);
+
+				/**
+				 * [tAdvancedHash_row14 begin ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_8 begin ] start
+				 */
+
+				ok_Hash.put("tFileOutputDelimited_8", false);
+				start_Hash.put("tFileOutputDelimited_8", System.currentTimeMillis());
+
+				currentComponent = "tFileOutputDelimited_8";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row10");
+				}
+
+				int tos_count_tFileOutputDelimited_8 = 0;
+
+				String fileName_tFileOutputDelimited_8 = "";
+				fileName_tFileOutputDelimited_8 = (new java.io.File(
+						"D:/Projetos/12ABDGrupo2DataOPS/DL/raw/ChrunIngAddressRaw" + TalendDate.getDate("YYYY-MM-DD")
+								+ ".csv")).getAbsolutePath().replace("\\", "/");
+				String fullName_tFileOutputDelimited_8 = null;
+				String extension_tFileOutputDelimited_8 = null;
+				String directory_tFileOutputDelimited_8 = null;
+				if ((fileName_tFileOutputDelimited_8.indexOf("/") != -1)) {
+					if (fileName_tFileOutputDelimited_8.lastIndexOf(".") < fileName_tFileOutputDelimited_8
+							.lastIndexOf("/")) {
+						fullName_tFileOutputDelimited_8 = fileName_tFileOutputDelimited_8;
+						extension_tFileOutputDelimited_8 = "";
+					} else {
+						fullName_tFileOutputDelimited_8 = fileName_tFileOutputDelimited_8.substring(0,
+								fileName_tFileOutputDelimited_8.lastIndexOf("."));
+						extension_tFileOutputDelimited_8 = fileName_tFileOutputDelimited_8
+								.substring(fileName_tFileOutputDelimited_8.lastIndexOf("."));
+					}
+					directory_tFileOutputDelimited_8 = fileName_tFileOutputDelimited_8.substring(0,
+							fileName_tFileOutputDelimited_8.lastIndexOf("/"));
+				} else {
+					if (fileName_tFileOutputDelimited_8.lastIndexOf(".") != -1) {
+						fullName_tFileOutputDelimited_8 = fileName_tFileOutputDelimited_8.substring(0,
+								fileName_tFileOutputDelimited_8.lastIndexOf("."));
+						extension_tFileOutputDelimited_8 = fileName_tFileOutputDelimited_8
+								.substring(fileName_tFileOutputDelimited_8.lastIndexOf("."));
+					} else {
+						fullName_tFileOutputDelimited_8 = fileName_tFileOutputDelimited_8;
+						extension_tFileOutputDelimited_8 = "";
+					}
+					directory_tFileOutputDelimited_8 = "";
+				}
+				boolean isFileGenerated_tFileOutputDelimited_8 = true;
+				java.io.File filetFileOutputDelimited_8 = new java.io.File(fileName_tFileOutputDelimited_8);
+				globalMap.put("tFileOutputDelimited_8_FILE_NAME", fileName_tFileOutputDelimited_8);
+				int nb_line_tFileOutputDelimited_8 = 0;
+				int splitedFileNo_tFileOutputDelimited_8 = 0;
+				int currentRow_tFileOutputDelimited_8 = 0;
+
+				final String OUT_DELIM_tFileOutputDelimited_8 = /** Start field tFileOutputDelimited_8:FIELDSEPARATOR */
+						";"/** End field tFileOutputDelimited_8:FIELDSEPARATOR */
+				;
+
+				final String OUT_DELIM_ROWSEP_tFileOutputDelimited_8 = /**
+																		 * Start field
+																		 * tFileOutputDelimited_8:ROWSEPARATOR
+																		 */
+						"\n"/** End field tFileOutputDelimited_8:ROWSEPARATOR */
+				;
+
+				// create directory only if not exists
+				if (directory_tFileOutputDelimited_8 != null && directory_tFileOutputDelimited_8.trim().length() != 0) {
+					java.io.File dir_tFileOutputDelimited_8 = new java.io.File(directory_tFileOutputDelimited_8);
+					if (!dir_tFileOutputDelimited_8.exists()) {
+						dir_tFileOutputDelimited_8.mkdirs();
+					}
+				}
+
+				// routines.system.Row
+				java.io.Writer outtFileOutputDelimited_8 = null;
+
+				java.io.File fileToDelete_tFileOutputDelimited_8 = new java.io.File(fileName_tFileOutputDelimited_8);
+				if (fileToDelete_tFileOutputDelimited_8.exists()) {
+					fileToDelete_tFileOutputDelimited_8.delete();
+				}
+				outtFileOutputDelimited_8 = new java.io.BufferedWriter(new java.io.OutputStreamWriter(
+						new java.io.FileOutputStream(fileName_tFileOutputDelimited_8, false), "UTF-8"));
+				if (filetFileOutputDelimited_8.length() == 0) {
+					outtFileOutputDelimited_8.write("AddressID");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("AddressLine1");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("AddressLine2");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("City");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("StateProvince");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("CountryRegion");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("PostalCode");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("rowguid");
+					outtFileOutputDelimited_8.write(OUT_DELIM_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.write("ModifiedDate");
+					outtFileOutputDelimited_8.write(OUT_DELIM_ROWSEP_tFileOutputDelimited_8);
+					outtFileOutputDelimited_8.flush();
+				}
+
+				resourceMap.put("out_tFileOutputDelimited_8", outtFileOutputDelimited_8);
+				resourceMap.put("nb_line_tFileOutputDelimited_8", nb_line_tFileOutputDelimited_8);
+				resourceMap.put("isFileGenerated_tFileOutputDelimited_8", isFileGenerated_tFileOutputDelimited_8);
+				resourceMap.put("filetFileOutputDelimited_8", filetFileOutputDelimited_8);
+
+				/**
+				 * [tFileOutputDelimited_8 begin ] stop
+				 */
+
+				/**
+				 * [tDBInput_12 begin ] start
+				 */
+
+				ok_Hash.put("tDBInput_12", false);
+				start_Hash.put("tDBInput_12", System.currentTimeMillis());
+
+				currentComponent = "tDBInput_12";
+
+				int tos_count_tDBInput_12 = 0;
+
+				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_12 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
+						.getMSSqlGenerateTimestampUtil();
+
+				java.util.List<String> talendToDBList_tDBInput_12 = new java.util.ArrayList();
+				String[] talendToDBArray_tDBInput_12 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
+						"DECIMAL IDENTITY", "REAL" };
+				java.util.Collections.addAll(talendToDBList_tDBInput_12, talendToDBArray_tDBInput_12);
+				int nb_line_tDBInput_12 = 0;
+				java.sql.Connection conn_tDBInput_12 = null;
+				String driverClass_tDBInput_12 = "net.sourceforge.jtds.jdbc.Driver";
+				java.lang.Class jdbcclazz_tDBInput_12 = java.lang.Class.forName(driverClass_tDBInput_12);
+				String dbUser_tDBInput_12 = "sqlfamily";
+
+				final String decryptedPassword_tDBInput_12 = routines.system.PasswordEncryptUtil.decryptPassword(
+						"enc:routine.encryption.key.v1:ntDPa8xfgCFFEC8tEmQwLcUBeTgeKAW6tBjKGcdq8zOEBIHitQ==");
+
+				String dbPwd_tDBInput_12 = decryptedPassword_tDBInput_12;
+
+				String port_tDBInput_12 = "1433";
+				String dbname_tDBInput_12 = "AdventureWorks";
+				String url_tDBInput_12 = "jdbc:jtds:sqlserver://" + "sqlservercentralpublic.database.windows.net";
+				if (!"".equals(port_tDBInput_12)) {
+					url_tDBInput_12 += ":" + "1433";
+				}
+				if (!"".equals(dbname_tDBInput_12)) {
+					url_tDBInput_12 += "//" + "AdventureWorks";
+				}
+				url_tDBInput_12 += ";appName=" + projectName + ";" + "";
+				String dbschema_tDBInput_12 = "SalesLT";
+
+				conn_tDBInput_12 = java.sql.DriverManager.getConnection(url_tDBInput_12, dbUser_tDBInput_12,
+						dbPwd_tDBInput_12);
+
+				java.sql.Statement stmt_tDBInput_12 = conn_tDBInput_12.createStatement();
+
+				String dbquery_tDBInput_12 = "SELECT SalesLT.Address.AddressID,\n		SalesLT.Address.AddressLine1,\n		SalesLT.Address.AddressLine2,\n		SalesLT.Address.Cit"
+						+ "y,\n		SalesLT.Address.StateProvince,\n		SalesLT.Address.CountryRegion,\n		SalesLT.Address.PostalCode,\n		SalesLT.Address.row"
+						+ "guid,\n		SalesLT.Address.ModifiedDate\nFROM	SalesLT.Address";
+
+				globalMap.put("tDBInput_12_QUERY", dbquery_tDBInput_12);
+				java.sql.ResultSet rs_tDBInput_12 = null;
+
+				try {
+					rs_tDBInput_12 = stmt_tDBInput_12.executeQuery(dbquery_tDBInput_12);
+					java.sql.ResultSetMetaData rsmd_tDBInput_12 = rs_tDBInput_12.getMetaData();
+					int colQtyInRs_tDBInput_12 = rsmd_tDBInput_12.getColumnCount();
+
+					String tmpContent_tDBInput_12 = null;
+
+					while (rs_tDBInput_12.next()) {
+						nb_line_tDBInput_12++;
+
+						if (colQtyInRs_tDBInput_12 < 1) {
+							row10.AddressID = 0;
+						} else {
+
+							row10.AddressID = rs_tDBInput_12.getInt(1);
+							if (rs_tDBInput_12.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 2) {
+							row10.AddressLine1 = null;
+						} else {
+
+							tmpContent_tDBInput_12 = rs_tDBInput_12.getString(2);
+							if (tmpContent_tDBInput_12 != null) {
+								if (talendToDBList_tDBInput_12.contains(
+										rsmd_tDBInput_12.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
+									row10.AddressLine1 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_12);
+								} else {
+									row10.AddressLine1 = tmpContent_tDBInput_12;
+								}
+							} else {
+								row10.AddressLine1 = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 3) {
+							row10.AddressLine2 = null;
+						} else {
+
+							tmpContent_tDBInput_12 = rs_tDBInput_12.getString(3);
+							if (tmpContent_tDBInput_12 != null) {
+								if (talendToDBList_tDBInput_12.contains(
+										rsmd_tDBInput_12.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
+									row10.AddressLine2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_12);
+								} else {
+									row10.AddressLine2 = tmpContent_tDBInput_12;
+								}
+							} else {
+								row10.AddressLine2 = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 4) {
+							row10.City = null;
+						} else {
+
+							tmpContent_tDBInput_12 = rs_tDBInput_12.getString(4);
+							if (tmpContent_tDBInput_12 != null) {
+								if (talendToDBList_tDBInput_12.contains(
+										rsmd_tDBInput_12.getColumnTypeName(4).toUpperCase(java.util.Locale.ENGLISH))) {
+									row10.City = FormatterUtils.formatUnwithE(tmpContent_tDBInput_12);
+								} else {
+									row10.City = tmpContent_tDBInput_12;
+								}
+							} else {
+								row10.City = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 5) {
+							row10.StateProvince = null;
+						} else {
+
+							tmpContent_tDBInput_12 = rs_tDBInput_12.getString(5);
+							if (tmpContent_tDBInput_12 != null) {
+								if (talendToDBList_tDBInput_12.contains(
+										rsmd_tDBInput_12.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+									row10.StateProvince = FormatterUtils.formatUnwithE(tmpContent_tDBInput_12);
+								} else {
+									row10.StateProvince = tmpContent_tDBInput_12;
+								}
+							} else {
+								row10.StateProvince = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 6) {
+							row10.CountryRegion = null;
+						} else {
+
+							net.sourceforge.jtds.jdbc.ClobImpl clob_tDBInput_12 = (net.sourceforge.jtds.jdbc.ClobImpl) rs_tDBInput_12
+									.getClob(6);
+							if (clob_tDBInput_12 != null) {
+								net.sourceforge.jtds.jdbc.TalendNTextImpl tNTextImpl_tDBInput_12 = new net.sourceforge.jtds.jdbc.TalendNTextImpl(
+										clob_tDBInput_12);
+								tmpContent_tDBInput_12 = tNTextImpl_tDBInput_12.getValue();
+							} else {
+								tmpContent_tDBInput_12 = null;
+							}
+							if (tmpContent_tDBInput_12 != null) {
+								if (talendToDBList_tDBInput_12.contains(
+										rsmd_tDBInput_12.getColumnTypeName(6).toUpperCase(java.util.Locale.ENGLISH))) {
+									row10.CountryRegion = FormatterUtils.formatUnwithE(tmpContent_tDBInput_12);
+								} else {
+									row10.CountryRegion = tmpContent_tDBInput_12;
+								}
+							} else {
+								row10.CountryRegion = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 7) {
+							row10.PostalCode = null;
+						} else {
+
+							tmpContent_tDBInput_12 = rs_tDBInput_12.getString(7);
+							if (tmpContent_tDBInput_12 != null) {
+								if (talendToDBList_tDBInput_12.contains(
+										rsmd_tDBInput_12.getColumnTypeName(7).toUpperCase(java.util.Locale.ENGLISH))) {
+									row10.PostalCode = FormatterUtils.formatUnwithE(tmpContent_tDBInput_12);
+								} else {
+									row10.PostalCode = tmpContent_tDBInput_12;
+								}
+							} else {
+								row10.PostalCode = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 8) {
+							row10.rowguid = null;
+						} else {
+
+							row10.rowguid = rs_tDBInput_12.getObject(8);
+							if (rs_tDBInput_12.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_12 < 9) {
+							row10.ModifiedDate = null;
+						} else {
+
+							row10.ModifiedDate = mssqlGTU_tDBInput_12.getDate(rsmd_tDBInput_12, rs_tDBInput_12, 9);
+
+						}
+
+						/**
+						 * [tDBInput_12 begin ] stop
+						 */
+
+						/**
+						 * [tDBInput_12 main ] start
+						 */
+
+						currentComponent = "tDBInput_12";
+
+						tos_count_tDBInput_12++;
+
+						/**
+						 * [tDBInput_12 main ] stop
+						 */
+
+						/**
+						 * [tDBInput_12 process_data_begin ] start
+						 */
+
+						currentComponent = "tDBInput_12";
+
+						/**
+						 * [tDBInput_12 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tFileOutputDelimited_8 main ] start
+						 */
+
+						currentComponent = "tFileOutputDelimited_8";
+
+						if (execStat) {
+							runStat.updateStatOnConnection(iterateId, 1, 1, "row10");
+						}
+
+						StringBuilder sb_tFileOutputDelimited_8 = new StringBuilder();
+						sb_tFileOutputDelimited_8.append(row10.AddressID);
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.AddressLine1 != null) {
+							sb_tFileOutputDelimited_8.append(row10.AddressLine1);
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.AddressLine2 != null) {
+							sb_tFileOutputDelimited_8.append(row10.AddressLine2);
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.City != null) {
+							sb_tFileOutputDelimited_8.append(row10.City);
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.StateProvince != null) {
+							sb_tFileOutputDelimited_8.append(row10.StateProvince);
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.CountryRegion != null) {
+							sb_tFileOutputDelimited_8.append(row10.CountryRegion);
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.PostalCode != null) {
+							sb_tFileOutputDelimited_8.append(row10.PostalCode);
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.rowguid != null) {
+							sb_tFileOutputDelimited_8.append(row10.rowguid);
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_tFileOutputDelimited_8);
+						if (row10.ModifiedDate != null) {
+							sb_tFileOutputDelimited_8
+									.append(FormatterUtils.format_Date(row10.ModifiedDate, "dd-MM-yyyy"));
+						}
+						sb_tFileOutputDelimited_8.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_8);
+
+						nb_line_tFileOutputDelimited_8++;
+						resourceMap.put("nb_line_tFileOutputDelimited_8", nb_line_tFileOutputDelimited_8);
+
+						outtFileOutputDelimited_8.write(sb_tFileOutputDelimited_8.toString());
+
+						row14 = row10;
+
+						tos_count_tFileOutputDelimited_8++;
+
+						/**
+						 * [tFileOutputDelimited_8 main ] stop
+						 */
+
+						/**
+						 * [tFileOutputDelimited_8 process_data_begin ] start
+						 */
+
+						currentComponent = "tFileOutputDelimited_8";
+
+						/**
+						 * [tFileOutputDelimited_8 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row14 main ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row14";
+
+						if (execStat) {
+							runStat.updateStatOnConnection(iterateId, 1, 1, "row14");
+						}
+
+						row14Struct row14_HashRow = new row14Struct();
+
+						row14_HashRow.AddressID = row14.AddressID;
+
+						row14_HashRow.AddressLine1 = row14.AddressLine1;
+
+						row14_HashRow.AddressLine2 = row14.AddressLine2;
+
+						row14_HashRow.City = row14.City;
+
+						row14_HashRow.StateProvince = row14.StateProvince;
+
+						row14_HashRow.CountryRegion = row14.CountryRegion;
+
+						row14_HashRow.PostalCode = row14.PostalCode;
+
+						row14_HashRow.rowguid = row14.rowguid;
+
+						row14_HashRow.ModifiedDate = row14.ModifiedDate;
+
+						tHash_Lookup_row14.put(row14_HashRow);
+
+						tos_count_tAdvancedHash_row14++;
+
+						/**
+						 * [tAdvancedHash_row14 main ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row14 process_data_begin ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row14";
+
+						/**
+						 * [tAdvancedHash_row14 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row14 process_data_end ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row14";
+
+						/**
+						 * [tAdvancedHash_row14 process_data_end ] stop
+						 */
+
+						/**
+						 * [tFileOutputDelimited_8 process_data_end ] start
+						 */
+
+						currentComponent = "tFileOutputDelimited_8";
+
+						/**
+						 * [tFileOutputDelimited_8 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_12 process_data_end ] start
+						 */
+
+						currentComponent = "tDBInput_12";
+
+						/**
+						 * [tDBInput_12 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_12 end ] start
+						 */
+
+						currentComponent = "tDBInput_12";
+
+					}
+				} finally {
+					if (rs_tDBInput_12 != null) {
+						rs_tDBInput_12.close();
+					}
+					if (stmt_tDBInput_12 != null) {
+						stmt_tDBInput_12.close();
+					}
+					if (conn_tDBInput_12 != null && !conn_tDBInput_12.isClosed()) {
+
+						conn_tDBInput_12.close();
+
+						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
+								&& routines.system.BundleUtils.inOSGi()) {
+							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
+									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
+						}
+
+					}
+				}
+				globalMap.put("tDBInput_12_NB_LINE", nb_line_tDBInput_12);
+
+				ok_Hash.put("tDBInput_12", true);
+				end_Hash.put("tDBInput_12", System.currentTimeMillis());
+
+				/**
+				 * [tDBInput_12 end ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_8 end ] start
+				 */
+
+				currentComponent = "tFileOutputDelimited_8";
+
+				if (outtFileOutputDelimited_8 != null) {
+					outtFileOutputDelimited_8.flush();
+					outtFileOutputDelimited_8.close();
+				}
+
+				globalMap.put("tFileOutputDelimited_8_NB_LINE", nb_line_tFileOutputDelimited_8);
+				globalMap.put("tFileOutputDelimited_8_FILE_NAME", fileName_tFileOutputDelimited_8);
+
+				if (isFileGenerated_tFileOutputDelimited_8 && nb_line_tFileOutputDelimited_8 == 0) {
+
+					filetFileOutputDelimited_8.delete();
+
+				}
+
+				resourceMap.put("finish_tFileOutputDelimited_8", true);
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row10");
+				}
+
+				ok_Hash.put("tFileOutputDelimited_8", true);
+				end_Hash.put("tFileOutputDelimited_8", System.currentTimeMillis());
+
+				/**
+				 * [tFileOutputDelimited_8 end ] stop
+				 */
+
+				/**
+				 * [tAdvancedHash_row14 end ] start
+				 */
+
+				currentComponent = "tAdvancedHash_row14";
+
+				tHash_Lookup_row14.endPut();
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row14");
+				}
+
+				ok_Hash.put("tAdvancedHash_row14", true);
+				end_Hash.put("tAdvancedHash_row14", System.currentTimeMillis());
+
+				/**
+				 * [tAdvancedHash_row14 end ] stop
+				 */
+
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tDBInput_12 finally ] start
+				 */
+
+				currentComponent = "tDBInput_12";
+
+				/**
+				 * [tDBInput_12 finally ] stop
+				 */
+
+				/**
+				 * [tFileOutputDelimited_8 finally ] start
+				 */
+
+				currentComponent = "tFileOutputDelimited_8";
+
+				if (resourceMap.get("finish_tFileOutputDelimited_8") == null) {
+
+					java.io.Writer outtFileOutputDelimited_8 = (java.io.Writer) resourceMap
+							.get("out_tFileOutputDelimited_8");
+					if (outtFileOutputDelimited_8 != null) {
+						outtFileOutputDelimited_8.flush();
+						outtFileOutputDelimited_8.close();
+					}
+
+					if (Boolean.valueOf(String.valueOf(resourceMap.get("isFileGenerated_tFileOutputDelimited_8")))
+							&& Integer
+									.valueOf(String.valueOf(resourceMap.get("nb_line_tFileOutputDelimited_8"))) == 0) {
+
+						((java.io.File) resourceMap.get("filetFileOutputDelimited_8")).delete();
+
+					}
+
+				}
+
+				/**
+				 * [tFileOutputDelimited_8 finally ] stop
+				 */
+
+				/**
+				 * [tAdvancedHash_row14 finally ] start
+				 */
+
+				currentComponent = "tAdvancedHash_row14";
+
+				/**
+				 * [tAdvancedHash_row14 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tDBInput_12_SUBPROCESS_STATE", 1);
 	}
 
 	public String resuming_logs_dir_path = null;
@@ -8373,14 +12288,26 @@ public class IngestaoCienciaDados implements TalendJob {
 		}
 		try {
 			errorCode = null;
-			tDBInput_9Process(globalMap);
+			tDBInput_10Process(globalMap);
 			if (!"failure".equals(status)) {
 				status = "end";
 			}
-		} catch (TalendException e_tDBInput_9) {
-			globalMap.put("tDBInput_9_SUBPROCESS_STATE", -1);
+		} catch (TalendException e_tDBInput_10) {
+			globalMap.put("tDBInput_10_SUBPROCESS_STATE", -1);
 
-			e_tDBInput_9.printStackTrace();
+			e_tDBInput_10.printStackTrace();
+
+		}
+		try {
+			errorCode = null;
+			tDBInput_11Process(globalMap);
+			if (!"failure".equals(status)) {
+				status = "end";
+			}
+		} catch (TalendException e_tDBInput_11) {
+			globalMap.put("tDBInput_11_SUBPROCESS_STATE", -1);
+
+			e_tDBInput_11.printStackTrace();
 
 		}
 
@@ -8535,6 +12462,6 @@ public class IngestaoCienciaDados implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 282623 characters generated by Talend Open Studio for Data Integration on the
- * July 11, 2021 1:39:58 PM BRT
+ * 409012 characters generated by Talend Open Studio for Data Integration on the
+ * July 11, 2021 3:21:49 PM BRT
  ************************************************************************************************/

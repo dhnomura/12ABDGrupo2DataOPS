@@ -45,7 +45,15 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Address",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - CustomerAddress",
     "version" : "Latest",
     "type" : "schema"
   }, {
