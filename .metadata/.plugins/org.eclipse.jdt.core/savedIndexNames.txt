@@ -1,7 +1,4 @@
 INDEX VERSION 1.131+D:\Projetos\12ABDGrupo2DataOPS\.metadata\.plugins\org.eclipse.jdt.core
 1242787514.index
-2162723623.index
-1823993109.index
 2564585934.index
-730669318.index
 4221904551.index
