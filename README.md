@@ -25,28 +25,23 @@ Branch Master -> Produtivo
 
 Branch Feature -> Ambiente de Desenvolvimento
 
+Branch Projeto Aula 2 -> Entregaveis da Aula
 
-# Etapas do Projeto
+# Data Ops Entregas Aula 2
 
-Projeto Aula 1 - 2h30min
+Gerar datasets, um com dados agregados para um relatório de negócios, e um dataset para o time de ciencia de Dados realizar exploração dos dados;
 
-	Criar uma branch para armazenar código e documentação;
-	
-		Realizar a branch através do GitFlow
-		
-		Realizar um assessment de uma base de dados
-		
-		Mapeamento de dados
-		
-		Entender quais tabelas eu tenho na base
-		
-		Quais informações tem em cada tabela
-		
-		Modelo Entidade relacionamento
-		
-		Pode ser um Word, pode ser um PDF
-		
-		Tabelas encontradas, atributos, relacionamentos
-		
-		Faltou o relacionamento
-		
+1. O Relatório é para a àrea de Vendas:
+	-	Este relatório deve conter dados diários
+	-	Informações de valores de venda por Região
+	-	Informações de valores de Venda Online e Offline
+
+2. O Dataset para exploração para ciência de Dados:
+	-	Objetivo de construir um modelo de previsão de Churn
+	-	A solicitação é de uma amostra de dados com informações da entidades de Cliente, Produtos, Vendas e Vendedores.
+
+# Data Pipe lines
+
+1. Pipe line com dados agregados de vendas para relatório de negócio
+
+![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/RelatorioVendas.PNG)

@@ -8,4 +8,14 @@
 		<section name="destinationFile">
 		</section>
 	</section>
+	<section name="GenerateDocAsHTMLWizard">
+		<list key="GenerateDocAsHTMLWizardPage.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\Projetos\12ABDGrupo2DataOPS\DocumentacaoTalend\IngestaoVendas_0.1.zip"/>
+		</list>
+		<section name="destinationFile">
+			<item value="D:\Projetos\12ABDGrupo2DataOPS\DocumentacaoTalend\IngestaoVendas_0.1.zip" key="destinationFile"/>
+		</section>
+	</section>
+	<section name="ZipFileExportWizard">
+	</section>
 </section>
