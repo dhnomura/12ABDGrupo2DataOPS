@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_2=>" expression="StringHandling.LEFT(row8.MiddleName, 1)">
+  <variables name="row8.CustomerID" value="0" talendType="id_Integer"/>
+  <variables name="row8.NameStyle" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.Title" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.FirstName" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.MiddleName" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.LastName" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.Suffix" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.CompanyName" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.SalesPerson" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.EmailAddress" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.Phone" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.PasswordHash" value="null" talendType="id_String"/>
+  <variables name="row8.PasswordSalt" value="null" talendType="id_String"/>
+  <variables name="row8.rowguid" value="null" talendType="id_Object"/>
+  <variables name="row8.ModifiedDate" value="null" talendType="id_Date"/>
+</expression:EMFExpression>
