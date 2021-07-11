@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
     <module>jobs/process/RelatorioVendas/ingestaovendas_0.1</module>
+    <module>jobs/process/ModeloPrevisaoChurn/ingestaocienciadados_0.1</module>
   </modules>
   <properties>
     <talend.project.name>LOCAL_PROJECT</talend.project.name>
