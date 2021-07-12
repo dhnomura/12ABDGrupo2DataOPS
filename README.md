@@ -45,3 +45,17 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 1. Pipe line com dados agregados de vendas para relatório de negócio
 
 ![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/RelatorioVendas.PNG)
+
+2. O Dataset para exploração para ciência de Dados
+
+	-	Entidate Clientes
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/IngestaoCustomer.PNG?raw=true)
+
+	-	Entidade Produtos
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/IngestaoProduto.PNG?raw=true)
+
+	-	Entidade Vendas
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/IngestaoSales.PNG?raw=true)
+
+	-	Entidade Vendedores
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/IngestaoSalesPerson.PNG?raw=true)
