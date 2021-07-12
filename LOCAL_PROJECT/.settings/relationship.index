@@ -69,6 +69,10 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - SalesOrderDetail",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - SalesOrderHeader",
     "version" : "Latest",
     "type" : "schema"

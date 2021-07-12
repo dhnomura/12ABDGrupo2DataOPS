@@ -235,6 +235,7 @@
             <outputDirectory>lib</outputDirectory>
             <includes>
                 <include>org.talend.libraries:crypto-utils:jar:6.0.0-SNAPSHOT</include>
+                <include>org.talend.libraries:talend_file_enhanced_20070724:jar:6.0.0</include>
                 <include>org.talend.libraries:advancedPersistentLookupLib-1.2:jar:6.0.0</include>
                 <include>org.example.local_project.code:routines:jar:7.3.1</include>
                 <include>org.talend.libraries:talendcsv:jar:6.0.0</include>
