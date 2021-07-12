@@ -93,10 +93,10 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 
 # Going Deep
 
-	AWS Serverless Data Pipeline: https://aws.amazon.com/blogs/big-data/aws-serverless-data-analytics-pipeline-reference-architecture/
+AWS Serverless Data Pipeline: https://aws.amazon.com/blogs/big-data/aws-serverless-data-analytics-pipeline-reference-architecture/
 
-	Azure Data Lakes: https://cloudblogs.microsoft.com/industry-blog/en-gb/technetuk/2020/04/09/building-your-data-lake-on-azure-data-lake-storage-gen2-part-1/
+Azure Data Lakes: https://cloudblogs.microsoft.com/industry-blog/en-gb/technetuk/2020/04/09/building-your-data-lake-on-azure-data-lake-storage-gen2-part-1/
 
-	Data Lake Processing Framework: https://www.youtube.com/watch?v=vXwYctw5Gyc&t=802s
+Data Lake Processing Framework: https://www.youtube.com/watch?v=vXwYctw5Gyc&t=802s
 
-	https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/data-analytics-update-1-final.jpg?raw=true
+https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/data-analytics-update-1-final.jpg?raw=true
