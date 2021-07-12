@@ -40,6 +40,24 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 	-	Objetivo de construir um modelo de previsão de Churn
 	-	A solicitação é de uma amostra de dados com informações da entidades de Cliente, Produtos, Vendas e Vendedores.
 
+# Data Ops Entregas Aula 3 Parte 1
+
+1.	Ampilar os pipelines com Talend a partir da Base AdventureWorks com os
+sequintes objetivos:
+
+2.	O Relatório criado anteriormente para a área de vendas foi um sucesso, a gestão do
+território nacional ficou extremamente satisfeita com os resultados e agora quer
+ampliar seus KPIS, a nova requisição foi:
+
+	-	Incluir informações sobre vendedores com melhor e pior desempenho no
+relatório existente.
+	-	Desenvolver um relatório novo com dados mensais, da distrubuição de
+produtos por região com métricas de quantidade de venda e valor.
+	-	Também foi solicitado um arquivo contendo informações de produtos
+vendidos, vendedor que realizou, distribuido por região e data este arquivo
+foi solicitado semanalmente para que o time de possa realizer analyses
+manuais.
+
 # Data Pipe lines
 
 1. Pipe line com dados agregados de vendas para relatório de negócio
