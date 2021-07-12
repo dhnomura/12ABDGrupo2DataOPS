@@ -77,6 +77,8 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 	-	**Coluna SalesPerson**	- Removido o prefixo da base de dados;
 	-	**Coluna Phone**		- Removido o prefixo do país.
 
+	![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/CustomerHarmonized.PNG?raw=true)
+
 # Dados Curados
 
 1.	**Relatório de Vendas**
