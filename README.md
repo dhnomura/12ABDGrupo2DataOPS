@@ -90,3 +90,13 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 	-	**ChrunSalesPerson<date>.csv**		- Desnormalização de Vendedores;
 	-	**ChrunSalesCurate<date>.csv**		- Desnormalização de Vendas;
 	-	**ChrunProductCurate<date>.csv**	- Desnormalização de Produtos.
+
+# Dive Deep
+
+AWS Serverless Data Pipeline: https://aws.amazon.com/blogs/big-data/aws-serverless-data-analytics-pipeline-reference-architecture/
+
+Azure Data Lakes: https://cloudblogs.microsoft.com/industry-blog/en-gb/technetuk/2020/04/09/building-your-data-lake-on-azure-data-lake-storage-gen2-part-1/
+
+Data Lake Processing Framework: https://www.youtube.com/watch?v=vXwYctw5Gyc&t=802s
+
+![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/data-analytics-update-1-final.jpg?raw=true)
