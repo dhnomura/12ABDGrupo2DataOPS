@@ -59,3 +59,32 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 
 	-	Entidade Vendedores
 		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/IngestaoSalesPerson.PNG?raw=true)
+
+# Estrutura de diretórios do HDFS
+
+1. RAW - Tem como objetivo ser uma landing Zone, são dados raws, os quais são recebidos de acordo com a sua origem.
+
+2. Harmonized - São dados que possuém algum tipo de tratamento, harmonização, os quais melhoram a qualidade do dado.
+
+3. Curated - São dados prontos para o consumo.
+
+# Harmonizações
+
+1.	Customer
+	-	Coluna Title 		- Removido valores Nulos;
+					 		- Convertido abreviações latinas para inglesa, como Sr -> Mr;
+	-	Coluna Midlewname	- Garantir trabalhar apenas com abreviações do segundo nome;	
+	-	Coluna SalesPerson	- Removido o prefixo da base de dados;
+	-	Coluna Phone		- Removido o prefixo do país.
+
+# Dados Curados
+
+1.	Relatório de Vendas
+	-	AggregateTotalOnline<date>.csv	- Agregação do total de vendas Online / Offline;
+	-	AggregateTotalRegion<date>.csv  - Agregação do total de vendas por região.
+
+2. 	Ciencia de dados, modelo Churn
+	-	ChrunCustomerCurated<date>.csv 	- Desnormalização de clientes;
+	-	ChrunSalesPerson<date>.csv		- Desnormalização de Vendedores;
+	-	ChrunSalesCurate<date>.csv		- Desnormalização de Vendas;
+	-	ChrunProductCurate<date>.csv	- Desnormalização de Produtos.
