@@ -71,11 +71,11 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 # Harmonizações
 
 1.	**Customer**
-	-	Coluna Title 		- Removido valores Nulos;
+	-	**Coluna Title** 		- Removido valores Nulos;
 					 		- Convertido abreviações latinas para inglesa, como Sr -> Mr;
-	-	Coluna Midlewname	- Garantir trabalhar apenas com abreviações do segundo nome;	
-	-	Coluna SalesPerson	- Removido o prefixo da base de dados;
-	-	Coluna Phone		- Removido o prefixo do país.
+	-	**Coluna Midlewname**	- Garantir trabalhar apenas com abreviações do segundo nome;	
+	-	**Coluna SalesPerson**	- Removido o prefixo da base de dados;
+	-	**Coluna Phone**		- Removido o prefixo do país.
 
 # Dados Curados
 
