@@ -99,4 +99,5 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 
 	Data Lake Processing Framework: https://www.youtube.com/watch?v=vXwYctw5Gyc&t=802s
 
+	![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/data-analytics-update-1-final.jpg?raw=true)
 	
