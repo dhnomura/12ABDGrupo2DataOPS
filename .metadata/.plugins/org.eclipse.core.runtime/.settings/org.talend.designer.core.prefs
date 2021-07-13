@@ -1,4 +1,4 @@
-Palette.RecentlyUsed.ComponentsList=tFileOutputDelimited\:1626052982478,tLogRow\:1626052554802,tUniqRow\:1626052539240,tMap\:1626052091030,tFileInputDelimited\:1626052065431,tExternalSortOutput\:1626050008907,tDBOutput\:1626041839801,tDBInput\:1626041816767,tFilterRow\:1625968527545,tAggregateRow\:1625953924247
+Palette.RecentlyUsed.ComponentsList=tFileOutputDelimited\:1626139077439,tLogRow\:1626138946564,tAggregateRow\:1626138896169,tMap\:1626138080812,tFileInputDelimited\:1626138022008,tAggregateSortedRow\:1626106571125,tFilterRow\:1626106514380,tDBInput\:1626104756237,tUniqRow\:1626052539240,tExternalSortOutput\:1626050008907,tDBOutput\:1626041839801
 TalendEditorPaletteFactory.Size=125
 TalendEditorPaletteFactory.StateAS400=1
 TalendEditorPaletteFactory.StateAccess=1
@@ -22,6 +22,7 @@ TalendEditorPaletteFactory.StateDatabases=0
 TalendEditorPaletteFactory.StateDataproc=1
 TalendEditorPaletteFactory.StateDropbox=1
 TalendEditorPaletteFactory.StateEDIFACT=1
+TalendEditorPaletteFactory.StateELT=0
 TalendEditorPaletteFactory.StateEMR=1
 TalendEditorPaletteFactory.StateEXASolution=1
 TalendEditorPaletteFactory.StateFTP=1
