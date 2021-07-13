@@ -7,7 +7,7 @@
     <additionalProperties xmi:id="_sYCV4uGwEeu9Hqb2tbT3Qw" key="created_date" value="2021-07-10T15:57:37.342-0300"/>
     <additionalProperties xmi:id="_sYCV4-GwEeu9Hqb2tbT3Qw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
     <additionalProperties xmi:id="_sYCV5OGwEeu9Hqb2tbT3Qw" key="modified_product_version" value="7.3.1.20200219_1130"/>
-    <additionalProperties xmi:id="_sYCV5eGwEeu9Hqb2tbT3Qw" key="modified_date" value="2021-07-12T23:35:48.931-0300"/>
+    <additionalProperties xmi:id="_sYCV5eGwEeu9Hqb2tbT3Qw" key="modified_date" value="2021-07-12T22:18:59.303-0300"/>
   </TalendProperties:Property>
   <TalendProperties:ItemState xmi:id="_sX_5ouGwEeu9Hqb2tbT3Qw" path="RelatorioVendas" locked="true" lockDate="2021-07-12T12:27:13.247-0300">
     <locker href="../../talend.project#_O0NhEOGvEeu9Hqb2tbT3Qw"/>
