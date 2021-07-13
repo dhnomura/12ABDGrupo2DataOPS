@@ -27,6 +27,8 @@ Git Flow Cheat Sheet: http://https://danielkummer.github.io/git-flow-cheatsheet/
 
 **Branch Projeto Aula 2** -> Entregaveis da Aula
 
+**Branch Projeto Aula 3 Pt 1** -> Primeira Parte da Aula 3
+
 # Data Ops Entregas Aula 2
 
 Gerar datasets, um com dados agregados para um relatório de negócios, e um dataset para o time de ciencia de Dados realizar exploração dos dados;
