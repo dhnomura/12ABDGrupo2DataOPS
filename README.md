@@ -88,6 +88,8 @@ manuais.
 	-	Quantidade de vendas e valor por região
 		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/Aula3Pt1SalesPerRegion.PNG?raw=true)
 
+	- 	Informação de produtos por região e vendendor
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/ProejtoAula3Pt1SalesPerSalesPerson.PNG?raw=true)
 
 # Estrutura de diretórios do HDFS
 
@@ -123,6 +125,7 @@ manuais.
 3.	**Aula 3 Parte 1**
 	-	**RelatorioSalesPersonCurated<date>.csv**	- Agregação do total de vendas por vendedor;
 	-	**AggregateTotalRegionMes<date>.csv**		- Agregação do total de vendas e quantidade vendida por região no mês.
+	-	**RelatorioSalesPersonCurated<date>.csv**	- Informacoes de produto e vendedores por região.
 
 # Dive Deep
 
