@@ -13,9 +13,10 @@
 			<item value="D:\Projetos\12ABDGrupo2DataOPS\DocumentacaoTalend\IngestaoVendas_0.1.zip"/>
 			<item value="D:\Projetos\12ABDGrupo2DataOPS\DocumentacaoTalend\IngestaoCienciaDados_0.1.zip"/>
 			<item value="D:\programas\Talend\TOS_DI-Win32-20200219_1130-V7.3.1\IngestaoVendas_0.1.zip"/>
+			<item value="D:\Projetos\12ABDGrupo2DataOPS\DocumentacaoTalend\ProjetoAula3Pt1.zip"/>
 		</list>
 		<section name="destinationFile">
-			<item value="D:\Projetos\12ABDGrupo2DataOPS\DocumentacaoTalend\IngestaoVendas_0.1.zip" key="destinationFile"/>
+			<item value="D:\Projetos\12ABDGrupo2DataOPS\DocumentacaoTalend\ProjetoAula3Pt1.zip" key="destinationFile"/>
 		</section>
 	</section>
 	<section name="ZipFileExportWizard">
