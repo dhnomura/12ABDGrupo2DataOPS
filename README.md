@@ -85,6 +85,9 @@ manuais.
 	-	Melhor e pior desempenho por vendedor
 		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/SalesPerSalesPerson.PNG?raw=true)
 
+	-	Quantidade de vendas e valor por região
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/Aula3Pt1SalesPerRegion.PNG?raw=true)
+
 
 # Estrutura de diretórios do HDFS
 
@@ -118,7 +121,8 @@ manuais.
 	-	**ChrunProductCurate<date>.csv**	- Desnormalização de Produtos.
 
 3.	**Aula 3 Parte 1**
-	-	**RelatorioSalesPersonCurated<date>.csv**	- Agregação do total de vendas por vendedor.
+	-	**RelatorioSalesPersonCurated<date>.csv**	- Agregação do total de vendas por vendedor;
+	-	**AggregateTotalRegionMes<date>.csv**		- Agregação do total de vendas e quantidade vendida por região no mês.
 
 # Dive Deep
 
