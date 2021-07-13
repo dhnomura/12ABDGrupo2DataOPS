@@ -27,6 +27,8 @@ Git Flow Cheat Sheet: http://https://danielkummer.github.io/git-flow-cheatsheet/
 
 **Branch Projeto Aula 2** -> Entregaveis da Aula
 
+**Branch Projeto Aula 3 Pt 1** -> Primeira Parte da Aula 3
+
 # Data Ops Entregas Aula 2
 
 Gerar datasets, um com dados agregados para um relatório de negócios, e um dataset para o time de ciencia de Dados realizar exploração dos dados;
@@ -40,7 +42,25 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 	-	Objetivo de construir um modelo de previsão de Churn
 	-	A solicitação é de uma amostra de dados com informações da entidades de Cliente, Produtos, Vendas e Vendedores.
 
-# Data Pipe lines
+# Data Ops Entregas Aula 3 Parte 1
+
+1.	Ampilar os pipelines com Talend a partir da Base AdventureWorks com os
+sequintes objetivos:
+
+2.	O Relatório criado anteriormente para a área de vendas foi um sucesso, a gestão do
+território nacional ficou extremamente satisfeita com os resultados e agora quer
+ampliar seus KPIS, a nova requisição foi:
+
+	-	Incluir informações sobre vendedores com melhor e pior desempenho no
+relatório existente.
+	-	Desenvolver um relatório novo com dados mensais, da distrubuição de
+produtos por região com métricas de quantidade de venda e valor.
+	-	Também foi solicitado um arquivo contendo informações de produtos
+vendidos, vendedor que realizou, distribuido por região e data este arquivo
+foi solicitado semanalmente para que o time de possa realizer analyses
+manuais.
+
+# Data Pipe lines Projeto
 
 1. Pipe line com dados agregados de vendas para relatório de negócio
 
@@ -59,6 +79,15 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 
 	-	Entidade Vendedores
 		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/IngestaoSalesPerson.PNG?raw=true)
+
+3. Ajustes solicitados na aula 3 parte 1
+
+	-	Melhor e pior desempenho por vendedor
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/SalesPerSalesPerson.PNG?raw=true)
+
+	-	Quantidade de vendas e valor por região
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/Aula3Pt1SalesPerRegion.PNG?raw=true)
+
 
 # Estrutura de diretórios do HDFS
 
@@ -85,11 +114,15 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 	-	**AggregateTotalOnline<date>.csv**	- Agregação do total de vendas Online / Offline;
 	-	**AggregateTotalRegion<date>.csv**  - Agregação do total de vendas por região.
 
-2. 	Ciencia de dados modelo Churn
+2. 	**Ciencia de dados modelo Churn**
 	-	**ChrunCustomerCurated<date>.csv** 	- Desnormalização de clientes;
 	-	**ChrunSalesPerson<date>.csv**		- Desnormalização de Vendedores;
 	-	**ChrunSalesCurate<date>.csv**		- Desnormalização de Vendas;
 	-	**ChrunProductCurate<date>.csv**	- Desnormalização de Produtos.
+
+3.	**Aula 3 Parte 1**
+	-	**RelatorioSalesPersonCurated<date>.csv**	- Agregação do total de vendas por vendedor;
+	-	**AggregateTotalRegionMes<date>.csv**		- Agregação do total de vendas e quantidade vendida por região no mês.
 
 # Dive Deep
 
