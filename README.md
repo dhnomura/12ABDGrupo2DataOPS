@@ -58,7 +58,7 @@ vendidos, vendedor que realizou, distribuido por região e data este arquivo
 foi solicitado semanalmente para que o time de possa realizer analyses
 manuais.
 
-# Data Pipe lines
+# Data Pipe lines Projeto
 
 1. Pipe line com dados agregados de vendas para relatório de negócio
 
@@ -77,6 +77,8 @@ manuais.
 
 	-	Entidade Vendedores
 		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula02/DocumentacaoTalend/IngestaoSalesPerson.PNG?raw=true)
+
+3. Ajustes solicitados na aula 3 parte 1
 
 # Estrutura de diretórios do HDFS
 

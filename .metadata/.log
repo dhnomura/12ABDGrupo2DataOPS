@@ -9873,3 +9873,772 @@ java.lang.Exception: Project 'TRABALHOFINAL' is not open.
 
 !ENTRY org.eclipse.core.resources 2 10035 2021-07-11 23:09:03.161
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-07-12 12:23:16.185 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_291
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-07-12 12:23:18.629
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-07-12 12:23:18.629
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [21]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:23:30.937
+!MESSAGE 2021-07-12 12:23:30,933 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: D:\programas\Talend\TOS_DI-Win32-20200219_1130-V7.3.1\configuration\studio.keys
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-07-12 12:23:31.751
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:23:40.400
+!MESSAGE 2021-07-12 12:23:40,395 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-07-12 12:24:13.158
+!MESSAGE 2021-07-12 12:24:13,154 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:28.842
+!MESSAGE 2021-07-12 12:24:28,842 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:28.882
+!MESSAGE 2021-07-12 12:24:28,882 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /LOCAL_PROJECT_ROUTINES/src/main/java overlaps with sources folder /LOCAL_PROJECT_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:28.899
+!MESSAGE 2021-07-12 12:24:28,899 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:28.899
+!MESSAGE 2021-07-12 12:24:28,899 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:34.554
+!MESSAGE 2021-07-12 12:24:34,550 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - D:\Projetos\12ABDGrupo2DataOPS\LOCAL_PROJECT\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:34.558
+!MESSAGE 2021-07-12 12:24:34,558 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s D:\programas\Talend\TOS_DI-Win32-20200219_1130-V7.3.1\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:43.298
+!MESSAGE 2021-07-12 12:24:43,294 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on Local_Project
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:24:46.506
+!MESSAGE 2021-07-12 12:24:46,506 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-07-12 12:25:52.043
+!MESSAGE 2021-07-12 12:25:52,019 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-07-12 12:25:52.253
+!MESSAGE 2021-07-12 12:25:52,249 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: esb-java-11-group
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:27:17.116
+!MESSAGE 2021-07-12 12:27:17,112 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:27:17.383
+!MESSAGE 2021-07-12 12:27:17,379 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:27:17.383
+!MESSAGE 2021-07-12 12:27:17,383 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:27:17.385
+!MESSAGE 2021-07-12 12:27:17,385 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:27:17.385
+!MESSAGE 2021-07-12 12:27:17,385 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:14.721
+!MESSAGE 2021-07-12 12:51:14,696 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:15.962
+!MESSAGE 2021-07-12 12:51:15,958 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:16.791
+!MESSAGE 2021-07-12 12:51:16,791 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:16.791
+!MESSAGE 2021-07-12 12:51:16,791 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:16.821
+!MESSAGE 2021-07-12 12:51:16,821 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:16.825
+!MESSAGE 2021-07-12 12:51:16,821 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:16.974
+!MESSAGE 2021-07-12 12:51:16,974 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 2 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:17.606
+!MESSAGE 2021-07-12 12:51:17,606 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:51:18.337
+!MESSAGE 2021-07-12 12:51:18,337 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3769 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:33.644
+!MESSAGE 2021-07-12 12:53:33,644 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:34.071
+!MESSAGE 2021-07-12 12:53:34,071 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:34.882
+!MESSAGE 2021-07-12 12:53:34,882 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:34.882
+!MESSAGE 2021-07-12 12:53:34,882 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:34.895
+!MESSAGE 2021-07-12 12:53:34,894 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:34.895
+!MESSAGE 2021-07-12 12:53:34,895 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:35.020
+!MESSAGE 2021-07-12 12:53:35,020 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:35.603
+!MESSAGE 2021-07-12 12:53:35,603 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:35.771
+!MESSAGE 2021-07-12 12:53:35,771 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3642 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:59.279
+!MESSAGE 2021-07-12 12:53:59,278 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:59.454
+!MESSAGE 2021-07-12 12:53:59,454 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOCIENCIADADOS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:59.454
+!MESSAGE 2021-07-12 12:53:59,454 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOCIENCIADADOS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:59.458
+!MESSAGE 2021-07-12 12:53:59,458 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOCIENCIADADOS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:53:59.458
+!MESSAGE 2021-07-12 12:53:59,458 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOCIENCIADADOS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:38.899
+!MESSAGE 2021-07-12 12:54:38,899 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.027
+!MESSAGE 2021-07-12 12:54:39,023 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.397
+!MESSAGE 2021-07-12 12:54:39,393 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.397
+!MESSAGE 2021-07-12 12:54:39,397 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.405
+!MESSAGE 2021-07-12 12:54:39,405 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.405
+!MESSAGE 2021-07-12 12:54:39,405 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.517
+!MESSAGE 2021-07-12 12:54:39,517 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.827
+!MESSAGE 2021-07-12 12:54:39,827 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:54:39.994
+!MESSAGE 2021-07-12 12:54:39,994 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3830 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.145
+!MESSAGE 2021-07-12 12:56:15,145 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.230
+!MESSAGE 2021-07-12 12:56:15,230 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.473
+!MESSAGE 2021-07-12 12:56:15,473 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.476
+!MESSAGE 2021-07-12 12:56:15,476 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.480
+!MESSAGE 2021-07-12 12:56:15,476 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.480
+!MESSAGE 2021-07-12 12:56:15,480 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.588
+!MESSAGE 2021-07-12 12:56:15,588 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:15.932
+!MESSAGE 2021-07-12 12:56:15,932 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:56:16.102
+!MESSAGE 2021-07-12 12:56:16,098 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3818 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:09.660
+!MESSAGE 2021-07-12 12:57:09,652 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:09.725
+!MESSAGE 2021-07-12 12:57:09,725 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:09.996
+!MESSAGE 2021-07-12 12:57:09,996 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:09.996
+!MESSAGE 2021-07-12 12:57:09,996 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:10.029
+!MESSAGE 2021-07-12 12:57:10,029 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:10.029
+!MESSAGE 2021-07-12 12:57:10,029 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:10.118
+!MESSAGE 2021-07-12 12:57:10,118 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:10.360
+!MESSAGE 2021-07-12 12:57:10,360 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 12:57:10.527
+!MESSAGE 2021-07-12 12:57:10,526 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3807 %*
+
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-12 12:59:45.451
+!MESSAGE 2021-07-12 12:59:45,451 ERROR org.talend.designer.codegen.CodeGenerator  - InvocationTargetException
+
+!STACK 0
+org.eclipse.emf.codegen.jet.JETException: InvocationTargetException
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:466)
+	at org.talend.designer.codegen.config.TalendJetEmitter.generate(TalendJetEmitter.java:684)
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:438)
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:429)
+	at org.talend.designer.codegen.proxy.JetProxy.generate(JetProxy.java:54)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentCode(CodeGenerator.java:860)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:547)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:587)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:632)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:632)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:632)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:511)
+	at org.talend.designer.codegen.CodeGenerator.generateProcessCode(CodeGenerator.java:234)
+	at org.talend.designer.runprocess.java.JavaProcessor.generateCode(JavaProcessor.java:669)
+	at org.talend.designer.runprocess.maven.MavenJavaProcessor.generateCode(MavenJavaProcessor.java:90)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateContextInfo(ProcessorUtilities.java:1019)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:605)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:2068)
+	at org.talend.designer.runprocess.RunProcessContext$1.run(RunProcessContext.java:601)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:240)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:966)
+	at org.talend.designer.runprocess.RunProcessContext.exec(RunProcessContext.java:548)
+	at org.talend.designer.runprocess.ui.ProcessComposite.exec(ProcessComposite.java:1448)
+	at org.talend.designer.runprocess.ui.views.ProcessView$RunAction.run(ProcessView.java:700)
+	at org.talend.designer.runprocess.ui.actions.RunProcessAction.run(RunProcessAction.java:63)
+	at org.talend.designer.core.debug.JobLaunchConfigurationDelegate$1$1.run(JobLaunchConfigurationDelegate.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:458)
+	... 57 more
+Caused by: java.lang.NullPointerException
+	at org.talend.designer.codegen.translators.technical.TAggregateOutBeginJava.generate(TAggregateOutBeginJava.java:252)
+	... 62 more
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-12 12:59:45.475
+!MESSAGE 2021-07-12 12:59:45,475 ERROR org.talend.commons.exception.CommonExceptionHandler  - Failed to generate code.
+
+!STACK 0
+org.talend.designer.runprocess.ProcessorException: Failed to generate code.
+	at org.talend.designer.runprocess.java.JavaProcessor.generateCode(JavaProcessor.java:672)
+	at org.talend.designer.runprocess.maven.MavenJavaProcessor.generateCode(MavenJavaProcessor.java:90)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateContextInfo(ProcessorUtilities.java:1019)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:605)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:2068)
+	at org.talend.designer.runprocess.RunProcessContext$1.run(RunProcessContext.java:601)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:240)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:966)
+	at org.talend.designer.runprocess.RunProcessContext.exec(RunProcessContext.java:548)
+	at org.talend.designer.runprocess.ui.ProcessComposite.exec(ProcessComposite.java:1448)
+	at org.talend.designer.runprocess.ui.views.ProcessView$RunAction.run(ProcessView.java:700)
+	at org.talend.designer.runprocess.ui.actions.RunProcessAction.run(RunProcessAction.java:63)
+	at org.talend.designer.core.debug.JobLaunchConfigurationDelegate$1$1.run(JobLaunchConfigurationDelegate.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: org.talend.designer.codegen.exception.CodeGeneratorException: org.eclipse.emf.codegen.jet.JETException: InvocationTargetException in IngestaoVendas job
+	at org.talend.designer.codegen.CodeGenerator.generateComponentCode(CodeGenerator.java:870)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:547)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:587)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:632)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:632)
+	at org.talend.designer.codegen.CodeGenerator.generatesTreeCode(CodeGenerator.java:780)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:632)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentsCode(CodeGenerator.java:511)
+	at org.talend.designer.codegen.CodeGenerator.generateProcessCode(CodeGenerator.java:234)
+	at org.talend.designer.runprocess.java.JavaProcessor.generateCode(JavaProcessor.java:669)
+	... 40 more
+Caused by: org.eclipse.emf.codegen.jet.JETException: InvocationTargetException
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:466)
+	at org.talend.designer.codegen.config.TalendJetEmitter.generate(TalendJetEmitter.java:684)
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:438)
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:429)
+	at org.talend.designer.codegen.proxy.JetProxy.generate(JetProxy.java:54)
+	at org.talend.designer.codegen.CodeGenerator.generateComponentCode(CodeGenerator.java:860)
+	... 52 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.emf.codegen.jet.JETEmitter.generate(JETEmitter.java:458)
+	... 57 more
+Caused by: java.lang.NullPointerException
+	at org.talend.designer.codegen.translators.technical.TAggregateOutBeginJava.generate(TAggregateOutBeginJava.java:252)
+	... 62 more
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.145
+!MESSAGE 2021-07-12 13:00:36,141 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.230
+!MESSAGE 2021-07-12 13:00:36,230 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.538
+!MESSAGE 2021-07-12 13:00:36,534 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.538
+!MESSAGE 2021-07-12 13:00:36,538 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.538
+!MESSAGE 2021-07-12 13:00:36,538 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.542
+!MESSAGE 2021-07-12 13:00:36,538 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.630
+!MESSAGE 2021-07-12 13:00:36,630 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:36.907
+!MESSAGE 2021-07-12 13:00:36,907 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:00:37.040
+!MESSAGE 2021-07-12 13:00:37,040 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3932 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:50.971
+!MESSAGE 2021-07-12 13:08:50,967 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:52.037
+!MESSAGE 2021-07-12 13:08:52,033 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:52.780
+!MESSAGE 2021-07-12 13:08:52,780 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:52.784
+!MESSAGE 2021-07-12 13:08:52,780 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:52.788
+!MESSAGE 2021-07-12 13:08:52,784 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:52.788
+!MESSAGE 2021-07-12 13:08:52,788 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:52.902
+!MESSAGE 2021-07-12 13:08:52,898 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:53.509
+!MESSAGE 2021-07-12 13:08:53,508 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:08:53.678
+!MESSAGE 2021-07-12 13:08:53,678 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3889 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:06.697
+!MESSAGE 2021-07-12 13:13:06,696 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:06.956
+!MESSAGE 2021-07-12 13:13:06,956 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:07.524
+!MESSAGE 2021-07-12 13:13:07,524 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:07.526
+!MESSAGE 2021-07-12 13:13:07,525 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:07.529
+!MESSAGE 2021-07-12 13:13:07,529 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:07.529
+!MESSAGE 2021-07-12 13:13:07,529 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:07.643
+!MESSAGE 2021-07-12 13:13:07,641 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:08.198
+!MESSAGE 2021-07-12 13:13:08,198 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:13:08.333
+!MESSAGE 2021-07-12 13:13:08,329 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3829 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:18.498
+!MESSAGE 2021-07-12 13:17:18,498 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:18.621
+!MESSAGE 2021-07-12 13:17:18,621 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:18.979
+!MESSAGE 2021-07-12 13:17:18,979 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:18.983
+!MESSAGE 2021-07-12 13:17:18,979 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:18.987
+!MESSAGE 2021-07-12 13:17:18,983 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:18.987
+!MESSAGE 2021-07-12 13:17:18,987 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:19.066
+!MESSAGE 2021-07-12 13:17:19,066 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:17:19.303
+!MESSAGE 2021-07-12 13:17:19,303 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-12 13:17:19.332
+!MESSAGE 2021-07-12 13:17:19,332 ERROR org.talend.commons.exception.CommonExceptionHandler  - Job compile errors 
+At least job "IngestaoVendas" has a compile errors, please fix and export again.
+Error Line: 11982
+Detail Message: Syntax error on token "==", Expression expected after this token
+There may be some other errors caused by JVM compatibility. Make sure your JVM setup is similar to the studio.
+
+!STACK 0
+org.talend.designer.runprocess.ProcessorException: Job compile errors 
+At least job "IngestaoVendas" has a compile errors, please fix and export again.
+Error Line: 11982
+Detail Message: Syntax error on token "==", Expression expected after this token
+There may be some other errors caused by JVM compatibility. Make sure your JVM setup is similar to the studio.
+	at org.talend.designer.runprocess.JobErrorsChecker.checkLastGenerationHasCompilationError(JobErrorsChecker.java:358)
+	at org.talend.designer.runprocess.DefaultRunProcessService.checkLastGenerationHasCompilationError(DefaultRunProcessService.java:539)
+	at org.talend.designer.runprocess.RunProcessService.checkLastGenerationHasCompilationError(RunProcessService.java:317)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateBuildInfo(ProcessorUtilities.java:955)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:615)
+	at org.talend.designer.runprocess.ProcessorUtilities.generateCode(ProcessorUtilities.java:2068)
+	at org.talend.designer.runprocess.RunProcessContext$1.run(RunProcessContext.java:601)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:240)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:966)
+	at org.talend.designer.runprocess.RunProcessContext.exec(RunProcessContext.java:548)
+	at org.talend.designer.runprocess.ui.ProcessComposite.exec(ProcessComposite.java:1448)
+	at org.talend.designer.runprocess.ui.views.ProcessView$RunAction.run(ProcessView.java:700)
+	at org.talend.designer.runprocess.ui.actions.RunProcessAction.run(RunProcessAction.java:63)
+	at org.talend.designer.core.debug.JobLaunchConfigurationDelegate$1$1.run(JobLaunchConfigurationDelegate.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:25.349
+!MESSAGE 2021-07-12 13:28:25,341 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:27.912
+!MESSAGE 2021-07-12 13:28:27,912 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:28.879
+!MESSAGE 2021-07-12 13:28:28,879 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:28.879
+!MESSAGE 2021-07-12 13:28:28,879 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:28.891
+!MESSAGE 2021-07-12 13:28:28,891 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:28.891
+!MESSAGE 2021-07-12 13:28:28,891 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:29.021
+!MESSAGE 2021-07-12 13:28:29,017 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 3 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:29.636
+!MESSAGE 2021-07-12 13:28:29,632 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:28:29.833
+!MESSAGE 2021-07-12 13:28:29,829 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3831 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:47.440
+!MESSAGE 2021-07-12 13:29:47,440 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:47.739
+!MESSAGE 2021-07-12 13:29:47,739 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:49.212
+!MESSAGE 2021-07-12 13:29:49,208 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:49.212
+!MESSAGE 2021-07-12 13:29:49,212 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:49.221
+!MESSAGE 2021-07-12 13:29:49,221 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:49.221
+!MESSAGE 2021-07-12 13:29:49,221 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:49.343
+!MESSAGE 2021-07-12 13:29:49,339 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:49.950
+!MESSAGE 2021-07-12 13:29:49,946 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 13:29:50.099
+!MESSAGE 2021-07-12 13:29:50,099 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3878 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:16.685
+!MESSAGE 2021-07-12 21:40:16,682 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:18.435
+!MESSAGE 2021-07-12 21:40:18,425 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:19.597
+!MESSAGE 2021-07-12 21:40:19,596 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:19.597
+!MESSAGE 2021-07-12 21:40:19,597 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:19.605
+!MESSAGE 2021-07-12 21:40:19,605 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:19.606
+!MESSAGE 2021-07-12 21:40:19,605 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /LOCAL_PROJECT_INGESTAOVENDAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:19.852
+!MESSAGE 2021-07-12 21:40:19,851 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 3 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:20.556
+!MESSAGE 2021-07-12 21:40:20,555 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/LOCAL_PROJECT_ROUTINES: org.example.local_project.code:routines:7.3.1 with classifier  to /LOCAL_PROJECT_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-07-12 21:40:20.711
+!MESSAGE 2021-07-12 21:40:20,710 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3814 %*
+
