@@ -80,6 +80,10 @@ manuais.
 
 3. Ajustes solicitados na aula 3 parte 1
 
+	-	Melhor e pior desempenho por vendedor
+		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/SalesPerSalesPerson.PNG?raw=true)
+
+
 # Estrutura de diretórios do HDFS
 
 1. **RAW** - Tem como objetivo ser uma landing Zone, são dados raws, os quais são recebidos de acordo com a sua origem.
@@ -105,11 +109,14 @@ manuais.
 	-	**AggregateTotalOnline<date>.csv**	- Agregação do total de vendas Online / Offline;
 	-	**AggregateTotalRegion<date>.csv**  - Agregação do total de vendas por região.
 
-2. 	Ciencia de dados modelo Churn
+2. 	**Ciencia de dados modelo Churn**
 	-	**ChrunCustomerCurated<date>.csv** 	- Desnormalização de clientes;
 	-	**ChrunSalesPerson<date>.csv**		- Desnormalização de Vendedores;
 	-	**ChrunSalesCurate<date>.csv**		- Desnormalização de Vendas;
 	-	**ChrunProductCurate<date>.csv**	- Desnormalização de Produtos.
+
+3.	**Aula 3 Parte 1**
+	-	**RelatorioSalesPersonCurated<date>.csv**	- Agregação do total de vendas por vendedor.
 
 # Dive Deep
 
