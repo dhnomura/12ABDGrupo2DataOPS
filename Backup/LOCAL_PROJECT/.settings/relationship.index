@@ -1,0 +1,214 @@
+[ {
+  "baseItem" : {
+    "id" : "_GTQx4OHqEeuUp6xrcVqGUQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "DataOperation",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Mathematical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Numeric",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Relational",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "StringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDataGenerator",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendStringUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Address",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - CustomerAddress",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Product",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - ProductCategory",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - ProductModel",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - SalesOrderDetail",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - SalesOrderHeader",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_QKNNUGZ8EeWm5YvsrIoYzQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "DQTechnical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataOperation",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQuality",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DemoRoutines",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DqStringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "GetRandomPhoneNum",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Mathematical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Numeric",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Relational",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "SQLike",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "StringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDataGenerator",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendString",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_sX_5oOGwEeu9Hqb2tbT3Qw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "DataOperation",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Mathematical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Numeric",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Relational",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "StringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDataGenerator",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TalendStringUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Address",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - Product",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - SalesOrderDetail",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wBBrQOGvEeu9Hqb2tbT3Qw - SalesOrderHeader",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
