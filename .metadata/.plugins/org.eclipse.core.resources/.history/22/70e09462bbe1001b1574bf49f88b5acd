@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_YWxmAOG7EeuSJaSClSQS0A" name="AdventureWorks" id="_Q90bcOG7EeuSJaSClSQS0A" label="AdventureWorks" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://sqlservercentralpublic.database.windows.net:1433/AdventureWorks;" dbVersionString="JTDS" Port="1433" Username="sqlfamily" Password="enc:system.encryption.key.v1:HgtcytHw8ZI0u4H3YNwKfcQs2E/V/J9bRq6Uuo00x7YlPJr1AQ==" ServerName="sqlservercentralpublic.database.windows.net" DatasourceName="" FileFieldName="" SID="AdventureWorks" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
-  <taggedValue xmi:id="_YXCEsOG7EeuSJaSClSQS0A" tag="Is Conn Need Reload" value="true"/>
-  <parameters xmi:id="_YXCEseG7EeuSJaSClSQS0A" key="CONN_PARA_KEY_USERNAME" value="sqlfamily"/>
-</TalendMetadata:DatabaseConnection>
