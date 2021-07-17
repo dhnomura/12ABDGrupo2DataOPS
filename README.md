@@ -29,6 +29,8 @@ Git Flow Cheat Sheet: http://https://danielkummer.github.io/git-flow-cheatsheet/
 
 **Branch Projeto Aula 3 Pt 1** -> Primeira Parte da Aula 3
 
+**Branch Projeto Aula 3 Pt 2** -> Segunda Parte da Aula 3
+
 # Data Ops Entregas Aula 2
 
 Gerar datasets, um com dados agregados para um relatório de negócios, e um dataset para o time de ciencia de Dados realizar exploração dos dados;
@@ -91,6 +93,11 @@ manuais.
 	- 	Informação de produtos por região e vendendor
 		![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt01/DocumentacaoTalend/ProejtoAula3Pt1SalesPerSalesPerson.PNG?raw=true)
 
+4. Ajustes solicitados na aula 3 parte 2
+
+	-	A solicitação é de uma nova amostra de dados com informações da entidades de Produtos, Vendas e Vendedores, removendo a entidade de cliente e incluindo as informações existentes sobre as lojas das vendas.
+	![alt text](https://github.com/dhnomura/12ABDGrupo2DataOPS/blob/ProjetoAula03Pt02/DocumentacaoTalend/ProejtoAula3Pt2.PNG?raw=true)
+
 # Estrutura de diretórios do HDFS
 
 1. **RAW** - Tem como objetivo ser uma landing Zone, são dados raws, os quais são recebidos de acordo com a sua origem.
@@ -126,6 +133,9 @@ manuais.
 	-	**RelatorioSalesPersonCurated<date>.csv**	- Agregação do total de vendas por vendedor;
 	-	**AggregateTotalRegionMes<date>.csv**		- Agregação do total de vendas e quantidade vendida por região no mês.
 	-	**RelatorioSalesPersonCurated<date>.csv**	- Informacoes de produto e vendedores por região.
+
+4.	**Aula 3 Parte 2**
+	-	**ChrunAula03PT02<date>.csv**	- Dataset com entidades de Produtos, vendas, vendedores e lojas.
 
 # Dive Deep
 
