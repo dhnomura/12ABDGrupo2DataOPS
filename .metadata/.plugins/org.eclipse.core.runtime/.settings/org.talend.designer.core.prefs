@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+Palette.RecentlyUsed.ComponentsList=tFileOutputDelimited\:1626531767274,tDBOutput\:1626531753342,tLogRow\:1626531696371,tDBInput\:1626525748811,tMap\:1626525362621,tAggregateRow\:1626138896169,tFileInputDelimited\:1626138022008,tAggregateSortedRow\:1626106571125,tFilterRow\:1626106514380,tUniqRow\:1626052539240,tExternalSortOutput\:1626050008907
+=======
 Palette.RecentlyUsed.ComponentsList=tFileOutputDelimited\:1626213329117,tLogRow\:1626213181152,tDBInput\:1626213174981,tMap\:1626213024471,tFileInputDelimited\:1626212510008,tDBOutput\:1626041839801,tAggregateRow\:1626138896169,tAggregateSortedRow\:1626106571125,tFilterRow\:1626106514380,tUniqRow\:1626052539240,tExternalSortOutput\:1626050008907
+>>>>>>> main
 TalendEditorPaletteFactory.Size=125
 TalendEditorPaletteFactory.StateAS400=1
 TalendEditorPaletteFactory.StateAccess=1
