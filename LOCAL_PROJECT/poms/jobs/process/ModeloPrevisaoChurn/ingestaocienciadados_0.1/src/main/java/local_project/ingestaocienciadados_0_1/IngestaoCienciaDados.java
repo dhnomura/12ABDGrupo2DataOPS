@@ -312,7 +312,7 @@ public class IngestaoCienciaDados implements TalendJob {
 		tDBInput_6_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tFileOutputDelimited_14_error(Exception exception, String errorComponent,
+	public void tLogRow_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
@@ -360,16 +360,6 @@ public class IngestaoCienciaDados implements TalendJob {
 		status = "failure";
 
 		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void tDBInput_4_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tDBInput_4_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tDBInput_5_error(Exception exception, String errorComponent,
@@ -432,16 +422,6 @@ public class IngestaoCienciaDados implements TalendJob {
 		tDBInput_6_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tDBInput_8_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tDBInput_8_onSubJobError(exception, errorComponent, globalMap);
-	}
-
 	public void tDBInput_9_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -500,16 +480,6 @@ public class IngestaoCienciaDados implements TalendJob {
 		status = "failure";
 
 		tDBInput_11_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void tDBInput_10_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tDBInput_10_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tDBInput_11_error(Exception exception, String errorComponent,
@@ -716,14 +686,6 @@ public class IngestaoCienciaDados implements TalendJob {
 
 	}
 
-	public void tDBInput_4_onSubJobError(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
 	public void tDBInput_5_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -740,23 +702,7 @@ public class IngestaoCienciaDados implements TalendJob {
 
 	}
 
-	public void tDBInput_8_onSubJobError(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
 	public void tDBInput_9_onSubJobError(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
-	public void tDBInput_10_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -2747,7 +2693,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				// source node:tFileOutputDelimited_4 - inputs:(JoinProduct)
 				// outputs:(row24,row24) | target node:tAdvancedHash_row24 - inputs:(row24)
 				// outputs:()
-				// linked node: tMap_6 - inputs:(row24,row21,row23,row22) outputs:(Output)
+				// linked node: tMap_6 - inputs:(row24,row21,row23,row22) outputs:(Bla)
 
 				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row24 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
 
@@ -3078,7 +3024,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_1 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:akPOsjSP5UBrKUKpNK7+sNY5FW6Qn8Vkxv3RUYlIpHogykmQgg==");
+						"enc:routine.encryption.key.v1:fLqxvLoFOJT7hFUFfd7RmDuo0Lr/zLs/TRuD+h3SC4N//t14rA==");
 
 				String dbPwd_tDBInput_1 = decryptedPassword_tDBInput_1;
 
@@ -4792,7 +4738,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_2 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_2 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:jpGFUWvoiBT2LTWuMAyMwUuY1n4rZLoj5B7DGmIXMAUEOrQBlw==");
+						"enc:routine.encryption.key.v1:4p7uYuuLpiVDApypLCe3LNI/nGGDYDYr63ktjOXzVYiDHnMIYw==");
 
 				String dbPwd_tDBInput_2 = decryptedPassword_tDBInput_2;
 
@@ -5888,7 +5834,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_3 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_3 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:N4SiJd6gasdyPb2ZFY/onr+BGFsOdAFUzHdcr+W+SSo3wXFOew==");
+						"enc:routine.encryption.key.v1:NUmq637ski//R20Tj2GPoAkZ4hDWZwq15Ha1L35ai1jXPKnAvw==");
 
 				String dbPwd_tDBInput_3 = decryptedPassword_tDBInput_3;
 
@@ -6294,197 +6240,6 @@ public class IngestaoCienciaDados implements TalendJob {
 		}
 
 		globalMap.put("tDBInput_3_SUBPROCESS_STATE", 1);
-	}
-
-	public void tDBInput_4Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-		globalMap.put("tDBInput_4_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		String iterateId = "";
-
-		String currentComponent = "";
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				/**
-				 * [tDBInput_4 begin ] start
-				 */
-
-				ok_Hash.put("tDBInput_4", false);
-				start_Hash.put("tDBInput_4", System.currentTimeMillis());
-
-				currentComponent = "tDBInput_4";
-
-				int tos_count_tDBInput_4 = 0;
-
-				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_4 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
-						.getMSSqlGenerateTimestampUtil();
-
-				java.util.List<String> talendToDBList_tDBInput_4 = new java.util.ArrayList();
-				String[] talendToDBArray_tDBInput_4 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
-						"DECIMAL IDENTITY", "REAL" };
-				java.util.Collections.addAll(talendToDBList_tDBInput_4, talendToDBArray_tDBInput_4);
-				int nb_line_tDBInput_4 = 0;
-				java.sql.Connection conn_tDBInput_4 = null;
-				String driverClass_tDBInput_4 = "net.sourceforge.jtds.jdbc.Driver";
-				java.lang.Class jdbcclazz_tDBInput_4 = java.lang.Class.forName(driverClass_tDBInput_4);
-				String dbUser_tDBInput_4 = "sqlfamily";
-
-				final String decryptedPassword_tDBInput_4 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:VMZqyrwlP7nq6rQU52XkDYbeWMpnDY0GYy70dZ9O0COwDS4Lpg==");
-
-				String dbPwd_tDBInput_4 = decryptedPassword_tDBInput_4;
-
-				String port_tDBInput_4 = "1433";
-				String dbname_tDBInput_4 = "AdventureWorks";
-				String url_tDBInput_4 = "jdbc:jtds:sqlserver://" + "sqlservercentralpublic.database.windows.net";
-				if (!"".equals(port_tDBInput_4)) {
-					url_tDBInput_4 += ":" + "1433";
-				}
-				if (!"".equals(dbname_tDBInput_4)) {
-					url_tDBInput_4 += "//" + "AdventureWorks";
-				}
-				url_tDBInput_4 += ";appName=" + projectName + ";" + "";
-				String dbschema_tDBInput_4 = "SalesLT";
-
-				conn_tDBInput_4 = java.sql.DriverManager.getConnection(url_tDBInput_4, dbUser_tDBInput_4,
-						dbPwd_tDBInput_4);
-
-				java.sql.Statement stmt_tDBInput_4 = conn_tDBInput_4.createStatement();
-
-				String dbquery_tDBInput_4 = "SELECT SalesLT.Customer.CustomerID,\n		SalesLT.Customer.NameStyle,\n		SalesLT.Customer.Title,\n		SalesLT.Customer.FirstNam"
-						+ "e,\n		SalesLT.Customer.MiddleName,\n		SalesLT.Customer.LastName,\n		SalesLT.Customer.Suffix,\n		SalesLT.Customer.CompanyName"
-						+ ",\n		SalesLT.Customer.SalesPerson,\n		SalesLT.Customer.EmailAddress,\n		SalesLT.Customer.Phone,\n		SalesLT.Customer.Password"
-						+ "Hash,\n		SalesLT.Customer.PasswordSalt,\n		SalesLT.Customer.rowguid,\n		SalesLT.Customer.ModifiedDate\nFROM	SalesLT.Customer"
-						+ "";
-
-				globalMap.put("tDBInput_4_QUERY", dbquery_tDBInput_4);
-				java.sql.ResultSet rs_tDBInput_4 = null;
-
-				try {
-					rs_tDBInput_4 = stmt_tDBInput_4.executeQuery(dbquery_tDBInput_4);
-					java.sql.ResultSetMetaData rsmd_tDBInput_4 = rs_tDBInput_4.getMetaData();
-					int colQtyInRs_tDBInput_4 = rsmd_tDBInput_4.getColumnCount();
-
-					String tmpContent_tDBInput_4 = null;
-
-					while (rs_tDBInput_4.next()) {
-						nb_line_tDBInput_4++;
-
-						/**
-						 * [tDBInput_4 begin ] stop
-						 */
-
-						/**
-						 * [tDBInput_4 main ] start
-						 */
-
-						currentComponent = "tDBInput_4";
-
-						tos_count_tDBInput_4++;
-
-						/**
-						 * [tDBInput_4 main ] stop
-						 */
-
-						/**
-						 * [tDBInput_4 process_data_begin ] start
-						 */
-
-						currentComponent = "tDBInput_4";
-
-						/**
-						 * [tDBInput_4 process_data_begin ] stop
-						 */
-
-						/**
-						 * [tDBInput_4 process_data_end ] start
-						 */
-
-						currentComponent = "tDBInput_4";
-
-						/**
-						 * [tDBInput_4 process_data_end ] stop
-						 */
-
-						/**
-						 * [tDBInput_4 end ] start
-						 */
-
-						currentComponent = "tDBInput_4";
-
-					}
-				} finally {
-					if (rs_tDBInput_4 != null) {
-						rs_tDBInput_4.close();
-					}
-					if (stmt_tDBInput_4 != null) {
-						stmt_tDBInput_4.close();
-					}
-					if (conn_tDBInput_4 != null && !conn_tDBInput_4.isClosed()) {
-
-						conn_tDBInput_4.close();
-
-						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
-								&& routines.system.BundleUtils.inOSGi()) {
-							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
-									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
-						}
-
-					}
-				}
-				globalMap.put("tDBInput_4_NB_LINE", nb_line_tDBInput_4);
-
-				ok_Hash.put("tDBInput_4", true);
-				end_Hash.put("tDBInput_4", System.currentTimeMillis());
-
-				/**
-				 * [tDBInput_4 end ] stop
-				 */
-			} // end the resume
-
-		} catch (java.lang.Exception e) {
-
-			TalendException te = new TalendException(e, currentComponent, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [tDBInput_4 finally ] start
-				 */
-
-				currentComponent = "tDBInput_4";
-
-				/**
-				 * [tDBInput_4 finally ] stop
-				 */
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("tDBInput_4_SUBPROCESS_STATE", 1);
 	}
 
 	public static class row17Struct implements routines.system.IPersistableComparableLookupRow<row17Struct> {
@@ -7644,7 +7399,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_5 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_5 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:7arosJ2l9wVYMH1hE141bxp0U7d7Whtp4CJWaXjPfAz7XhhDbw==");
+						"enc:routine.encryption.key.v1:RaGAeY2rkiH2NAMWdQsnBevkrkHYrA2ZNRgHe/JPoRuGKk9bDw==");
 
 				String dbPwd_tDBInput_5 = decryptedPassword_tDBInput_5;
 
@@ -8285,309 +8040,9 @@ public class IngestaoCienciaDados implements TalendJob {
 		globalMap.put("tDBInput_5_SUBPROCESS_STATE", 1);
 	}
 
-	public static class OutputStruct implements routines.system.IPersistableRow<OutputStruct> {
+	public static class BlaStruct implements routines.system.IPersistableRow<BlaStruct> {
 		final static byte[] commonByteArrayLock_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
 		static byte[] commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
-
-		public String loopKey;
-
-		public int ProductID;
-
-		public int getProductID() {
-			return this.ProductID;
-		}
-
-		public String ProductName;
-
-		public String getProductName() {
-			return this.ProductName;
-		}
-
-		public String ProductNumber;
-
-		public String getProductNumber() {
-			return this.ProductNumber;
-		}
-
-		public String ProductColor;
-
-		public String getProductColor() {
-			return this.ProductColor;
-		}
-
-		public Object ProductStandardCost;
-
-		public Object getProductStandardCost() {
-			return this.ProductStandardCost;
-		}
-
-		public java.util.Date SellStartDate;
-
-		public java.util.Date getSellStartDate() {
-			return this.SellStartDate;
-		}
-
-		public java.util.Date SellEndDate;
-
-		public java.util.Date getSellEndDate() {
-			return this.SellEndDate;
-		}
-
-		public String ModelName;
-
-		public String getModelName() {
-			return this.ModelName;
-		}
-
-		public String SalesPerson;
-
-		public String getSalesPerson() {
-			return this.SalesPerson;
-		}
-
-		public String CompanyName;
-
-		public String getCompanyName() {
-			return this.CompanyName;
-		}
-
-		public String Phone;
-
-		public String getPhone() {
-			return this.Phone;
-		}
-
-		public String AddressLine1;
-
-		public String getAddressLine1() {
-			return this.AddressLine1;
-		}
-
-		public int SalesOrderID;
-
-		public int getSalesOrderID() {
-			return this.SalesOrderID;
-		}
-
-		public java.util.Date OrderDate;
-
-		public java.util.Date getOrderDate() {
-			return this.OrderDate;
-		}
-
-		public java.util.Date DueDate;
-
-		public java.util.Date getDueDate() {
-			return this.DueDate;
-		}
-
-		public java.util.Date ShipDate;
-
-		public java.util.Date getShipDate() {
-			return this.ShipDate;
-		}
-
-		public short Status;
-
-		public short getStatus() {
-			return this.Status;
-		}
-
-		public Integer OnlineOrderFlag;
-
-		public Integer getOnlineOrderFlag() {
-			return this.OnlineOrderFlag;
-		}
-
-		public String SalesOrderNumber;
-
-		public String getSalesOrderNumber() {
-			return this.SalesOrderNumber;
-		}
-
-		public Integer ShipToAddressID;
-
-		public Integer getShipToAddressID() {
-			return this.ShipToAddressID;
-		}
-
-		public Integer BillToAddressID;
-
-		public Integer getBillToAddressID() {
-			return this.BillToAddressID;
-		}
-
-		public String ShipMethod;
-
-		public String getShipMethod() {
-			return this.ShipMethod;
-		}
-
-		public String CreditCardApprovalCode;
-
-		public String getCreditCardApprovalCode() {
-			return this.CreditCardApprovalCode;
-		}
-
-		public BigDecimal TotalDue;
-
-		public BigDecimal getTotalDue() {
-			return this.TotalDue;
-		}
-
-		public Object TaxAmt;
-
-		public Object getTaxAmt() {
-			return this.TaxAmt;
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.ProductID;
-
-				result = prime * result + (int) this.SalesOrderID;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final OutputStruct other = (OutputStruct) obj;
-
-			if (this.ProductID != other.ProductID)
-				return false;
-
-			if (this.SalesOrderID != other.SalesOrderID)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(OutputStruct other) {
-
-			other.ProductID = this.ProductID;
-			other.ProductName = this.ProductName;
-			other.ProductNumber = this.ProductNumber;
-			other.ProductColor = this.ProductColor;
-			other.ProductStandardCost = this.ProductStandardCost;
-			other.SellStartDate = this.SellStartDate;
-			other.SellEndDate = this.SellEndDate;
-			other.ModelName = this.ModelName;
-			other.SalesPerson = this.SalesPerson;
-			other.CompanyName = this.CompanyName;
-			other.Phone = this.Phone;
-			other.AddressLine1 = this.AddressLine1;
-			other.SalesOrderID = this.SalesOrderID;
-			other.OrderDate = this.OrderDate;
-			other.DueDate = this.DueDate;
-			other.ShipDate = this.ShipDate;
-			other.Status = this.Status;
-			other.OnlineOrderFlag = this.OnlineOrderFlag;
-			other.SalesOrderNumber = this.SalesOrderNumber;
-			other.ShipToAddressID = this.ShipToAddressID;
-			other.BillToAddressID = this.BillToAddressID;
-			other.ShipMethod = this.ShipMethod;
-			other.CreditCardApprovalCode = this.CreditCardApprovalCode;
-			other.TotalDue = this.TotalDue;
-			other.TaxAmt = this.TaxAmt;
-
-		}
-
-		public void copyKeysDataTo(OutputStruct other) {
-
-			other.ProductID = this.ProductID;
-			other.SalesOrderID = this.SalesOrderID;
-
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados.length) {
-					if (length < 1024 && commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados.length == 0) {
-						commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[1024];
-					} else {
-						commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados, 0, length);
-				strReturn = new String(commonByteArray_LOCAL_PROJECT_IngestaoCienciaDados, 0, length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos) throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		private Integer readInteger(ObjectInputStream dis) throws IOException {
-			Integer intReturn;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				intReturn = null;
-			} else {
-				intReturn = dis.readInt();
-			}
-			return intReturn;
-		}
-
-		private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException {
-			if (intNum == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeInt(intNum);
-			}
-		}
 
 		public void readData(ObjectInputStream dis) {
 
@@ -8597,62 +8052,9 @@ public class IngestaoCienciaDados implements TalendJob {
 
 					int length = 0;
 
-					this.ProductID = dis.readInt();
+				}
 
-					this.ProductName = readString(dis);
-
-					this.ProductNumber = readString(dis);
-
-					this.ProductColor = readString(dis);
-
-					this.ProductStandardCost = (Object) dis.readObject();
-
-					this.SellStartDate = readDate(dis);
-
-					this.SellEndDate = readDate(dis);
-
-					this.ModelName = readString(dis);
-
-					this.SalesPerson = readString(dis);
-
-					this.CompanyName = readString(dis);
-
-					this.Phone = readString(dis);
-
-					this.AddressLine1 = readString(dis);
-
-					this.SalesOrderID = dis.readInt();
-
-					this.OrderDate = readDate(dis);
-
-					this.DueDate = readDate(dis);
-
-					this.ShipDate = readDate(dis);
-
-					this.Status = dis.readShort();
-
-					this.OnlineOrderFlag = readInteger(dis);
-
-					this.SalesOrderNumber = readString(dis);
-
-					this.ShipToAddressID = readInteger(dis);
-
-					this.BillToAddressID = readInteger(dis);
-
-					this.ShipMethod = readString(dis);
-
-					this.CreditCardApprovalCode = readString(dis);
-
-					this.TotalDue = (BigDecimal) dis.readObject();
-
-					this.TaxAmt = (Object) dis.readObject();
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				} catch (ClassNotFoundException eCNFE) {
-					throw new RuntimeException(eCNFE);
-
+				finally {
 				}
 
 			}
@@ -8662,108 +8064,9 @@ public class IngestaoCienciaDados implements TalendJob {
 		public void writeData(ObjectOutputStream dos) {
 			try {
 
-				// int
+			}
 
-				dos.writeInt(this.ProductID);
-
-				// String
-
-				writeString(this.ProductName, dos);
-
-				// String
-
-				writeString(this.ProductNumber, dos);
-
-				// String
-
-				writeString(this.ProductColor, dos);
-
-				// Object
-
-				dos.writeObject(this.ProductStandardCost);
-
-				// java.util.Date
-
-				writeDate(this.SellStartDate, dos);
-
-				// java.util.Date
-
-				writeDate(this.SellEndDate, dos);
-
-				// String
-
-				writeString(this.ModelName, dos);
-
-				// String
-
-				writeString(this.SalesPerson, dos);
-
-				// String
-
-				writeString(this.CompanyName, dos);
-
-				// String
-
-				writeString(this.Phone, dos);
-
-				// String
-
-				writeString(this.AddressLine1, dos);
-
-				// int
-
-				dos.writeInt(this.SalesOrderID);
-
-				// java.util.Date
-
-				writeDate(this.OrderDate, dos);
-
-				// java.util.Date
-
-				writeDate(this.DueDate, dos);
-
-				// java.util.Date
-
-				writeDate(this.ShipDate, dos);
-
-				// short
-
-				dos.writeShort(this.Status);
-
-				// Integer
-
-				writeInteger(this.OnlineOrderFlag, dos);
-
-				// String
-
-				writeString(this.SalesOrderNumber, dos);
-
-				// Integer
-
-				writeInteger(this.ShipToAddressID, dos);
-
-				// Integer
-
-				writeInteger(this.BillToAddressID, dos);
-
-				// String
-
-				writeString(this.ShipMethod, dos);
-
-				// String
-
-				writeString(this.CreditCardApprovalCode, dos);
-
-				// BigDecimal
-
-				dos.writeObject(this.TotalDue);
-
-				// Object
-
-				dos.writeObject(this.TaxAmt);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
+			finally {
 			}
 
 		}
@@ -8773,31 +8076,6 @@ public class IngestaoCienciaDados implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("ProductID=" + String.valueOf(ProductID));
-			sb.append(",ProductName=" + ProductName);
-			sb.append(",ProductNumber=" + ProductNumber);
-			sb.append(",ProductColor=" + ProductColor);
-			sb.append(",ProductStandardCost=" + String.valueOf(ProductStandardCost));
-			sb.append(",SellStartDate=" + String.valueOf(SellStartDate));
-			sb.append(",SellEndDate=" + String.valueOf(SellEndDate));
-			sb.append(",ModelName=" + ModelName);
-			sb.append(",SalesPerson=" + SalesPerson);
-			sb.append(",CompanyName=" + CompanyName);
-			sb.append(",Phone=" + Phone);
-			sb.append(",AddressLine1=" + AddressLine1);
-			sb.append(",SalesOrderID=" + String.valueOf(SalesOrderID));
-			sb.append(",OrderDate=" + String.valueOf(OrderDate));
-			sb.append(",DueDate=" + String.valueOf(DueDate));
-			sb.append(",ShipDate=" + String.valueOf(ShipDate));
-			sb.append(",Status=" + String.valueOf(Status));
-			sb.append(",OnlineOrderFlag=" + String.valueOf(OnlineOrderFlag));
-			sb.append(",SalesOrderNumber=" + SalesOrderNumber);
-			sb.append(",ShipToAddressID=" + String.valueOf(ShipToAddressID));
-			sb.append(",BillToAddressID=" + String.valueOf(BillToAddressID));
-			sb.append(",ShipMethod=" + ShipMethod);
-			sb.append(",CreditCardApprovalCode=" + CreditCardApprovalCode);
-			sb.append(",TotalDue=" + String.valueOf(TotalDue));
-			sb.append(",TaxAmt=" + String.valueOf(TaxAmt));
 			sb.append("]");
 
 			return sb.toString();
@@ -8806,19 +8084,9 @@ public class IngestaoCienciaDados implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(OutputStruct other) {
+		public int compareTo(BlaStruct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.ProductID, other.ProductID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
-
-			returnValue = checkNullsAndCompare(this.SalesOrderID, other.SalesOrderID);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -10723,102 +9991,76 @@ public class IngestaoCienciaDados implements TalendJob {
 				row15Struct row16 = row15;
 				SalesProductStruct SalesProduct = new SalesProductStruct();
 				SalesProductStruct row21 = SalesProduct;
-				OutputStruct Output = new OutputStruct();
+				BlaStruct Bla = new BlaStruct();
 
 				/**
-				 * [tFileOutputDelimited_14 begin ] start
+				 * [tLogRow_1 begin ] start
 				 */
 
-				ok_Hash.put("tFileOutputDelimited_14", false);
-				start_Hash.put("tFileOutputDelimited_14", System.currentTimeMillis());
+				ok_Hash.put("tLogRow_1", false);
+				start_Hash.put("tLogRow_1", System.currentTimeMillis());
 
-				currentComponent = "tFileOutputDelimited_14";
+				currentComponent = "tLogRow_1";
 
 				if (execStat) {
-					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "Output");
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "Bla");
 				}
 
-				int tos_count_tFileOutputDelimited_14 = 0;
+				int tos_count_tLogRow_1 = 0;
 
-				String fileName_tFileOutputDelimited_14 = "";
-				fileName_tFileOutputDelimited_14 = (new java.io.File(
-						"D:/Projetos/12ABDGrupo2DataOPS/DL/Curated/ChrunAula03PT02" + TalendDate.getDate("YYYY-MM-DD")
-								+ ".csv")).getAbsolutePath().replace("\\", "/");
-				String fullName_tFileOutputDelimited_14 = null;
-				String extension_tFileOutputDelimited_14 = null;
-				String directory_tFileOutputDelimited_14 = null;
-				if ((fileName_tFileOutputDelimited_14.indexOf("/") != -1)) {
-					if (fileName_tFileOutputDelimited_14.lastIndexOf(".") < fileName_tFileOutputDelimited_14
-							.lastIndexOf("/")) {
-						fullName_tFileOutputDelimited_14 = fileName_tFileOutputDelimited_14;
-						extension_tFileOutputDelimited_14 = "";
-					} else {
-						fullName_tFileOutputDelimited_14 = fileName_tFileOutputDelimited_14.substring(0,
-								fileName_tFileOutputDelimited_14.lastIndexOf("."));
-						extension_tFileOutputDelimited_14 = fileName_tFileOutputDelimited_14
-								.substring(fileName_tFileOutputDelimited_14.lastIndexOf("."));
+				///////////////////////
+
+				class Util_tLogRow_1 {
+
+					String[] des_top = { ".", ".", "-", "+" };
+
+					String[] des_head = { "|=", "=|", "-", "+" };
+
+					String[] des_bottom = { "'", "'", "-", "+" };
+
+					String name = "";
+
+					java.util.List<String[]> list = new java.util.ArrayList<String[]>();
+
+					int[] colLengths = new int[0];
+
+					public void addRow(String[] row) {
+
+						for (int i = 0; i < 0; i++) {
+							if (row[i] != null) {
+								colLengths[i] = Math.max(colLengths[i], row[i].length());
+							}
+						}
+						list.add(row);
 					}
-					directory_tFileOutputDelimited_14 = fileName_tFileOutputDelimited_14.substring(0,
-							fileName_tFileOutputDelimited_14.lastIndexOf("/"));
-				} else {
-					if (fileName_tFileOutputDelimited_14.lastIndexOf(".") != -1) {
-						fullName_tFileOutputDelimited_14 = fileName_tFileOutputDelimited_14.substring(0,
-								fileName_tFileOutputDelimited_14.lastIndexOf("."));
-						extension_tFileOutputDelimited_14 = fileName_tFileOutputDelimited_14
-								.substring(fileName_tFileOutputDelimited_14.lastIndexOf("."));
-					} else {
-						fullName_tFileOutputDelimited_14 = fileName_tFileOutputDelimited_14;
-						extension_tFileOutputDelimited_14 = "";
+
+					public void setTableName(String name) {
+
+						this.name = name;
 					}
-					directory_tFileOutputDelimited_14 = "";
-				}
-				boolean isFileGenerated_tFileOutputDelimited_14 = true;
-				java.io.File filetFileOutputDelimited_14 = new java.io.File(fileName_tFileOutputDelimited_14);
-				globalMap.put("tFileOutputDelimited_14_FILE_NAME", fileName_tFileOutputDelimited_14);
-				int nb_line_tFileOutputDelimited_14 = 0;
-				int splitedFileNo_tFileOutputDelimited_14 = 0;
-				int currentRow_tFileOutputDelimited_14 = 0;
 
-				final String OUT_DELIM_tFileOutputDelimited_14 = /**
-																	 * Start field
-																	 * tFileOutputDelimited_14:FIELDSEPARATOR
-																	 */
-						";"/** End field tFileOutputDelimited_14:FIELDSEPARATOR */
-				;
+					public StringBuilder format() {
 
-				final String OUT_DELIM_ROWSEP_tFileOutputDelimited_14 = /**
-																		 * Start field
-																		 * tFileOutputDelimited_14:ROWSEPARATOR
-																		 */
-						"\n"/** End field tFileOutputDelimited_14:ROWSEPARATOR */
-				;
+						StringBuilder sb = new StringBuilder();
 
-				// create directory only if not exists
-				if (directory_tFileOutputDelimited_14 != null
-						&& directory_tFileOutputDelimited_14.trim().length() != 0) {
-					java.io.File dir_tFileOutputDelimited_14 = new java.io.File(directory_tFileOutputDelimited_14);
-					if (!dir_tFileOutputDelimited_14.exists()) {
-						dir_tFileOutputDelimited_14.mkdirs();
+						return sb;
+					}
+
+					public boolean isTableEmpty() {
+						if (list.size() > 1)
+							return false;
+						return true;
 					}
 				}
-
-				// routines.system.Row
-				java.io.Writer outtFileOutputDelimited_14 = null;
-
-				java.io.File fileToDelete_tFileOutputDelimited_14 = new java.io.File(fileName_tFileOutputDelimited_14);
-				if (fileToDelete_tFileOutputDelimited_14.exists()) {
-					fileToDelete_tFileOutputDelimited_14.delete();
-				}
-				outtFileOutputDelimited_14 = new java.io.BufferedWriter(new java.io.OutputStreamWriter(
-						new java.io.FileOutputStream(fileName_tFileOutputDelimited_14, false), "UTF-8"));
-
-				resourceMap.put("out_tFileOutputDelimited_14", outtFileOutputDelimited_14);
-				resourceMap.put("nb_line_tFileOutputDelimited_14", nb_line_tFileOutputDelimited_14);
-				resourceMap.put("isFileGenerated_tFileOutputDelimited_14", isFileGenerated_tFileOutputDelimited_14);
-				resourceMap.put("filetFileOutputDelimited_14", filetFileOutputDelimited_14);
+				Util_tLogRow_1 util_tLogRow_1 = new Util_tLogRow_1();
+				util_tLogRow_1.setTableName("tLogRow_1");
+				util_tLogRow_1.addRow(new String[] {});
+				StringBuilder strBuffer_tLogRow_1 = null;
+				int nb_line_tLogRow_1 = 0;
+///////////////////////    			
 
 				/**
-				 * [tFileOutputDelimited_14 begin ] stop
+				 * [tLogRow_1 begin ] stop
 				 */
 
 				/**
@@ -10867,7 +10109,7 @@ public class IngestaoCienciaDados implements TalendJob {
 
 // ###############################
 // # Outputs initialization
-				OutputStruct Output_tmp = new OutputStruct();
+				BlaStruct Bla_tmp = new BlaStruct();
 // ###############################
 
 				/**
@@ -11214,7 +10456,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_6 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_6 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:JItokZ2C9nVfs49WdwKRy0b+Eaus/0P+cHhzBiwRjND7qwk2uA==");
+						"enc:routine.encryption.key.v1:rdVTQ/0sFhJ3GjWE0XmfTr7hUKeLYgIm3RHb5pjiQDjuxOIN8g==");
 
 				String dbPwd_tDBInput_6 = decryptedPassword_tDBInput_6;
 
@@ -11919,35 +11161,10 @@ public class IngestaoCienciaDados implements TalendJob {
 								// ###############################
 								// # Output tables
 
-								Output = null;
+								Bla = null;
 
-// # Output table : 'Output'
-								Output_tmp.ProductID = row24.ProductID;
-								Output_tmp.ProductName = row24.Name;
-								Output_tmp.ProductNumber = row24.ProductNumber;
-								Output_tmp.ProductColor = row24.Color;
-								Output_tmp.ProductStandardCost = row24.StandardCost;
-								Output_tmp.SellStartDate = row24.SellStartDate;
-								Output_tmp.SellEndDate = row24.SellEndDate;
-								Output_tmp.ModelName = row24.ModelName;
-								Output_tmp.SalesPerson = row22.SalesPerson;
-								Output_tmp.CompanyName = row23.CompanyName;
-								Output_tmp.Phone = row23.Phone;
-								Output_tmp.AddressLine1 = row23.AddressLine1;
-								Output_tmp.SalesOrderID = row21.SalesOrderID;
-								Output_tmp.OrderDate = row21.OrderDate;
-								Output_tmp.DueDate = row21.DueDate;
-								Output_tmp.ShipDate = row21.ShipDate;
-								Output_tmp.Status = row21.Status;
-								Output_tmp.OnlineOrderFlag = row21.OnlineOrderFlag;
-								Output_tmp.SalesOrderNumber = row21.SalesOrderNumber;
-								Output_tmp.ShipToAddressID = row21.ShipToAddressID;
-								Output_tmp.BillToAddressID = row21.BillToAddressID;
-								Output_tmp.ShipMethod = row21.ShipMethod;
-								Output_tmp.CreditCardApprovalCode = row21.CreditCardApprovalCode;
-								Output_tmp.TotalDue = row21.TotalDue;
-								Output_tmp.TaxAmt = row21.TaxAmt;
-								Output = Output_tmp;
+// # Output table : 'Bla'
+								Bla = Bla_tmp;
 // ###############################
 
 							} // end of Var scope
@@ -11969,153 +11186,58 @@ public class IngestaoCienciaDados implements TalendJob {
 							/**
 							 * [tMap_6 process_data_begin ] stop
 							 */
-// Start of branch "Output"
-							if (Output != null) {
+// Start of branch "Bla"
+							if (Bla != null) {
 
 								/**
-								 * [tFileOutputDelimited_14 main ] start
+								 * [tLogRow_1 main ] start
 								 */
 
-								currentComponent = "tFileOutputDelimited_14";
+								currentComponent = "tLogRow_1";
 
 								if (execStat) {
-									runStat.updateStatOnConnection(iterateId, 1, 1, "Output");
+									runStat.updateStatOnConnection(iterateId, 1, 1, "Bla");
 								}
 
-								StringBuilder sb_tFileOutputDelimited_14 = new StringBuilder();
-								sb_tFileOutputDelimited_14.append(Output.ProductID);
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ProductName != null) {
-									sb_tFileOutputDelimited_14.append(Output.ProductName);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ProductNumber != null) {
-									sb_tFileOutputDelimited_14.append(Output.ProductNumber);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ProductColor != null) {
-									sb_tFileOutputDelimited_14.append(Output.ProductColor);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ProductStandardCost != null) {
-									sb_tFileOutputDelimited_14.append(Output.ProductStandardCost);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.SellStartDate != null) {
-									sb_tFileOutputDelimited_14
-											.append(FormatterUtils.format_Date(Output.SellStartDate, "dd-MM-yyyy"));
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.SellEndDate != null) {
-									sb_tFileOutputDelimited_14
-											.append(FormatterUtils.format_Date(Output.SellEndDate, "dd-MM-yyyy"));
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ModelName != null) {
-									sb_tFileOutputDelimited_14.append(Output.ModelName);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.SalesPerson != null) {
-									sb_tFileOutputDelimited_14.append(Output.SalesPerson);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.CompanyName != null) {
-									sb_tFileOutputDelimited_14.append(Output.CompanyName);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.Phone != null) {
-									sb_tFileOutputDelimited_14.append(Output.Phone);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.AddressLine1 != null) {
-									sb_tFileOutputDelimited_14.append(Output.AddressLine1);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								sb_tFileOutputDelimited_14.append(Output.SalesOrderID);
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.OrderDate != null) {
-									sb_tFileOutputDelimited_14
-											.append(FormatterUtils.format_Date(Output.OrderDate, "dd-MM-yyyy"));
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.DueDate != null) {
-									sb_tFileOutputDelimited_14
-											.append(FormatterUtils.format_Date(Output.DueDate, "dd-MM-yyyy"));
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ShipDate != null) {
-									sb_tFileOutputDelimited_14
-											.append(FormatterUtils.format_Date(Output.ShipDate, "dd-MM-yyyy"));
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								sb_tFileOutputDelimited_14.append(Output.Status);
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.OnlineOrderFlag != null) {
-									sb_tFileOutputDelimited_14.append(Output.OnlineOrderFlag);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.SalesOrderNumber != null) {
-									sb_tFileOutputDelimited_14.append(Output.SalesOrderNumber);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ShipToAddressID != null) {
-									sb_tFileOutputDelimited_14.append(Output.ShipToAddressID);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.BillToAddressID != null) {
-									sb_tFileOutputDelimited_14.append(Output.BillToAddressID);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.ShipMethod != null) {
-									sb_tFileOutputDelimited_14.append(Output.ShipMethod);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.CreditCardApprovalCode != null) {
-									sb_tFileOutputDelimited_14.append(Output.CreditCardApprovalCode);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.TotalDue != null) {
-									sb_tFileOutputDelimited_14.append(Output.TotalDue
-											.setScale(4, java.math.RoundingMode.HALF_UP).toPlainString());
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_tFileOutputDelimited_14);
-								if (Output.TaxAmt != null) {
-									sb_tFileOutputDelimited_14.append(Output.TaxAmt);
-								}
-								sb_tFileOutputDelimited_14.append(OUT_DELIM_ROWSEP_tFileOutputDelimited_14);
+///////////////////////		
 
-								nb_line_tFileOutputDelimited_14++;
-								resourceMap.put("nb_line_tFileOutputDelimited_14", nb_line_tFileOutputDelimited_14);
+								String[] row_tLogRow_1 = new String[0];
 
-								outtFileOutputDelimited_14.write(sb_tFileOutputDelimited_14.toString());
+								util_tLogRow_1.addRow(row_tLogRow_1);
+								nb_line_tLogRow_1++;
+//////
 
-								tos_count_tFileOutputDelimited_14++;
+//////                    
+
+///////////////////////    			
+
+								tos_count_tLogRow_1++;
 
 								/**
-								 * [tFileOutputDelimited_14 main ] stop
+								 * [tLogRow_1 main ] stop
 								 */
 
 								/**
-								 * [tFileOutputDelimited_14 process_data_begin ] start
+								 * [tLogRow_1 process_data_begin ] start
 								 */
 
-								currentComponent = "tFileOutputDelimited_14";
+								currentComponent = "tLogRow_1";
 
 								/**
-								 * [tFileOutputDelimited_14 process_data_begin ] stop
+								 * [tLogRow_1 process_data_begin ] stop
 								 */
 
 								/**
-								 * [tFileOutputDelimited_14 process_data_end ] start
+								 * [tLogRow_1 process_data_end ] start
 								 */
 
-								currentComponent = "tFileOutputDelimited_14";
+								currentComponent = "tLogRow_1";
 
 								/**
-								 * [tFileOutputDelimited_14 process_data_end ] stop
+								 * [tLogRow_1 process_data_end ] stop
 								 */
 
-							} // End of branch "Output"
+							} // End of branch "Bla"
 
 							/**
 							 * [tMap_6 process_data_end ] start
@@ -12338,36 +11460,37 @@ public class IngestaoCienciaDados implements TalendJob {
 				 */
 
 				/**
-				 * [tFileOutputDelimited_14 end ] start
+				 * [tLogRow_1 end ] start
 				 */
 
-				currentComponent = "tFileOutputDelimited_14";
+				currentComponent = "tLogRow_1";
 
-				if (outtFileOutputDelimited_14 != null) {
-					outtFileOutputDelimited_14.flush();
-					outtFileOutputDelimited_14.close();
+//////
+
+				java.io.PrintStream consoleOut_tLogRow_1 = null;
+				if (globalMap.get("tLogRow_CONSOLE") != null) {
+					consoleOut_tLogRow_1 = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
+				} else {
+					consoleOut_tLogRow_1 = new java.io.PrintStream(new java.io.BufferedOutputStream(System.out));
+					globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_1);
 				}
 
-				globalMap.put("tFileOutputDelimited_14_NB_LINE", nb_line_tFileOutputDelimited_14);
-				globalMap.put("tFileOutputDelimited_14_FILE_NAME", fileName_tFileOutputDelimited_14);
+				consoleOut_tLogRow_1.println(util_tLogRow_1.format().toString());
+				consoleOut_tLogRow_1.flush();
+//////
+				globalMap.put("tLogRow_1_NB_LINE", nb_line_tLogRow_1);
 
-				if (isFileGenerated_tFileOutputDelimited_14 && nb_line_tFileOutputDelimited_14 == 0) {
-
-					filetFileOutputDelimited_14.delete();
-
-				}
-
-				resourceMap.put("finish_tFileOutputDelimited_14", true);
+///////////////////////    			
 
 				if (execStat) {
-					runStat.updateStat(resourceMap, iterateId, 2, 0, "Output");
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "Bla");
 				}
 
-				ok_Hash.put("tFileOutputDelimited_14", true);
-				end_Hash.put("tFileOutputDelimited_14", System.currentTimeMillis());
+				ok_Hash.put("tLogRow_1", true);
+				end_Hash.put("tLogRow_1", System.currentTimeMillis());
 
 				/**
-				 * [tFileOutputDelimited_14 end ] stop
+				 * [tLogRow_1 end ] stop
 				 */
 
 			} // end the resume
@@ -12490,32 +11613,13 @@ public class IngestaoCienciaDados implements TalendJob {
 				 */
 
 				/**
-				 * [tFileOutputDelimited_14 finally ] start
+				 * [tLogRow_1 finally ] start
 				 */
 
-				currentComponent = "tFileOutputDelimited_14";
-
-				if (resourceMap.get("finish_tFileOutputDelimited_14") == null) {
-
-					java.io.Writer outtFileOutputDelimited_14 = (java.io.Writer) resourceMap
-							.get("out_tFileOutputDelimited_14");
-					if (outtFileOutputDelimited_14 != null) {
-						outtFileOutputDelimited_14.flush();
-						outtFileOutputDelimited_14.close();
-					}
-
-					if (Boolean.valueOf(String.valueOf(resourceMap.get("isFileGenerated_tFileOutputDelimited_14")))
-							&& Integer
-									.valueOf(String.valueOf(resourceMap.get("nb_line_tFileOutputDelimited_14"))) == 0) {
-
-						((java.io.File) resourceMap.get("filetFileOutputDelimited_14")).delete();
-
-					}
-
-				}
+				currentComponent = "tLogRow_1";
 
 				/**
-				 * [tFileOutputDelimited_14 finally ] stop
+				 * [tLogRow_1 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -12527,197 +11631,6 @@ public class IngestaoCienciaDados implements TalendJob {
 		}
 
 		globalMap.put("tDBInput_6_SUBPROCESS_STATE", 1);
-	}
-
-	public void tDBInput_8Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-		globalMap.put("tDBInput_8_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		String iterateId = "";
-
-		String currentComponent = "";
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				/**
-				 * [tDBInput_8 begin ] start
-				 */
-
-				ok_Hash.put("tDBInput_8", false);
-				start_Hash.put("tDBInput_8", System.currentTimeMillis());
-
-				currentComponent = "tDBInput_8";
-
-				int tos_count_tDBInput_8 = 0;
-
-				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_8 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
-						.getMSSqlGenerateTimestampUtil();
-
-				java.util.List<String> talendToDBList_tDBInput_8 = new java.util.ArrayList();
-				String[] talendToDBArray_tDBInput_8 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
-						"DECIMAL IDENTITY", "REAL" };
-				java.util.Collections.addAll(talendToDBList_tDBInput_8, talendToDBArray_tDBInput_8);
-				int nb_line_tDBInput_8 = 0;
-				java.sql.Connection conn_tDBInput_8 = null;
-				String driverClass_tDBInput_8 = "net.sourceforge.jtds.jdbc.Driver";
-				java.lang.Class jdbcclazz_tDBInput_8 = java.lang.Class.forName(driverClass_tDBInput_8);
-				String dbUser_tDBInput_8 = "sqlfamily";
-
-				final String decryptedPassword_tDBInput_8 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:OJCBQdeEU5ce643hz/civQ7Bzk/Fz/JfOhN0O4aDHNZ4OD8I0A==");
-
-				String dbPwd_tDBInput_8 = decryptedPassword_tDBInput_8;
-
-				String port_tDBInput_8 = "1433";
-				String dbname_tDBInput_8 = "AdventureWorks";
-				String url_tDBInput_8 = "jdbc:jtds:sqlserver://" + "sqlservercentralpublic.database.windows.net";
-				if (!"".equals(port_tDBInput_8)) {
-					url_tDBInput_8 += ":" + "1433";
-				}
-				if (!"".equals(dbname_tDBInput_8)) {
-					url_tDBInput_8 += "//" + "AdventureWorks";
-				}
-				url_tDBInput_8 += ";appName=" + projectName + ";" + "";
-				String dbschema_tDBInput_8 = "SalesLT";
-
-				conn_tDBInput_8 = java.sql.DriverManager.getConnection(url_tDBInput_8, dbUser_tDBInput_8,
-						dbPwd_tDBInput_8);
-
-				java.sql.Statement stmt_tDBInput_8 = conn_tDBInput_8.createStatement();
-
-				String dbquery_tDBInput_8 = "SELECT SalesLT.Customer.CustomerID,\n		SalesLT.Customer.NameStyle,\n		SalesLT.Customer.Title,\n		SalesLT.Customer.FirstNam"
-						+ "e,\n		SalesLT.Customer.MiddleName,\n		SalesLT.Customer.LastName,\n		SalesLT.Customer.Suffix,\n		SalesLT.Customer.CompanyName"
-						+ ",\n		SalesLT.Customer.SalesPerson,\n		SalesLT.Customer.EmailAddress,\n		SalesLT.Customer.Phone,\n		SalesLT.Customer.Password"
-						+ "Hash,\n		SalesLT.Customer.PasswordSalt,\n		SalesLT.Customer.rowguid,\n		SalesLT.Customer.ModifiedDate\nFROM	SalesLT.Customer"
-						+ "";
-
-				globalMap.put("tDBInput_8_QUERY", dbquery_tDBInput_8);
-				java.sql.ResultSet rs_tDBInput_8 = null;
-
-				try {
-					rs_tDBInput_8 = stmt_tDBInput_8.executeQuery(dbquery_tDBInput_8);
-					java.sql.ResultSetMetaData rsmd_tDBInput_8 = rs_tDBInput_8.getMetaData();
-					int colQtyInRs_tDBInput_8 = rsmd_tDBInput_8.getColumnCount();
-
-					String tmpContent_tDBInput_8 = null;
-
-					while (rs_tDBInput_8.next()) {
-						nb_line_tDBInput_8++;
-
-						/**
-						 * [tDBInput_8 begin ] stop
-						 */
-
-						/**
-						 * [tDBInput_8 main ] start
-						 */
-
-						currentComponent = "tDBInput_8";
-
-						tos_count_tDBInput_8++;
-
-						/**
-						 * [tDBInput_8 main ] stop
-						 */
-
-						/**
-						 * [tDBInput_8 process_data_begin ] start
-						 */
-
-						currentComponent = "tDBInput_8";
-
-						/**
-						 * [tDBInput_8 process_data_begin ] stop
-						 */
-
-						/**
-						 * [tDBInput_8 process_data_end ] start
-						 */
-
-						currentComponent = "tDBInput_8";
-
-						/**
-						 * [tDBInput_8 process_data_end ] stop
-						 */
-
-						/**
-						 * [tDBInput_8 end ] start
-						 */
-
-						currentComponent = "tDBInput_8";
-
-					}
-				} finally {
-					if (rs_tDBInput_8 != null) {
-						rs_tDBInput_8.close();
-					}
-					if (stmt_tDBInput_8 != null) {
-						stmt_tDBInput_8.close();
-					}
-					if (conn_tDBInput_8 != null && !conn_tDBInput_8.isClosed()) {
-
-						conn_tDBInput_8.close();
-
-						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
-								&& routines.system.BundleUtils.inOSGi()) {
-							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
-									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
-						}
-
-					}
-				}
-				globalMap.put("tDBInput_8_NB_LINE", nb_line_tDBInput_8);
-
-				ok_Hash.put("tDBInput_8", true);
-				end_Hash.put("tDBInput_8", System.currentTimeMillis());
-
-				/**
-				 * [tDBInput_8 end ] stop
-				 */
-			} // end the resume
-
-		} catch (java.lang.Exception e) {
-
-			TalendException te = new TalendException(e, currentComponent, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [tDBInput_8 finally ] start
-				 */
-
-				currentComponent = "tDBInput_8";
-
-				/**
-				 * [tDBInput_8 finally ] stop
-				 */
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("tDBInput_8_SUBPROCESS_STATE", 1);
 	}
 
 	public static class row13Struct implements routines.system.IPersistableComparableLookupRow<row13Struct> {
@@ -14569,7 +13482,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_9 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_9 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:BWLbyrkB64p7t0mnWuO5qGY1ZvnrIdRTaJnrQ/yY1VGGwKjXgA==");
+						"enc:routine.encryption.key.v1:6IZfIAgWYn67vlDSlH5ObCT9tE644hRRgp5IYfBCvGZ7K+3aWQ==");
 
 				String dbPwd_tDBInput_9 = decryptedPassword_tDBInput_9;
 
@@ -15478,194 +14391,6 @@ public class IngestaoCienciaDados implements TalendJob {
 		}
 
 		globalMap.put("tDBInput_9_SUBPROCESS_STATE", 1);
-	}
-
-	public void tDBInput_10Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-		globalMap.put("tDBInput_10_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		String iterateId = "";
-
-		String currentComponent = "";
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				/**
-				 * [tDBInput_10 begin ] start
-				 */
-
-				ok_Hash.put("tDBInput_10", false);
-				start_Hash.put("tDBInput_10", System.currentTimeMillis());
-
-				currentComponent = "tDBInput_10";
-
-				int tos_count_tDBInput_10 = 0;
-
-				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_10 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
-						.getMSSqlGenerateTimestampUtil();
-
-				java.util.List<String> talendToDBList_tDBInput_10 = new java.util.ArrayList();
-				String[] talendToDBArray_tDBInput_10 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
-						"DECIMAL IDENTITY", "REAL" };
-				java.util.Collections.addAll(talendToDBList_tDBInput_10, talendToDBArray_tDBInput_10);
-				int nb_line_tDBInput_10 = 0;
-				java.sql.Connection conn_tDBInput_10 = null;
-				String driverClass_tDBInput_10 = "net.sourceforge.jtds.jdbc.Driver";
-				java.lang.Class jdbcclazz_tDBInput_10 = java.lang.Class.forName(driverClass_tDBInput_10);
-				String dbUser_tDBInput_10 = "sqlfamily";
-
-				final String decryptedPassword_tDBInput_10 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:t7Do0f0wJZhJpRaWutRjHVDzfPLh/NX2xR0B8GmrTtcrXE+tuA==");
-
-				String dbPwd_tDBInput_10 = decryptedPassword_tDBInput_10;
-
-				String port_tDBInput_10 = "1433";
-				String dbname_tDBInput_10 = "AdventureWorks";
-				String url_tDBInput_10 = "jdbc:jtds:sqlserver://" + "sqlservercentralpublic.database.windows.net";
-				if (!"".equals(port_tDBInput_10)) {
-					url_tDBInput_10 += ":" + "1433";
-				}
-				if (!"".equals(dbname_tDBInput_10)) {
-					url_tDBInput_10 += "//" + "AdventureWorks";
-				}
-				url_tDBInput_10 += ";appName=" + projectName + ";" + "";
-				String dbschema_tDBInput_10 = "SalesLT";
-
-				conn_tDBInput_10 = java.sql.DriverManager.getConnection(url_tDBInput_10, dbUser_tDBInput_10,
-						dbPwd_tDBInput_10);
-
-				java.sql.Statement stmt_tDBInput_10 = conn_tDBInput_10.createStatement();
-
-				String dbquery_tDBInput_10 = "SELECT SalesLT.CustomerAddress.CustomerID,\n		SalesLT.CustomerAddress.AddressID,\n		SalesLT.CustomerAddress.rowguid,\n		Sa"
-						+ "lesLT.CustomerAddress.ModifiedDate\nFROM	SalesLT.CustomerAddress";
-
-				globalMap.put("tDBInput_10_QUERY", dbquery_tDBInput_10);
-				java.sql.ResultSet rs_tDBInput_10 = null;
-
-				try {
-					rs_tDBInput_10 = stmt_tDBInput_10.executeQuery(dbquery_tDBInput_10);
-					java.sql.ResultSetMetaData rsmd_tDBInput_10 = rs_tDBInput_10.getMetaData();
-					int colQtyInRs_tDBInput_10 = rsmd_tDBInput_10.getColumnCount();
-
-					String tmpContent_tDBInput_10 = null;
-
-					while (rs_tDBInput_10.next()) {
-						nb_line_tDBInput_10++;
-
-						/**
-						 * [tDBInput_10 begin ] stop
-						 */
-
-						/**
-						 * [tDBInput_10 main ] start
-						 */
-
-						currentComponent = "tDBInput_10";
-
-						tos_count_tDBInput_10++;
-
-						/**
-						 * [tDBInput_10 main ] stop
-						 */
-
-						/**
-						 * [tDBInput_10 process_data_begin ] start
-						 */
-
-						currentComponent = "tDBInput_10";
-
-						/**
-						 * [tDBInput_10 process_data_begin ] stop
-						 */
-
-						/**
-						 * [tDBInput_10 process_data_end ] start
-						 */
-
-						currentComponent = "tDBInput_10";
-
-						/**
-						 * [tDBInput_10 process_data_end ] stop
-						 */
-
-						/**
-						 * [tDBInput_10 end ] start
-						 */
-
-						currentComponent = "tDBInput_10";
-
-					}
-				} finally {
-					if (rs_tDBInput_10 != null) {
-						rs_tDBInput_10.close();
-					}
-					if (stmt_tDBInput_10 != null) {
-						stmt_tDBInput_10.close();
-					}
-					if (conn_tDBInput_10 != null && !conn_tDBInput_10.isClosed()) {
-
-						conn_tDBInput_10.close();
-
-						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
-								&& routines.system.BundleUtils.inOSGi()) {
-							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
-									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
-						}
-
-					}
-				}
-				globalMap.put("tDBInput_10_NB_LINE", nb_line_tDBInput_10);
-
-				ok_Hash.put("tDBInput_10", true);
-				end_Hash.put("tDBInput_10", System.currentTimeMillis());
-
-				/**
-				 * [tDBInput_10 end ] stop
-				 */
-			} // end the resume
-
-		} catch (java.lang.Exception e) {
-
-			TalendException te = new TalendException(e, currentComponent, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [tDBInput_10 finally ] start
-				 */
-
-				currentComponent = "tDBInput_10";
-
-				/**
-				 * [tDBInput_10 finally ] stop
-				 */
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("tDBInput_10_SUBPROCESS_STATE", 1);
 	}
 
 	public static class row23Struct implements routines.system.IPersistableComparableLookupRow<row23Struct> {
@@ -16967,7 +15692,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				// source node:tFileOutputDelimited_10 - inputs:(Customer1)
 				// outputs:(row23,row23) | target node:tAdvancedHash_row23 - inputs:(row23)
 				// outputs:()
-				// linked node: tMap_6 - inputs:(row24,row21,row23,row22) outputs:(Output)
+				// linked node: tMap_6 - inputs:(row24,row21,row23,row22) outputs:(Bla)
 
 				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row23 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
 
@@ -17280,7 +16005,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_11 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_11 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:0RPAme1V4mWxHI5AHpR+fFp/K5iXH/SntHVR7SDcAf/aqJ8bhg==");
+						"enc:routine.encryption.key.v1:E97TVzItubQTtARPqJcJWPFQEpZovoy2mMSwcUE7zrJHdHnW/w==");
 
 				String dbPwd_tDBInput_11 = decryptedPassword_tDBInput_11;
 
@@ -18807,7 +17532,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				String dbUser_tDBInput_12 = "sqlfamily";
 
 				final String decryptedPassword_tDBInput_12 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:9OnP+he2FkoQMn6EHbfby3scus0Yb2dIwl3zuqM9hQXq3cqV1g==");
+						"enc:routine.encryption.key.v1:GScKi5VazjRrxZNbFM4MamXldzELzJCAjxScfsSlfvpDR36RgA==");
 
 				String dbPwd_tDBInput_12 = decryptedPassword_tDBInput_12;
 
@@ -21215,7 +19940,7 @@ public class IngestaoCienciaDados implements TalendJob {
 				// connection name:row22
 				// source node:tFileOutputDelimited_13 - inputs:(row20) outputs:(row22,row22) |
 				// target node:tAdvancedHash_row22 - inputs:(row22) outputs:()
-				// linked node: tMap_6 - inputs:(row24,row21,row23,row22) outputs:(Output)
+				// linked node: tMap_6 - inputs:(row24,row21,row23,row22) outputs:(Bla)
 
 				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row22 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
 
@@ -22280,18 +21005,6 @@ public class IngestaoCienciaDados implements TalendJob {
 
 		try {
 			errorCode = null;
-			tDBInput_4Process(globalMap);
-			if (!"failure".equals(status)) {
-				status = "end";
-			}
-		} catch (TalendException e_tDBInput_4) {
-			globalMap.put("tDBInput_4_SUBPROCESS_STATE", -1);
-
-			e_tDBInput_4.printStackTrace();
-
-		}
-		try {
-			errorCode = null;
 			tDBInput_6Process(globalMap);
 			if (!"failure".equals(status)) {
 				status = "end";
@@ -22300,30 +21013,6 @@ public class IngestaoCienciaDados implements TalendJob {
 			globalMap.put("tDBInput_6_SUBPROCESS_STATE", -1);
 
 			e_tDBInput_6.printStackTrace();
-
-		}
-		try {
-			errorCode = null;
-			tDBInput_8Process(globalMap);
-			if (!"failure".equals(status)) {
-				status = "end";
-			}
-		} catch (TalendException e_tDBInput_8) {
-			globalMap.put("tDBInput_8_SUBPROCESS_STATE", -1);
-
-			e_tDBInput_8.printStackTrace();
-
-		}
-		try {
-			errorCode = null;
-			tDBInput_10Process(globalMap);
-			if (!"failure".equals(status)) {
-				status = "end";
-			}
-		} catch (TalendException e_tDBInput_10) {
-			globalMap.put("tDBInput_10_SUBPROCESS_STATE", -1);
-
-			e_tDBInput_10.printStackTrace();
 
 		}
 
@@ -22478,6 +21167,6 @@ public class IngestaoCienciaDados implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 729041 characters generated by Talend Open Studio for Data Integration on the
- * July 17, 2021 3:19:25 PM BRT
+ * 682892 characters generated by Talend Open Studio for Data Integration on the
+ * July 17, 2021 4:06:59 PM BRT
  ************************************************************************************************/
