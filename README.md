@@ -46,21 +46,22 @@ Gerar datasets, um com dados agregados para um relatório de negócios, e um dat
 
 # Data Ops Entregas Aula 3 Parte 1
 
-1.	Ampilar os pipelines com Talend a partir da Base AdventureWorks com os
-sequintes objetivos:
+1.	Ampilar os pipelines com Talend a partir da Base AdventureWorks com os sequintes objetivos:
 
-2.	O Relatório criado anteriormente para a área de vendas foi um sucesso, a gestão do
-território nacional ficou extremamente satisfeita com os resultados e agora quer
-ampliar seus KPIS, a nova requisição foi:
+2.	O Relatório criado anteriormente para a área de vendas foi um sucesso, a gestão do território nacional ficou extremamente satisfeita com os resultados e agora quer ampliar seus KPIS, a nova requisição foi:
 
-	-	Incluir informações sobre vendedores com melhor e pior desempenho no
-relatório existente.
-	-	Desenvolver um relatório novo com dados mensais, da distrubuição de
-produtos por região com métricas de quantidade de venda e valor.
-	-	Também foi solicitado um arquivo contendo informações de produtos
-vendidos, vendedor que realizou, distribuido por região e data este arquivo
-foi solicitado semanalmente para que o time de possa realizer analyses
-manuais.
+	-	Incluir informações sobre vendedores com melhor e pior desempenho no relatório existente.
+	-	Desenvolver um relatório novo com dados mensais, da distrubuição de produtos por região com métricas de quantidade de venda e valor.
+	-	Também foi solicitado um arquivo contendo informações de produtos vendidos, vendedor que realizou, distribuido por região e data este arquivo foi solicitado semanalmente para que o time de possa realizer analyses manuais.
+
+# Data Ops Entregas Aula 3 Parte 2
+
+1.	Ampilar os pipelines com Talend a partir da Base AdventureWorks com os sequintes objetivos:
+
+	- O Dataset enviado para exploração pelo time de ciência de Dados, foi utilizado, porém eles realizaram um solicitação complementar sobre a anterior;
+	- Objetivo de construir um modelo de previsão de Churn;
+	- A solicitação é de uma nova amostra de dados com informações da entidades de Produtos, Vendas e Vendedores, removendo a entidade de cliente e incluindo as informações existentes sobre as lojas das vendas;
+	- Também solicitaram que a amostra seja enviada com um histórico maior, já dividida em amostra para modelagem e amostra para treino.
 
 # Data Pipe lines Projeto
 
