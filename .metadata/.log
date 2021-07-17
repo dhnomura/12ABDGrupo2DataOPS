@@ -183,6 +183,7 @@ Created Time: 2021-07-13 18:54:36.499
 !ENTRY org.talend.platform.logging 1 0 2021-07-13 19:03:59.946
 !MESSAGE 2021-07-13 19:03:59,946 INFO  org.talend.designer.core.runprocess.Processor  - Command line: c:/Program Files/Java/jre1.8.0_291/bin/java.exe -Xms256M -Xmx1024M -Dtalend.component.manager.m2.repository=D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/.m2/repository -Dfile.encoding=UTF-8 -Dencryption.keys.file=/D:/programas/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/configuration/studio.keys -cp D:/Projetos/12ABDGrupo2DataOPS/LOCAL_PROJECT/poms/jobs/process/RelatorioVendas/ingestaovendas_0.1/target/classpath.jar; local_project.ingestaovendas_0_1.IngestaoVendas --context=Default --stat_port=3632 %*
 
+<<<<<<< HEAD
 !SESSION 2021-07-13 19:33:41.878 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.8.0_291
@@ -261,6 +262,11 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.la
 
 !ENTRY org.talend.platform.logging 4 0 2021-07-13 19:39:44.863
 !MESSAGE 2021-07-13 19:39:44,855 ERROR org.talend.commons.exception.CommonExceptionHandler  - Project 'TRABALHOFINAL' is not open.
+=======
+
+!ENTRY org.talend.platform.logging 4 0 2021-07-13 19:30:54.797
+!MESSAGE 2021-07-13 19:30:54,766 ERROR org.talend.commons.exception.CommonExceptionHandler  - Project 'TRABALHOFINAL' is not open.
+>>>>>>> main
 
 !STACK 0
 java.lang.Exception: Project 'TRABALHOFINAL' is not open.
@@ -346,6 +352,7 @@ java.lang.Exception: Project 'TRABALHOFINAL' is not open.
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.resources 2 10035 2021-07-13 19:39:47.412
 !MESSAGE The workspace will exit with unsaved changes in this session.
 !SESSION 2021-07-15 07:41:15.097 -----------------------------------------------
@@ -2085,4 +2092,7 @@ java.lang.Exception: Project 'TRABALHOFINAL' is not open.
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
 !ENTRY org.eclipse.core.resources 2 10035 2021-07-17 11:32:37.775
+=======
+!ENTRY org.eclipse.core.resources 2 10035 2021-07-13 19:30:59.227
+>>>>>>> main
 !MESSAGE The workspace will exit with unsaved changes in this session.

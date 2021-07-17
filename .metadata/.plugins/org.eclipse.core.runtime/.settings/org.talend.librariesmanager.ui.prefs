@@ -6,7 +6,11 @@ BSD-4-Clause=true
 CATOSL-1.1=true
 CDDL-1.0=true
 CDDL-1.1=true
+<<<<<<< HEAD
 IPL-1.0=true
+=======
+GPL-2.0=true
+>>>>>>> main
 LGPL-2.0=true
 LGPL-2.1=true
 LGPL-3.0=true
